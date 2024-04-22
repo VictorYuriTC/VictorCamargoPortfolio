@@ -14,16 +14,23 @@ import androidStudioIcon from "@/assets/android-studio-tool.svg";
 import xCodeIcon from "@/assets/xcode-tool.svg";
 
 import SkillsSectionContainer from "./SkillsSectionContainer";
+import SectionTitle from "../SectionTitle/SectionTitle";
+import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 export default function SkillsSection() {
   return (
-    <div className="flex flex-col">
+    <SectionWrapper className="mt-16 lg:mt-4 xl:mt-0">
+      <SectionTitle>Skills</SectionTitle>
+
       <SkillsSectionContainer
         divWrapper={{
           className: "mt-12",
         }}
         title="Programming Languages">
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             name: "JavaScript",
             iconData: {
@@ -34,6 +41,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             name: "TypeScript",
             iconData: {
@@ -44,6 +54,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             name: "Dart",
             iconData: {
@@ -54,6 +67,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             name: "Python",
             iconData: {
@@ -70,6 +86,9 @@ export default function SkillsSection() {
         }}
         title="Frameworks">
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             iconData: {
               src: reactIcon,
@@ -80,6 +99,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             iconData: {
               src: dartIcon,
@@ -90,6 +112,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             iconData: {
               src: flutterIcon,
@@ -104,18 +129,11 @@ export default function SkillsSection() {
         divWrapper={{
           className: "mt-12",
         }}
-        title="Frameworks">
+        title="Tools">
         <SkillCard
-          skill={{
-            iconData: {
-              src: gitHubIcon,
-              alt: "GitHub logo",
-            },
-            name: "GitHub",
+          link={{
+            href: "",
           }}
-        />
-
-        <SkillCard
           skill={{
             iconData: {
               src: gitIcon,
@@ -126,6 +144,22 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
+          skill={{
+            iconData: {
+              src: gitHubIcon,
+              alt: "GitHub logo",
+            },
+            name: "GitHub",
+          }}
+        />
+
+        <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             iconData: {
               src: androidStudioIcon,
@@ -136,6 +170,9 @@ export default function SkillsSection() {
         />
 
         <SkillCard
+          link={{
+            href: "",
+          }}
           skill={{
             iconData: {
               src: xCodeIcon,
@@ -145,6 +182,6 @@ export default function SkillsSection() {
           }}
         />
       </SkillsSectionContainer>
-    </div>
+    </SectionWrapper>
   );
 }

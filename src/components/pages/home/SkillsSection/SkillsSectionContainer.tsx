@@ -9,11 +9,10 @@ interface ISkillsSectionContainer {
 
 export default function SkillsSectionContainer(props: ISkillsSectionContainer) {
   return (
-    <div
-      className={`flex flex-col items-center ${props.divWrapper?.className}`}>
+    <div className={`flex flex-col ${props.divWrapper?.className}`}>
       <span className="text-lg font-semibold">{props.title}</span>
 
-      <div className="mt-3 grid grid-flow-col grid-col-3 gap-8">
+      <div className="flex flex-row items-center gap-8 mt-3">
         {props.children}
       </div>
     </div>

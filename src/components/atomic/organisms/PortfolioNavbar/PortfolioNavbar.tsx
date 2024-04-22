@@ -2,7 +2,7 @@ import PortfolioNavbarLink from "./PortfolioNavbarLink";
 
 export default function PortfolioNavbar() {
   return (
-    <div className="flex flex-row items-center justify-end gap-x-5 mx-6 mt-4">
+    <nav className="flex flex-row items-center justify-end gap-x-5 mx-6 mt-4">
       <PortfolioNavbarLink
         link={{
           children: "Home",
@@ -23,6 +23,6 @@ export default function PortfolioNavbar() {
           href: "/animations",
         }}
       />
-    </div>
+    </nav>
   );
 }

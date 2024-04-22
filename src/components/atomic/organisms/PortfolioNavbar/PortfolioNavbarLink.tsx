@@ -15,8 +15,8 @@ export default function PortfolioNavbarLink(props: IPortfolioNavbarLink) {
 
   return (
     <Link
-      className={`font-normal py-3 px-5 rounded-lg active:bg-purple-900 ${
-        pathname === props.link?.href && "font-medium bg-purple-950"
+      className={`bg-transparent py-3 px-5 font-light ${
+        pathname === props.link?.href && "text-xl font-semibold"
       }`}
       href={props.link.href}>
       {props.link.children}
