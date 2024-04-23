@@ -23,7 +23,9 @@ export default function PortfolioNavbarLink(props: IPortfolioNavbarLink) {
     <Link
       className={`flex flex-col items-center bg-transparent py-3 px-5 text-base rounded-full font-medium dark:font-light`}
       href={`/${pathname}#${props.link.href}`}>
-      {props.icon?.node}
+      <div className="flex flex-col items-center lg:hidden">
+        {props.icon?.node}
+      </div>
 
       {props.link.children}
     </Link>
