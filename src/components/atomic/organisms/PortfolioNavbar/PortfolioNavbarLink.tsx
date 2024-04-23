@@ -10,7 +10,10 @@ interface IPortfolioNavbarLink {
   link: LinkProps & {
     children: ReactNode;
   };
-  icon?: IPortfolioIcon;
+  icon?: {
+    node: ReactNode;
+    alt?: string;
+  };
 }
 
 export default function PortfolioNavbarLink(props: IPortfolioNavbarLink) {
@@ -20,15 +23,7 @@ export default function PortfolioNavbarLink(props: IPortfolioNavbarLink) {
     <Link
       className={`flex flex-col items-center bg-transparent py-3 px-5 text-base rounded-full font-medium dark:font-light`}
       href={`/${pathname}#${props.link.href}`}>
-      {props.icon && (
-        <Image
-          width={24}
-          height={24}
-          src={props.icon.src}
-          alt={`${props.icon.alt}`}
-          className="lg:hidden"
-        />
-      )}
+      {props.icon?.node}
 
       {props.link.children}
     </Link>

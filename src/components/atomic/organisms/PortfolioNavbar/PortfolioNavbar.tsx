@@ -1,11 +1,13 @@
 import PortfolioNavbarLink from "./PortfolioNavbarLink";
 
-import userIcon from "@/assets/user.svg";
-import suitcaseIcon from "@/assets/suitcase.svg";
-import skillsIcon from "@/assets/skills.svg";
-import emailIcon from "@/assets/email.svg";
+import UserSVG from "@/assets/svgs/UserSVG";
+import SuitcaseSVG from "@/assets/svgs/SuitcaseSVG";
+import SkillsSVG from "@/assets/svgs/SkillsSVG";
+import EmailSVG from "@/assets/svgs/EmailSVG";
 
 export default function PortfolioNavbar() {
+  const SVG_SIZE = 24;
+
   return (
     <nav className="w-full fixed left-0 bottom-0 grid grid-flow-col backdrop-blur-lg bg-[theme(colors.gray.50)50] lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-x-5 lg:py-2 dark:bg-[#00000099]">
       <PortfolioNavbarLink
@@ -14,8 +16,13 @@ export default function PortfolioNavbar() {
           href: "about-section",
         }}
         icon={{
-          src: userIcon,
-          alt: 'Link to "About" section',
+          node: (
+            <UserSVG
+              width={SVG_SIZE}
+              height={SVG_SIZE}
+              className="fill-black dark:fill-white"
+            />
+          ),
         }}
       />
 
@@ -25,7 +32,13 @@ export default function PortfolioNavbar() {
           href: "experience-section",
         }}
         icon={{
-          src: suitcaseIcon,
+          node: (
+            <SuitcaseSVG
+              width={SVG_SIZE}
+              height={SVG_SIZE}
+              className="fill-black dark:fill-white"
+            />
+          ),
           alt: 'Link to "Experience" section',
         }}
       />
@@ -36,7 +49,13 @@ export default function PortfolioNavbar() {
           href: "skills-section",
         }}
         icon={{
-          src: skillsIcon,
+          node: (
+            <SkillsSVG
+              width={SVG_SIZE}
+              height={SVG_SIZE}
+              className="fill-black dark:fill-white"
+            />
+          ),
           alt: 'Link to "Skills" section',
         }}
       />
@@ -47,7 +66,13 @@ export default function PortfolioNavbar() {
           href: "contact-section",
         }}
         icon={{
-          src: emailIcon,
+          node: (
+            <EmailSVG
+              width={SVG_SIZE}
+              height={SVG_SIZE}
+              className="fill-black dark:fill-white"
+            />
+          ),
           alt: 'Link to "Contact" section',
         }}
       />
