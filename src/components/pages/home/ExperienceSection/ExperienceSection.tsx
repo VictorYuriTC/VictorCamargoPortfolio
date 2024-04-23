@@ -5,7 +5,7 @@ import { allVictorExperiences } from "./allVictorExperiences";
 
 export default function ExperienceSection() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="experience-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
         Experience
       </SectionTitle>

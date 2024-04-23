@@ -21,7 +21,7 @@ export default function ContactInput(props: IContactInput) {
         type={props.input.type}
         name={props.input.name}
         placeholder={props.input.placeholder}
-        className="mt-1 px-2 py-2 bg-transparent border border-gray-900 rounded caret-gray-500 outline-none focus:shadow-outline focus:border-purple-900 placeholder:text-gray-700"
+        className="mt-1 px-2 py-2 bg-transparent border rounded caret-gray-500 outline-none placeholder:text-gray-350 focus:shadow-outline focus:border-purple-700 text-black border-gray-200 dark:text-white dark:border-gray-900 dark:focus:border-purple-900 dark:placeholder:text-gray-700"
       />
 
       <ValidationError

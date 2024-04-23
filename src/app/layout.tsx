@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // `scrollBehavior: 'smooth'` as reference: https://stackoverflow.com/questions/69825670/smooth-scroll-in-next-js
+    <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body className={inter.className}>{children}</body>
     </html>
   );

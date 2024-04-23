@@ -1,3 +1,4 @@
+import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import { VictorFrameworksEnum } from "@/typing/enums/VictorFrameworksEnum/VictorFrameworksEnum";
 import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
 import { VictorProgrammingLanguagesEnum } from "@/typing/enums/VictorProgrammingLanguagesEnum/VictorProgrammingLanguagesEnum";
@@ -22,9 +23,11 @@ export interface IExperienceSkillTag {
 
 export default function ExperienceSkillTag(props: IExperienceSkillTag) {
   return (
-    <span
-      className={`flex flex-row justify-center items-center py-1 px-3 rounded-full text-base font-light bg-purple-800 ${props.span?.className}`}>
+    <PortfolioPrimaryButton
+      variant="small"
+      borderRadius="rounded-full"
+      className={`flex flex-row justify-center items-center py-1 px-3 rounded-full text-base font-light text-white ${props.span?.className}`}>
       {props.skill.name}
-    </span>
+    </PortfolioPrimaryButton>
   );
 }

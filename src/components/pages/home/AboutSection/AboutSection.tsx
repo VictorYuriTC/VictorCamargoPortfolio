@@ -9,7 +9,7 @@ export default function AboutSection() {
     "Victor Camargo at the top of Caratuva Hill, on Antonina, Paraná, Brazil.";
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="about-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
         My two cents <AboutStrongText>about me</AboutStrongText>
       </SectionTitle>
@@ -29,7 +29,7 @@ export default function AboutSection() {
             />
           </div>
 
-          <p className="mt-4 font-extralight text-sm">
+          <p className="mt-4 text-sm font-light dark:font-extralight">
             {VICTOR_PHOTO_ALT_TEXT}
           </p>
         </div>

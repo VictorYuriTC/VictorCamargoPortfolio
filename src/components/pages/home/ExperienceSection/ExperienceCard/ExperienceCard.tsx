@@ -52,12 +52,12 @@ interface IExperienceCard {
 
 export default function ExperienceCard(props: IExperienceCard) {
   return (
-    <div className="group flex flex-col rounded duration-500 p-5 border border-gray-900 hover:shadow-[0px_0px_7px_theme(colors.purple.500)]">
+    <div className="group flex flex-col rounded duration-500 p-5 border border-gray-300 dark:border-gray-900 hover:shadow-[0px_0px_7px_theme(colors.purple.500)]">
       <div className="flex flex-row flex-wrap gap-x-3 gap-y-3 mb-4">
         {props.experience.allSkills.map((skill, index) => (
           <ExperienceSkillTag
             span={{
-              className: "duration-500 group-hover:bg-purple-700",
+              className: "duration-500 bg-purple-700 group-hover:bg-purple-600",
             }}
             skill={skill}
             key={`index`}

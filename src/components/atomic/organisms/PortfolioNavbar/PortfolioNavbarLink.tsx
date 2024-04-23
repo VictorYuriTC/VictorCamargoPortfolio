@@ -18,10 +18,8 @@ export default function PortfolioNavbarLink(props: IPortfolioNavbarLink) {
 
   return (
     <Link
-      className={`flex flex-col items-center bg-transparent py-3 px-5 font-light text-base ${
-        pathname === props.link?.href && "font-semibold"
-      }`}
-      href={props.link.href}>
+      className={`flex flex-col items-center bg-transparent py-3 px-5 text-base rounded-full font-medium dark:font-light`}
+      href={`/${pathname}#${props.link.href}`}>
       {props.icon && (
         <Image
           width={24}

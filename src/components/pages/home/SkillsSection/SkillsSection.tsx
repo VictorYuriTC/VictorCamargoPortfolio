@@ -22,7 +22,7 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 export default function SkillsSection() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="skills-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
         Skills
       </SectionTitle>

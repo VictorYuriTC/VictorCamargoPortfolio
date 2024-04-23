@@ -3,7 +3,7 @@
 import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import ContactInput from "./ContactInput";
 import ContactTextarea from "./ContactTextarea";
 
@@ -17,9 +17,9 @@ export default function ContactSection() {
   const [state, handleOnSubmitContactForm] = useForm("meqyvplq");
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="contact-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
-        Contact Me
+        Contact
       </SectionTitle>
 
       {!state.succeeded && (
@@ -63,6 +63,7 @@ export default function ContactSection() {
 
           <div className="flex flex-row justify-center">
             <PortfolioPrimaryButton
+              variant="default"
               className="mt-10 w-full md:w-[50%] lg:w-[35%]"
               disabled={state.submitting}
               type="submit"

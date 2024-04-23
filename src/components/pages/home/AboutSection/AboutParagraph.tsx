@@ -4,7 +4,7 @@ export default function AboutParagraph(
   props: HtmlHTMLAttributes<HTMLParagraphElement>
 ) {
   return (
-    <p className={`text-lg font-extralight ${props.className}`}>
+    <p className={`text-lg font-light dark:font-extralight ${props.className}`}>
       {props.children}
     </p>
   );
