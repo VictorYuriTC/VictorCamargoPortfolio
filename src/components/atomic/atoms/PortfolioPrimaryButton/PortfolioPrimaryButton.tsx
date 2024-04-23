@@ -9,8 +9,11 @@ export interface IPortfolioPrimaryButton
 export default function PortfolioPrimaryButton(props: IPortfolioPrimaryButton) {
   return (
     <button
+      type={props.type}
+      onClick={props.onClick}
+      disabled={props.disabled}
       style={props.style}
-      className={` duration-300 text-white bg-purple-600 hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 ${
+      className={`duration-300 text-white bg-purple-600 hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 disabled:opacity-60 disabled:hover:bg-purple-600 disabled:dark:hover:bg-purple-700 ${
         props.borderRadius === "default"
           ? "rounded-lg"
           : props.borderRadius === "rounded-full"

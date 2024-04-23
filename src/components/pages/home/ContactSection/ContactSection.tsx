@@ -22,6 +22,33 @@ export default function ContactSection() {
         Contact
       </SectionTitle>
 
+      {state.succeeded && (
+        <div className="flex flex-col duration-500 p-5 rounded hover:shadow-[0px_0px_7px_theme(colors.purple.500)] border border-gray-300 dark:border-gray-900">
+          <strong className="font-semibold text-xl lg:text-2xl">
+            You&apos;re message has been received!
+          </strong>
+
+          <span className="mt-1 font-light text-base dark:font-extralight lg:text-lg">
+            I&apos;ll get back to you as soon as possible - so play a game in
+            the meanwhile!{" "}
+          </span>
+
+          <strong className="text-purple-500 font-semibold text-lg lg:text-xl">
+            {"Thank you :)"}
+          </strong>
+
+          <div className="flex flex-row mt-6">
+            <PortfolioPrimaryButton
+              disabled={true}
+              variant="default"
+              borderRadius="rounded-full"
+              className="disabled:">
+              {"Under Construction" || "Start Game"}
+            </PortfolioPrimaryButton>
+          </div>
+        </div>
+      )}
+
       {!state.succeeded && (
         <form
           onSubmit={handleOnSubmitContactForm}
@@ -64,11 +91,15 @@ export default function ContactSection() {
           <div className="flex flex-row justify-center">
             <PortfolioPrimaryButton
               variant="default"
-              className="mt-10 w-full md:w-[50%] lg:w-[35%]"
-              disabled={state.submitting}
+              className={`mt-10 w-full md:w-[50%] lg:w-[35%]`}
+              disabled={state.submitting || state.succeeded}
               type="submit"
               borderRadius="rounded-full">
-              Send Message
+              {state.submitting
+                ? "Loading"
+                : state.succeeded
+                ? "Message Sent"
+                : "Send Message"}
             </PortfolioPrimaryButton>
           </div>
         </form>
