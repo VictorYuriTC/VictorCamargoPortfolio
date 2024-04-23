@@ -10,11 +10,11 @@ export default function AboutSection() {
 
   return (
     <SectionWrapper>
-      <SectionTitle>
+      <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
         My two cents <AboutStrongText>about me</AboutStrongText>
       </SectionTitle>
 
-      <div className="flex flex-col mt-8 gap-y-8 gap-x-0 lg:flex-row lg:items-center lg:gap-y-0 lg:gap-x-10 xl:gap-x-20">
+      <div className="flex flex-col gap-y-8 gap-x-0 lg:flex-row lg:items-center lg:gap-y-0 lg:gap-x-10 xl:gap-x-20">
         <div className="flex flex-col items-center w-[100%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] lg:order-2">
           <div className="flex flex-col items-center w-[85%] sm:w-[75%] md:w-[65%] lg:w-[100%]">
             <Image
@@ -34,7 +34,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="md:w-[75%] lg:w-[50%] lg:order-1">
+        <div className="mt-4 flex flex-col gap-y-4 md:w-[75%] lg:w-[50%] lg:order-1">
           <AboutParagraph>
             I&apos;m Victor Camargo, a{" "}
             <AboutStrongText>frontend developer</AboutStrongText> and{" "}

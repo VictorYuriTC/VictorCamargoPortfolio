@@ -1,6 +1,7 @@
 import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import PortfolioNavbar from "@/components/atomic/organisms/PortfolioNavbar/PortfolioNavbar";
 import AboutSection from "@/components/pages/home/AboutSection/AboutSection";
+import ExperienceSection from "@/components/pages/home/ExperienceSection/ExperienceSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SectionWrapper from "@/components/pages/home/SectionWrapper/SectionWrapper";
 import SkillsSection from "@/components/pages/home/SkillsSection/SkillsSection";
@@ -13,9 +14,11 @@ export default function Home() {
       <main className="px-8 lg:px-16 xl:px-36">
         <div className="flex flex-col">
           <SectionWrapper className="flex flex-col justify-center gap-y-6">
-            <p className="text-5xl font-light">Victor Camargo</p>
+            <p className="font-light text-3xl md:text-5xl">Victor Camargo</p>
 
-            <p className="text-7xl font-semibold">Frontend Developer</p>
+            <p className="font-semibold text-5xl md:text-7xl">
+              Frontend Developer
+            </p>
 
             <div className="flex flex-row mt-6">
               <PortfolioPrimaryButton borderRadius="rounded-full">
@@ -30,6 +33,8 @@ export default function Home() {
           </SectionWrapper>
 
           <AboutSection />
+
+          <ExperienceSection />
 
           <ResumeSection />
 

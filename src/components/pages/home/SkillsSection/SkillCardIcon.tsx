@@ -1,13 +1,9 @@
+import { IPortfolioIcon } from "@/typing/interfaces/IPortfolioIcon/IPortfolioIcon";
 import Image from "next/image";
-
-export interface ISkillIcon {
-  alt: string;
-  src: string;
-}
 
 export interface ISkillCardIcon {
   name: string;
-  iconData: ISkillIcon;
+  iconData: IPortfolioIcon;
 }
 
 export default function SkillCardIcon(props: ISkillCardIcon) {

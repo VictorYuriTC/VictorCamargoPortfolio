@@ -4,9 +4,12 @@ import javaScriptIcon from "@/assets/javascript-language.svg";
 import typeScriptIcon from "@/assets/typescript-language.svg";
 import dartIcon from "@/assets/dart-language.svg";
 import pythonIcon from "@/assets/python-language.svg";
+import microPythonIcon from "@/assets/micropython-language.svg";
+import javaIcon from "@/assets/java-language.svg";
 
 import flutterIcon from "@/assets/flutter-framework.svg";
 import reactIcon from "@/assets/react-framework.svg";
+import nextIcon from "@/assets/next-framework.svg";
 
 import gitHubIcon from "@/assets/github-tool.svg";
 import gitIcon from "@/assets/git-tool.svg";
@@ -20,13 +23,11 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 export default function SkillsSection() {
   return (
     <SectionWrapper className="mt-16 lg:mt-4 xl:mt-0">
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
+        Skills
+      </SectionTitle>
 
-      <SkillsSectionContainer
-        divWrapper={{
-          className: "mt-12",
-        }}
-        title="Programming Languages">
+      <SkillsSectionContainer title="Programming Languages">
         <SkillCard
           link={{
             href: "",
@@ -78,6 +79,32 @@ export default function SkillsSection() {
             },
           }}
         />
+
+        <SkillCard
+          link={{
+            href: "",
+          }}
+          skill={{
+            name: "MicroPython",
+            iconData: {
+              src: microPythonIcon,
+              alt: "MicroPython language logo",
+            },
+          }}
+        />
+
+        <SkillCard
+          link={{
+            href: "",
+          }}
+          skill={{
+            name: "Java",
+            iconData: {
+              src: javaIcon,
+              alt: "Java language logo",
+            },
+          }}
+        />
       </SkillsSectionContainer>
 
       <SkillsSectionContainer
@@ -92,7 +119,7 @@ export default function SkillsSection() {
           skill={{
             iconData: {
               src: reactIcon,
-              alt: "React framework logo",
+              alt: "React.js framework logo",
             },
             name: "React",
           }}
@@ -104,10 +131,23 @@ export default function SkillsSection() {
           }}
           skill={{
             iconData: {
-              src: dartIcon,
+              src: reactIcon,
               alt: "React Native framework logo",
             },
             name: "React Native",
+          }}
+        />
+
+        <SkillCard
+          link={{
+            href: "",
+          }}
+          skill={{
+            iconData: {
+              src: nextIcon,
+              alt: "Next.js framework logo",
+            },
+            name: "Next",
           }}
         />
 
