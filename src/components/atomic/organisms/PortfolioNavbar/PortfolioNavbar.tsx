@@ -3,7 +3,7 @@ import PortfolioNavbarLink from "./PortfolioNavbarLink";
 import UserSVG from "@/assets/svgs/UserSVG";
 import SuitcaseSVG from "@/assets/svgs/SuitcaseSVG";
 import SkillsSVG from "@/assets/svgs/SkillsSVG";
-import EmailSVG from "@/assets/svgs/EmailSVG";
+import PhoneSVG from "@/assets/svgs/PhoneSVG";
 
 export default function PortfolioNavbar() {
   const SVG_SIZE = 24;
@@ -67,7 +67,7 @@ export default function PortfolioNavbar() {
         }}
         icon={{
           node: (
-            <EmailSVG
+            <PhoneSVG
               width={SVG_SIZE}
               height={SVG_SIZE}
               className="fill-black dark:fill-white"
