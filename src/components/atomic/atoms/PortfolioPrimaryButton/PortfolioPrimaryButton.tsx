@@ -1,7 +1,7 @@
-import { HtmlHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, HtmlHTMLAttributes } from "react";
 
 export interface IPortfolioPrimaryButton
-  extends HtmlHTMLAttributes<HTMLButtonElement> {
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   borderRadius: "default" | "rounded-full";
 }
 

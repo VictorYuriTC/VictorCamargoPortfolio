@@ -22,206 +22,200 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 export default function SkillsSection() {
   return (
-    <SectionWrapper className="mt-16 lg:mt-4 xl:mt-0">
+    <SectionWrapper>
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
         Skills
       </SectionTitle>
 
-      <SkillsSectionContainer title="Programming Languages">
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "JavaScript",
-            iconData: {
-              src: javaScriptIcon,
-              alt: "JavaScript language logo",
-            },
-          }}
-        />
+      <div className="flex flex-col gap-y-12">
+        <SkillsSectionContainer title="Programming Languages">
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "JavaScript",
+              iconData: {
+                src: javaScriptIcon,
+                alt: "JavaScript language logo",
+              },
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "TypeScript",
-            iconData: {
-              src: typeScriptIcon,
-              alt: "TypeScript language logo",
-            },
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "TypeScript",
+              iconData: {
+                src: typeScriptIcon,
+                alt: "TypeScript language logo",
+              },
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "Dart",
-            iconData: {
-              src: dartIcon,
-              alt: "Dart language logo",
-            },
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "Dart",
+              iconData: {
+                src: dartIcon,
+                alt: "Dart language logo",
+              },
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "Python",
-            iconData: {
-              src: pythonIcon,
-              alt: "Python language logo",
-            },
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "Python",
+              iconData: {
+                src: pythonIcon,
+                alt: "Python language logo",
+              },
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "MicroPython",
-            iconData: {
-              src: microPythonIcon,
-              alt: "MicroPython language logo",
-            },
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "MicroPython",
+              iconData: {
+                src: microPythonIcon,
+                alt: "MicroPython language logo",
+              },
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            name: "Java",
-            iconData: {
-              src: javaIcon,
-              alt: "Java language logo",
-            },
-          }}
-        />
-      </SkillsSectionContainer>
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              name: "Java",
+              iconData: {
+                src: javaIcon,
+                alt: "Java language logo",
+              },
+            }}
+          />
+        </SkillsSectionContainer>
 
-      <SkillsSectionContainer
-        divWrapper={{
-          className: "mt-12",
-        }}
-        title="Frameworks">
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: reactIcon,
-              alt: "React.js framework logo",
-            },
-            name: "React",
-          }}
-        />
+        <SkillsSectionContainer title="Frameworks">
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: reactIcon,
+                alt: "React.js framework logo",
+              },
+              name: "React",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: reactIcon,
-              alt: "React Native framework logo",
-            },
-            name: "React Native",
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: reactIcon,
+                alt: "React Native framework logo",
+              },
+              name: "React Native",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: nextIcon,
-              alt: "Next.js framework logo",
-            },
-            name: "Next",
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: nextIcon,
+                alt: "Next.js framework logo",
+              },
+              name: "Next",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: flutterIcon,
-              alt: "Flutter framework logo",
-            },
-            name: "Flutter",
-          }}
-        />
-      </SkillsSectionContainer>
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: flutterIcon,
+                alt: "Flutter framework logo",
+              },
+              name: "Flutter",
+            }}
+          />
+        </SkillsSectionContainer>
 
-      <SkillsSectionContainer
-        divWrapper={{
-          className: "mt-12",
-        }}
-        title="Tools">
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: gitIcon,
-              alt: "Git logo",
-            },
-            name: "Git",
-          }}
-        />
+        <SkillsSectionContainer title="Tools">
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: gitIcon,
+                alt: "Git logo",
+              },
+              name: "Git",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: gitHubIcon,
-              alt: "GitHub logo",
-            },
-            name: "GitHub",
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: gitHubIcon,
+                alt: "GitHub logo",
+              },
+              name: "GitHub",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: androidStudioIcon,
-              alt: "Android Studio logo",
-            },
-            name: "Android Studio",
-          }}
-        />
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: androidStudioIcon,
+                alt: "Android Studio logo",
+              },
+              name: "Android Studio",
+            }}
+          />
 
-        <SkillCard
-          link={{
-            href: "",
-          }}
-          skill={{
-            iconData: {
-              src: xCodeIcon,
-              alt: "XCode logo",
-            },
-            name: "XCode",
-          }}
-        />
-      </SkillsSectionContainer>
+          <SkillCard
+            link={{
+              href: "",
+            }}
+            skill={{
+              iconData: {
+                src: xCodeIcon,
+                alt: "XCode logo",
+              },
+              name: "XCode",
+            }}
+          />
+        </SkillsSectionContainer>
+      </div>
     </SectionWrapper>
   );
 }

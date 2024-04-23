@@ -1,6 +1,7 @@
 import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import PortfolioNavbar from "@/components/atomic/organisms/PortfolioNavbar/PortfolioNavbar";
 import AboutSection from "@/components/pages/home/AboutSection/AboutSection";
+import ContactSection from "@/components/pages/home/ContactSection/ContactSection";
 import ExperienceSection from "@/components/pages/home/ExperienceSection/ExperienceSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SectionWrapper from "@/components/pages/home/SectionWrapper/SectionWrapper";
@@ -12,7 +13,7 @@ export default function Home() {
       <PortfolioNavbar />
 
       <main className="px-8 lg:px-16 xl:px-36">
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-28 lg:pb-10">
           <SectionWrapper className="flex flex-col justify-center gap-y-6">
             <p className="font-light text-3xl md:text-5xl">Victor Camargo</p>
 
@@ -39,6 +40,8 @@ export default function Home() {
           <ResumeSection />
 
           <SkillsSection />
+
+          <ContactSection />
         </div>
       </main>
     </>

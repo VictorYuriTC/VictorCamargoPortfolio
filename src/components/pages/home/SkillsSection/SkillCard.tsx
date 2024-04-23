@@ -1,9 +1,11 @@
 import Link, { LinkProps } from "next/link";
-import SkillCardIcon, { ISkillIcon } from "./SkillCardIcon";
+import SkillCardIcon from "./SkillCardIcon";
+import { IPortfolioIcon } from "@/typing/interfaces/IPortfolioIcon/IPortfolioIcon";
+import { VictorSkillNameType } from "../ExperienceSection/ExperienceCard/ExperienceSkillTag";
 
 export interface ISkill {
-  name: string;
-  iconData: ISkillIcon;
+  name: VictorSkillNameType;
+  iconData: IPortfolioIcon;
 }
 
 export interface ISkillCard {

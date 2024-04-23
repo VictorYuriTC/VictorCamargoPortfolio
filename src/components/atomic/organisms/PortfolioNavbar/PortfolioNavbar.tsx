@@ -6,7 +6,7 @@ import userIcon from "@/assets/user.svg";
 
 export default function PortfolioNavbar() {
   return (
-    <nav className="bg-[#00000099] backdrop-blur-lg w-full fixed left-0 bottom-0 mx-6 grid grid-flow-col lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-x-5 lg:py-2">
+    <nav className="bg-[#00000099] backdrop-blur-lg w-full fixed left-0 bottom-0 grid grid-flow-col border-b border-b-gray-950 lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-x-5 lg:py-2">
       <PortfolioNavbarLink
         link={{
           children: "Home",
