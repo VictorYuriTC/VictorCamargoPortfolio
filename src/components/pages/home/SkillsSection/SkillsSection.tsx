@@ -19,6 +19,9 @@ import xCodeIcon from "@/assets/xcode-tool.svg";
 import SkillsSectionContainer from "./SkillsSectionContainer";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
+import NextFrameworkSVG from "@/assets/svgs/NextFrameworkSVG";
+import GitHubToolSVG from "@/assets/svgs/GitHubToolSVG";
+import MicroPythonLanguageSVG from "@/assets/svgs/MicroPythonLanguageSVG";
 
 export default function SkillsSection() {
   return (
@@ -92,6 +95,15 @@ export default function SkillsSection() {
                 alt: "MicroPython language logo",
               },
             }}
+            customIconComponent={
+              <div className="">
+                <MicroPythonLanguageSVG
+                  width={40}
+                  height={40}
+                  className="fill-black dark:fill-white"
+                />
+              </div>
+            }
           />
 
           <SkillCard
@@ -146,6 +158,13 @@ export default function SkillsSection() {
               },
               name: "Next",
             }}
+            customIconComponent={
+              <NextFrameworkSVG
+                width={40}
+                height={40}
+                className="fill-black dark:fill-white"
+              />
+            }
           />
 
           <SkillCard
@@ -187,6 +206,13 @@ export default function SkillsSection() {
               },
               name: "GitHub",
             }}
+            customIconComponent={
+              <GitHubToolSVG
+                width={40}
+                height={40}
+                className="fill-black dark:fill-white"
+              />
+            }
           />
 
           <SkillCard

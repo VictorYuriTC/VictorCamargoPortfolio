@@ -5,8 +5,8 @@ export default function SkillsSVG(props: SVGProps<SVGSVGElement>) {
     <svg
       className={props.className}
       fill={props.fill || "#ffffff"}
-      width={props.width || "800px"}
-      height={props.height || "800px"}
+      width={props.width || "24px"}
+      height={props.height || "24px"}
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
