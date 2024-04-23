@@ -11,12 +11,15 @@ export default function ExperienceSection() {
       </SectionTitle>
 
       <div className="flex flex-col gap-y-8">
-        {allVictorExperiences.toReversed().map((victorExperience) => (
-          <ExperienceCard
-            key={victorExperience.id}
-            experience={victorExperience}
-          />
-        ))}
+        {allVictorExperiences
+          .slice()
+          .reverse()
+          .map((victorExperience) => (
+            <ExperienceCard
+              key={victorExperience.id}
+              experience={victorExperience}
+            />
+          ))}
       </div>
     </SectionWrapper>
   );
