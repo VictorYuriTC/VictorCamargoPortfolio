@@ -17,9 +17,7 @@ export interface ISkillCard {
 
 export default function SkillCard(props: ISkillCard) {
   return (
-    <Link
-      href={props.link?.href}
-      className="flex flex-col items-center rounded p-2 duration-300 hover:bg-gray-100 dark:hover:bg-gray-800">
+    <button className="flex flex-col items-center rounded p-2 duration-300 hover:bg-gray-100 dark:hover:bg-gray-800">
       {props.customIconComponent}
       {!props.customIconComponent && (
         <SkillCardIcon
@@ -29,6 +27,6 @@ export default function SkillCard(props: ISkillCard) {
       )}
 
       <span className="font-semibold mt-1">{props.skill.name}</span>
-    </Link>
+    </button>
   );
 }
