@@ -1,3 +1,4 @@
+import PortfolioFooter from "@/components/atomic/organisms/PortfolioFooter/PortfolioFooter";
 import PortfolioNavbar from "@/components/atomic/organisms/PortfolioNavbar/PortfolioNavbar";
 import AboutSection from "@/components/pages/home/AboutSection/AboutSection";
 import ContactSection from "@/components/pages/home/ContactSection/ContactSection";
@@ -24,6 +25,8 @@ export default function Home() {
           <SkillsSection />
 
           <ContactSection />
+
+          <PortfolioFooter />
         </div>
       </main>
     </>
