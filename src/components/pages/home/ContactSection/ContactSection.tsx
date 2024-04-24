@@ -6,6 +6,12 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import { useForm } from "@formspree/react";
 import ContactInput from "./ContactInput";
 import ContactTextarea from "./ContactTextarea";
+import EmailSVG from "@/assets/svgs/EmailSVG";
+import ContactMethodCard from "@/components/atomic/organisms/PortfolioFooter/ContactMethodCard";
+import PhoneSVG from "@/assets/svgs/PhoneSVG";
+import LinkedinSVG from "@/assets/svgs/LinkedInSVG";
+import GitHubOutlineToolSVG from "@/assets/svgs/GitHubOutlineToolSVG";
+import InstagramSVG from "@/assets/svgs/InstagramSVG";
 
 export interface IContactForm {
   email: string;
@@ -18,9 +24,86 @@ export default function ContactSection() {
 
   return (
     <SectionWrapper id="contact-section">
-      <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
-        Contact
-      </SectionTitle>
+      <div className="flex flex-row gap-x-5">
+        <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
+          Contact
+        </SectionTitle>
+
+        <div className="flex flex-row items-center gap-x-2 translate-y-1">
+          <ContactMethodCard
+            icon={
+              <GitHubOutlineToolSVG
+                width={24}
+                height={24}
+                className="fill-black dark:fill-white"
+              />
+            }
+            text="GitHub"
+            link={{
+              href: "https://github.com/VictorYuriTC",
+            }}
+          />
+
+          <ContactMethodCard
+            icon={
+              <LinkedinSVG
+                width={24}
+                height={24}
+                className="fill-black dark:fill-white"
+              />
+            }
+            text="LinkedIn"
+            link={{
+              href: "https://www.linkedin.com/in/victor-yuri-tavares-de-camargo/",
+            }}
+          />
+
+          <ContactMethodCard
+            icon={
+              <InstagramSVG
+                width={24}
+                height={24}
+                className="fill-black dark:fill-white"
+              />
+            }
+            text="LinkedIn"
+            link={{
+              href: "https://instagram.com/victoryuritc",
+            }}
+          />
+        </div>
+      </div>
+
+      <div className="mb-8">
+        <p>
+          Want to talk about any topic seen on this website?{" "}
+          <span className="text-purple-500">Let&apos;s get in touch!</span>
+        </p>
+      </div>
+
+      <div className="mb-12 flex flex-col gap-y-3">
+        <ContactMethodCard
+          icon={
+            <EmailSVG
+              width={24}
+              height={24}
+              className="stroke-black dark:stroke-white"
+            />
+          }
+          text="victoryuritc@yahoo.com"
+        />
+
+        <ContactMethodCard
+          icon={
+            <PhoneSVG
+              width={24}
+              height={24}
+              className="stroke-black dark:stroke-white"
+            />
+          }
+          text="+5541997248930"
+        />
+      </div>
 
       {state.succeeded && (
         <div className="flex flex-col duration-500 p-5 rounded hover:shadow-[0px_0px_7px_theme(colors.purple.500)] border border-gray-300 dark:border-gray-900">
