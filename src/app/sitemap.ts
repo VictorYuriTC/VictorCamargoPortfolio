@@ -1,11 +1,10 @@
+import { VICTOR_PORTFOLIO_BASE_URL } from "@/constants";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://victorcamargodev.com";
-
   return [
     {
-      url: baseUrl,
+      url: VICTOR_PORTFOLIO_BASE_URL,
       lastModified: new Date(),
       priority: 1,
       changeFrequency: "weekly",
