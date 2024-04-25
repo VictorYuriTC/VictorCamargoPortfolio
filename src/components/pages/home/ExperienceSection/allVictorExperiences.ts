@@ -36,7 +36,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
-        name: "Styled Components",
+        name: "Styled-Components",
       },
 
       {

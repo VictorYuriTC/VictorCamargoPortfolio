@@ -1,4 +1,4 @@
-import Link, { LinkProps } from "next/link";
+import { LinkProps } from "next/link";
 import SkillCardIcon from "./SkillCardIcon";
 import { IPortfolioIcon } from "@/typing/interfaces/IPortfolioIcon/IPortfolioIcon";
 import { VictorSkillNameType } from "../ExperienceSection/ExperienceCard/ExperienceSkillTag";
