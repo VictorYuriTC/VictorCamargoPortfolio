@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/pages/home/ExperienceSection/Experie
 import LandingSection from "@/components/pages/home/LandingSection/LandingSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SkillsSection from "@/components/pages/home/SkillsSection/SkillsSection";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -32,3 +33,8 @@ export default function Home() {
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Victor Camargo's Portfolio",
+  description: "My two cents about me",
+};
