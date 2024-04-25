@@ -8,10 +8,11 @@ export const allVictorExperiences: (VictorExperienceType & {
     type: "past",
     startDate: "November-2022",
     endDate: "August-2023",
-    companyLink: {
-      href: "https://aakscience.com/",
+
+    company: {
+      name: { children: "AAK Tele-Science" },
+      websiteLink: { href: "https://aakscience.com/" },
     },
-    companyName: { children: "AAK Tele-Science" },
     role: { children: "Frontend Developer" },
     allSkills: [
       {
@@ -58,10 +59,11 @@ export const allVictorExperiences: (VictorExperienceType & {
     id: 2,
     type: "present",
     startDate: "June-2023",
-    companyLink: {
-      href: "https://gigawrks.com/",
+
+    company: {
+      name: { children: "Gigawrks" },
+      websiteLink: { href: "https://gigawrks.com/" },
     },
-    companyName: { children: "Gigawrks" },
     role: { children: "Frontend Developer" },
     allSkills: [
       {
