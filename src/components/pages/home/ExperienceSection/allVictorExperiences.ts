@@ -8,7 +8,11 @@ export const allVictorExperiences: (VictorExperienceType & {
     type: "past",
     startDate: "November-2022",
     endDate: "August-2023",
-    companyName: { children: "AAK Tele-Science" },
+
+    company: {
+      name: { children: "AAK Tele-Science" },
+      websiteLink: { href: "https://aakscience.com/" },
+    },
     role: { children: "Frontend Developer" },
     allSkills: [
       {
@@ -36,7 +40,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
-        name: "Styled Components",
+        name: "Styled-Components",
       },
 
       {
@@ -55,7 +59,11 @@ export const allVictorExperiences: (VictorExperienceType & {
     id: 2,
     type: "present",
     startDate: "June-2023",
-    companyName: { children: "Gigawrks" },
+
+    company: {
+      name: { children: "Gigawrks" },
+      websiteLink: { href: "https://gigawrks.com/" },
+    },
     role: { children: "Frontend Developer" },
     allSkills: [
       {

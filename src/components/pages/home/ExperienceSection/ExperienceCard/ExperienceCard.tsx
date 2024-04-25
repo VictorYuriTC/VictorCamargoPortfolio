@@ -2,12 +2,10 @@ import ExperienceCompanyName, {
   IExperienceCompanyName,
 } from "./ExperienceCompanyName";
 import ExperienceDate from "./ExperienceDate";
-import ExperienceSkillTag, {
-  IExperienceSkillTag,
-  IVictorSkill,
-  VictorSkillNameType,
-} from "./ExperienceSkillTag";
+import ExperienceSkillTag, { IVictorSkill } from "./ExperienceSkillTag";
 import ExperienceRole, { IExperienceRole } from "./ExperienceRole";
+import { LinkProps } from "next/link";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export type MonthType =
   | "January"
@@ -27,21 +25,27 @@ export type YearType = "2022" | "2023" | "2024";
 
 export type ExperienceDateType = `${MonthType}-${YearType}`;
 
+export interface ICompany {
+  websiteLink?: LinkProps;
+  name: DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>;
+}
 export interface IPresentExperience {
   type: "present";
   role: IExperienceRole;
-  companyName: IExperienceCompanyName;
+  company: ICompany;
   allSkills: IVictorSkill[];
   startDate: ExperienceDateType;
+  companyLink?: LinkProps;
 }
 
 export interface IPastExperience {
   type: "past";
   role: IExperienceRole;
-  companyName: IExperienceCompanyName;
+  company: ICompany;
   allSkills: IVictorSkill[];
   startDate: ExperienceDateType;
   endDate: ExperienceDateType;
+  companyLink?: LinkProps;
 }
 
 export type VictorExperienceType = IPresentExperience | IPastExperience;
@@ -67,18 +71,16 @@ export default function ExperienceCard(props: IExperienceCard) {
 
       <ExperienceRole>{props.experience.role.children}</ExperienceRole>
 
-      <ExperienceCompanyName>
-        {props.experience.companyName.children}
-      </ExperienceCompanyName>
+      <ExperienceCompanyName company={props.experience.company} />
 
       {props.experience.type === "past" && (
         <ExperienceDate
           type={props.experience.type}
           endDate={props.experience.endDate}
           allSkills={props.experience.allSkills}
-          companyName={props.experience.companyName}
           role={props.experience.role}
           startDate={props.experience.startDate}
+          company={props.experience.company}
         />
       )}
 
@@ -86,9 +88,9 @@ export default function ExperienceCard(props: IExperienceCard) {
         <ExperienceDate
           type={props.experience.type}
           allSkills={props.experience.allSkills}
-          companyName={props.experience.companyName}
           role={props.experience.role}
           startDate={props.experience.startDate}
+          company={props.experience.company}
         />
       )}
     </div>

@@ -4,13 +4,14 @@ import Image from "next/image";
 export interface ISkillCardIcon {
   name: string;
   iconData: IPortfolioIcon;
+  svgSize: number;
 }
 
 export default function SkillCardIcon(props: ISkillCardIcon) {
   return (
     <Image
-      width={40}
-      height={40}
+      width={props.svgSize}
+      height={props.svgSize}
       alt={props.iconData.alt}
       src={props.iconData.src}
     />

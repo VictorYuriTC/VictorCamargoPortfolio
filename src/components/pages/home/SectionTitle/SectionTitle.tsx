@@ -9,7 +9,7 @@ export default function SectionTitle(props: ISectionTitle) {
   return (
     <h3
       className={`${props.hasDefaultMarginTop && "mt-12"} ${
-        props.hasDefaultMarginBottom && "mb-12"
+        props.hasDefaultMarginBottom && "mb-10"
       }`}>
       <strong className={`text-4xl`}>{props.children}</strong>
     </h3>
