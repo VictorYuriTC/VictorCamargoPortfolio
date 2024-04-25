@@ -29,7 +29,7 @@ export default function ContactSection() {
           Contact
         </SectionTitle>
 
-        <div className="flex flex-row items-center gap-x-2 translate-y-1">
+        <div className="flex flex-row items-center gap-x-2 translate-y-2">
           <ContactMethodCard
             icon={
               <GitHubOutlineToolSVG

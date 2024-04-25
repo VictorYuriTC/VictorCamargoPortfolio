@@ -1,5 +1,5 @@
-import SkillCard from "./SkillCard";
-import SkillsSectionContainer from "./SkillsSectionContainer";
+import SkillCard from "../SkillCard";
+import SkillsSectionContainer from "../SkillsSectionContainer";
 
 import javaScriptIcon from "@/assets/javascript-language.svg";
 import typeScriptIcon from "@/assets/typescript-language.svg";
@@ -9,10 +9,17 @@ import microPythonIcon from "@/assets/micropython-language.svg";
 import javaIcon from "@/assets/java-language.svg";
 import MicroPythonLanguageSVG from "@/assets/svgs/MicroPythonLanguageSVG";
 
-export default function VictorProgrammingLanguagesSubSection() {
+interface IVictorProgrammingLanguagesSubSection {
+  svgSize: number;
+}
+
+export default function VictorProgrammingLanguagesSubSection(
+  props: IVictorProgrammingLanguagesSubSection
+) {
   return (
     <SkillsSectionContainer title="Programming Languages">
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -26,6 +33,7 @@ export default function VictorProgrammingLanguagesSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -39,6 +47,7 @@ export default function VictorProgrammingLanguagesSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -52,6 +61,7 @@ export default function VictorProgrammingLanguagesSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -65,6 +75,7 @@ export default function VictorProgrammingLanguagesSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -78,8 +89,8 @@ export default function VictorProgrammingLanguagesSubSection() {
         customIconComponent={
           <div className="">
             <MicroPythonLanguageSVG
-              width={40}
-              height={40}
+              width={props.svgSize}
+              height={props.svgSize}
               className="fill-black dark:fill-white"
             />
           </div>
@@ -87,6 +98,7 @@ export default function VictorProgrammingLanguagesSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}

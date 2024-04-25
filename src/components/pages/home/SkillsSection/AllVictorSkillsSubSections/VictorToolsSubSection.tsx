@@ -1,5 +1,5 @@
-import SkillCard from "./SkillCard";
-import SkillsSectionContainer from "./SkillsSectionContainer";
+import SkillCard from "../SkillCard";
+import SkillsSectionContainer from "../SkillsSectionContainer";
 
 import gitHubIcon from "@/assets/github-tool.svg";
 import gitIcon from "@/assets/git-tool.svg";
@@ -7,10 +7,15 @@ import androidStudioIcon from "@/assets/android-studio-tool.svg";
 import xCodeIcon from "@/assets/xcode-tool.svg";
 import GitHubToolSVG from "@/assets/svgs/GitHubToolSVG";
 
-export default function VictorToolsSubSection() {
+interface IVictorToolsSubSection {
+  svgSize: number;
+}
+
+export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
   return (
     <SkillsSectionContainer title="Tools">
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -24,6 +29,7 @@ export default function VictorToolsSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -36,14 +42,15 @@ export default function VictorToolsSubSection() {
         }}
         customIconComponent={
           <GitHubToolSVG
-            width={40}
-            height={40}
+            width={props.svgSize}
+            height={props.svgSize}
             className="fill-black dark:fill-white"
           />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -57,6 +64,7 @@ export default function VictorToolsSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}

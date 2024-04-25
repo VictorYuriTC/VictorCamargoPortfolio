@@ -13,6 +13,7 @@ export interface ISkillCard {
   skill: ISkill;
   link: LinkProps;
   customIconComponent?: ReactNode;
+  svgSize: number;
 }
 
 export default function SkillCard(props: ISkillCard) {
@@ -23,10 +24,11 @@ export default function SkillCard(props: ISkillCard) {
         <SkillCardIcon
           iconData={props.skill.iconData}
           name={props.skill.name}
+          svgSize={props.svgSize}
         />
       )}
 
-      <span className="font-semibold mt-1">{props.skill.name}</span>
+      <span className="text-base font-semibold mt-1">{props.skill.name}</span>
     </button>
   );
 }

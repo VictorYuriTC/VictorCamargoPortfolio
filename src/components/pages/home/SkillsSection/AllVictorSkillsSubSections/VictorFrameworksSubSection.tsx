@@ -1,15 +1,22 @@
 import NextFrameworkSVG from "@/assets/svgs/NextFrameworkSVG";
-import SkillCard from "./SkillCard";
-import SkillsSectionContainer from "./SkillsSectionContainer";
+import SkillCard from "../SkillCard";
+import SkillsSectionContainer from "../SkillsSectionContainer";
 
 import flutterIcon from "@/assets/flutter-framework.svg";
 import reactIcon from "@/assets/react-framework.svg";
 import nextIcon from "@/assets/next-framework.svg";
 
-export default function VictorFrameworkSubSection() {
+interface IVictorFrameworkSubSection {
+  svgSize: number;
+}
+
+export default function VictorFrameworkSubSection(
+  props: IVictorFrameworkSubSection
+) {
   return (
     <SkillsSectionContainer title="Frameworks">
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -23,6 +30,7 @@ export default function VictorFrameworkSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -36,6 +44,7 @@ export default function VictorFrameworkSubSection() {
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -48,14 +57,15 @@ export default function VictorFrameworkSubSection() {
         }}
         customIconComponent={
           <NextFrameworkSVG
-            width={40}
-            height={40}
+            width={props.svgSize}
+            height={props.svgSize}
             className="fill-black dark:fill-white"
           />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}

@@ -2,12 +2,9 @@ import ExperienceCompanyName, {
   IExperienceCompanyName,
 } from "./ExperienceCompanyName";
 import ExperienceDate from "./ExperienceDate";
-import ExperienceSkillTag, {
-  IExperienceSkillTag,
-  IVictorSkill,
-  VictorSkillNameType,
-} from "./ExperienceSkillTag";
+import ExperienceSkillTag, { IVictorSkill } from "./ExperienceSkillTag";
 import ExperienceRole, { IExperienceRole } from "./ExperienceRole";
+import { LinkProps } from "next/link";
 
 export type MonthType =
   | "January"
@@ -33,6 +30,7 @@ export interface IPresentExperience {
   companyName: IExperienceCompanyName;
   allSkills: IVictorSkill[];
   startDate: ExperienceDateType;
+  companyLink?: LinkProps;
 }
 
 export interface IPastExperience {
@@ -42,6 +40,7 @@ export interface IPastExperience {
   allSkills: IVictorSkill[];
   startDate: ExperienceDateType;
   endDate: ExperienceDateType;
+  companyLink?: LinkProps;
 }
 
 export type VictorExperienceType = IPresentExperience | IPastExperience;

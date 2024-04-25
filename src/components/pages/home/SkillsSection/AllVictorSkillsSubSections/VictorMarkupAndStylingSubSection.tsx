@@ -1,6 +1,6 @@
 import HtmlSVG from "@/assets/svgs/HtmlSVG";
-import SkillCard from "./SkillCard";
-import SkillsSectionContainer from "./SkillsSectionContainer";
+import SkillCard from "../SkillCard";
+import SkillsSectionContainer from "../SkillsSectionContainer";
 import CssSVG from "@/assets/svgs/CssSVG";
 import TailwindSVG from "@/assets/svgs/TailwindSVG";
 import BootstrapSVG from "@/assets/svgs/BootstrapSVG";
@@ -9,10 +9,17 @@ import StyledComponentsSVG from "@/assets/svgs/StyledComponentsSVG";
 import htmlIcon from "@/assets/html.svg";
 import cssIcon from "@/assets/css.svg";
 
-export default function VictorMarkupAndStylingSubSection() {
+interface IVictorMarkupAndStylingSubSection {
+  svgSize: number;
+}
+
+export default function VictorMarkupAndStylingSubSection(
+  props: IVictorMarkupAndStylingSubSection
+) {
   return (
     <SkillsSectionContainer title="Markup & Styling">
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -25,14 +32,15 @@ export default function VictorMarkupAndStylingSubSection() {
         }}
         customIconComponent={
           <HtmlSVG
-            width={40}
-            height={40}
+            width={props.svgSize}
+            height={props.svgSize}
             className="fill-black dark:fill-white"
           />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -45,14 +53,15 @@ export default function VictorMarkupAndStylingSubSection() {
         }}
         customIconComponent={
           <CssSVG
-            width={40}
-            height={40}
+            width={props.svgSize}
+            height={props.svgSize}
             className="fill-black dark:fill-white"
           />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -64,11 +73,16 @@ export default function VictorMarkupAndStylingSubSection() {
           },
         }}
         customIconComponent={
-          <TailwindSVG width={40} height={40} className="fill-white" />
+          <TailwindSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-white"
+          />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -80,11 +94,16 @@ export default function VictorMarkupAndStylingSubSection() {
           },
         }}
         customIconComponent={
-          <BootstrapSVG width={40} height={40} className="fill-white" />
+          <BootstrapSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-white"
+          />
         }
       />
 
       <SkillCard
+        svgSize={props.svgSize}
         link={{
           href: "",
         }}
@@ -96,7 +115,11 @@ export default function VictorMarkupAndStylingSubSection() {
           },
         }}
         customIconComponent={
-          <StyledComponentsSVG width={40} height={40} className="fill-white" />
+          <StyledComponentsSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-white"
+          />
         }
       />
     </SkillsSectionContainer>

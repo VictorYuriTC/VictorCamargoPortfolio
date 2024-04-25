@@ -12,7 +12,7 @@ export default function SkillsSectionContainer(props: ISkillsSectionContainer) {
     <div className={`flex flex-col ${props.divWrapper?.className}`}>
       <span className="text-lg font-semibold">{props.title}</span>
 
-      <div className="flex flex-row flex-wrap items-center gap-8 mt-3">
+      <div className="flex flex-row flex-wrap items-center gap-8 mt-1">
         {props.children}
       </div>
     </div>
