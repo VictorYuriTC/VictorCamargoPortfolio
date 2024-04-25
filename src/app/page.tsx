@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/pages/home/ExperienceSection/Experie
 import LandingSection from "@/components/pages/home/LandingSection/LandingSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SkillsSection from "@/components/pages/home/SkillsSection/SkillsSection";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -32,3 +33,47 @@ export default function Home() {
     </>
   );
 }
+
+export const metadata: Metadata = {
+  appleWebApp: {
+    title: "Victor Camargo's Portfolio",
+  },
+
+  authors: [
+    {
+      name: "Victor Yuri Tavares de Camargo",
+      url: "https://victorcamargodev.com",
+    },
+  ],
+
+  category: "portfolio",
+
+  creator: "Victor Yuri Tavares de Camargo",
+
+  description: "My two cents about me",
+
+  keywords: [
+    "victor",
+    "camargo",
+    "victor camargo",
+    "portfolio",
+    "victor camargo portfolio",
+    "victor yuri tavares de camargo",
+  ],
+
+  openGraph: {
+    countryName: "",
+    emails: ["victoryuritc@yahoo.com"],
+    description: "Victor Camargo's Portoflio",
+    type: "profile",
+    firstName: "Victor",
+    lastName: "Camargo",
+    siteName: "victorcamargodev",
+    title: "Victor Camargo's Portfolio",
+    url: "https://victorcamargodev.com",
+    phoneNumbers: "+5541997248930",
+    determiner: "the",
+  },
+
+  title: "Victor Camargo's Portfolio",
+};
