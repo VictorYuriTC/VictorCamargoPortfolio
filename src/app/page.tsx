@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/pages/home/ExperienceSection/Experie
 import LandingSection from "@/components/pages/home/LandingSection/LandingSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SkillsSection from "@/components/pages/home/SkillsSection/SkillsSection";
+import { VICTOR_PORTFOLIO_BASE_URL } from "@/constants";
 import { Metadata } from "next";
 
 export default function Home() {
@@ -35,14 +36,51 @@ export default function Home() {
 }
 
 export const metadata: Metadata = {
+  description:
+    "Victor Camargo's Portfolio - Frontend Developer | My two cents about me",
+
+  generator: "Next.js",
+  metadataBase: new URL(VICTOR_PORTFOLIO_BASE_URL),
   appleWebApp: {
-    title: "Victor Camargo's Portfolio",
+    title: "Victor Camargo Dev",
   },
+
+  appLinks: {
+    web: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    iphone: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    windows: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    ios: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    windows_universal: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    windows_phone: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+
+    ipad: {
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
+    },
+  },
+
+  publisher: "Victor Camargo",
 
   authors: [
     {
       name: "Victor Yuri Tavares de Camargo",
-      url: "https://victorcamargodev.com",
+      url: new URL(VICTOR_PORTFOLIO_BASE_URL),
     },
   ],
 
@@ -50,30 +88,51 @@ export const metadata: Metadata = {
 
   creator: "Victor Yuri Tavares de Camargo",
 
-  description: "My two cents about me",
-
   keywords: [
     "victor",
     "camargo",
     "victor camargo",
     "portfolio",
+    "dev",
+    "victorcamargodev",
+    "victorcamargo",
+    "victor camargo dev",
+    "devcuritiba",
+    "dev curitiba",
     "victor camargo portfolio",
     "victor yuri tavares de camargo",
+    "victor tavares de camargo",
+    "frontend developer",
+    "victor frontend developer",
+    "victor camargo frontend developer",
+    "victor mobile developer",
+    "victor camargo mobile developer",
+    "mobile developer curitiba",
+    "frontend developer curitiba",
+    "front-end developer curitiba",
+    "victor camargo curitiba",
+    "victor yuri tavares de camargo curitiba",
   ],
 
+  twitter: {
+    title: "Victor Camargo Dev",
+    description: "Victor Camargo's Portfolio - My two cents about me",
+    creator: "Victor Yuri Tavares de Camargo",
+  },
+
+  applicationName: "Victor Camargo Dev",
+
   openGraph: {
-    countryName: "",
+    countryName: "brasil",
     emails: ["victoryuritc@yahoo.com"],
     description: "Victor Camargo's Portoflio",
     type: "profile",
     firstName: "Victor",
     lastName: "Camargo",
     siteName: "victorcamargodev",
-    title: "Victor Camargo's Portfolio",
-    url: "https://victorcamargodev.com",
+    title: "Victor Camargo Dev",
+    url: new URL(VICTOR_PORTFOLIO_BASE_URL),
     phoneNumbers: "+5541997248930",
     determiner: "the",
   },
-
-  title: "Victor Camargo's Portfolio",
 };
