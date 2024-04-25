@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { VICTOR_PORTFOLIO_BASE_URL } from "@/constants";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Victor Camargo's Portfolio",
-  description: "Victor Camargo's Portfolio",
-};
 
 export default function RootLayout({
   children,
@@ -21,3 +17,12 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: {
+    default: "Victor Camargo Dev",
+    template: "%s | Victor Camargo Dev",
+  },
+  description: "Victor Camargo | My two cents about me",
+  metadataBase: new URL(VICTOR_PORTFOLIO_BASE_URL),
+};
