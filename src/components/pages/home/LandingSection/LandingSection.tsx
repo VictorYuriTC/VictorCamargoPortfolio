@@ -6,9 +6,9 @@ export default function LandingSection() {
     <SectionWrapper
       id="#landing-section"
       className="flex flex-col justify-center gap-y-6">
-      <p className="font-light text-3xl md:text-5xl">Victor Camargo</p>
+      <h1 className="font-light text-3xl md:text-5xl">Victor Camargo</h1>
 
-      <p className="font-semibold text-5xl md:text-7xl">Frontend Developer</p>
+      <h2 className="font-semibold text-5xl md:text-7xl">Frontend Developer</h2>
 
       <div className="flex flex-row mt-6">
         <PortfolioPrimaryButton variant="default" borderRadius="rounded-full">
