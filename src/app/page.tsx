@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Victor Camargo Dev",
   },
 
-  icons: "/victor-camargo-dev-website-logo.png",
+  icons: "/favicon.ico",
 
   appLinks: {
     web: {
