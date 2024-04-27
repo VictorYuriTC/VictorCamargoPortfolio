@@ -45,6 +45,8 @@ export const metadata: Metadata = {
     title: "Victor Camargo Dev",
   },
 
+  icons: "/victor-camargo-dev-website-logo.png",
+
   appLinks: {
     web: {
       url: new URL(VICTOR_PORTFOLIO_BASE_URL),
@@ -87,11 +89,23 @@ export const metadata: Metadata = {
   category: "portfolio",
 
   creator: "Victor Yuri Tavares de Camargo",
+  manifest: new URL(`${VICTOR_PORTFOLIO_BASE_URL}/manifest.json`),
 
   keywords: [
     "victor",
+    "yuri",
+    "tavares",
     "camargo",
+    "victor yuri",
+    "victor tavares",
     "victor camargo",
+    "yuri tavares",
+    "yuri camargo",
+    "tavares de camargo",
+    "victor yuri tavares de camargo",
+    "victor tavares de camargo",
+    "victor de camargo",
+    "yuri tavares de camargo",
     "portfolio",
     "dev",
     "victorcamargodev",
@@ -100,8 +114,6 @@ export const metadata: Metadata = {
     "devcuritiba",
     "dev curitiba",
     "victor camargo portfolio",
-    "victor yuri tavares de camargo",
-    "victor tavares de camargo",
     "frontend developer",
     "victor frontend developer",
     "victor camargo frontend developer",
@@ -112,6 +124,11 @@ export const metadata: Metadata = {
     "front-end developer curitiba",
     "victor camargo curitiba",
     "victor yuri tavares de camargo curitiba",
+    "frontend developer xaxim",
+    "desenvolvedor frontend xaxim",
+    "developer xaxim",
+    "desenvolvedor xaxim",
+    "desenvolvedor curitiba",
   ],
 
   twitter: {

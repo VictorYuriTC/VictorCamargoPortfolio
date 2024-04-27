@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     default: "Victor Camargo Dev",
     template: "%s | Victor Camargo Dev",
   },
-  description: "Victor Camargo | My two cents about me",
+  description:
+    "Victor Camargo Dev | Portfolio website created by Victor Yuri Tavares de Camargo - a frontend developer and mobile developer based on Curitiba, Paraná, Brazil. Let me give my two cents about me.",
   metadataBase: new URL(VICTOR_PORTFOLIO_BASE_URL),
 };
