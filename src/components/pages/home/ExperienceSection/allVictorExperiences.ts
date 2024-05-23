@@ -106,5 +106,48 @@ export const allVictorExperiences: (VictorExperienceType & {
         name: "React TanStack Query",
       },
     ],
+    allExperiencePhotos: {
+      photos: [
+        {
+          photo: {
+            alt: "",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-agents-home-screen.png",
+          },
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-clients-home-screen-1.png",
+          },
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-track-transaction-screen.png",
+          },
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-chat-screen.png",
+          },
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-notifications-list-screen.png",
+          },
+          type: "photo",
+        },
+      ],
+    },
   },
 ];

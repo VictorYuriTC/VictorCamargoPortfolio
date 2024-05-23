@@ -12,7 +12,7 @@ export default function StyledComponentsSVG(props: SVGProps<SVGElement>) {
         <text
           fill="#000"
           font-size="75"
-          letter-spacing=".5"
+          letterSpacing=".5"
           transform="translate(15 80)">
           <tspan x="0" y="0">
             💅
