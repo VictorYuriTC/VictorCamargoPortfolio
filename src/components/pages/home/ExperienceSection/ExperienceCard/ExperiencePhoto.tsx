@@ -1,32 +1,33 @@
 import CameraSVG from "@/assets/svgs/CameraSVG";
 import Image, { ImageProps } from "next/image";
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction, useCallback } from "react";
 
 export interface IExperiencePhotoData {
   photo: ImageProps;
   type: "photo" | "video";
+  title: string;
 }
 
 export interface IExperiencePhoto {
   photoData: IExperiencePhotoData;
   setIsExperiencePhotosCarouselModalOpen: Dispatch<SetStateAction<boolean>>;
-  setFocusedPhoto: Dispatch<SetStateAction<ImageProps>>;
+  setFocusedPhoto: Dispatch<SetStateAction<IExperiencePhotoData | null>>;
 }
 
 export default function ExperiencePhoto(props: IExperiencePhoto) {
-  function handleOnClickPhoto() {
-    props.setIsExperiencePhotosCarouselModalOpen(true);
-    props.setFocusedPhoto({
-      src: props.photoData.photo.src,
-      alt: props.photoData.photo.alt,
-    });
-  }
+  const { setIsExperiencePhotosCarouselModalOpen, setFocusedPhoto, photoData } =
+    props;
+
+  const handleOnClickPhoto = useCallback(() => {
+    setIsExperiencePhotosCarouselModalOpen(true);
+    setFocusedPhoto(photoData);
+  }, [setIsExperiencePhotosCarouselModalOpen, setFocusedPhoto, photoData]);
 
   return (
     <button
       onClick={handleOnClickPhoto}
       className="group/experience-photo-button relative rounded overflow-hidden mr-8 transition-transform duration-700 h-68 w-36 z-20 opacity-60 hover:opacity-100 hover:scale-105">
-      {props.photoData.type === "photo" ? (
+      {photoData.type === "photo" ? (
         <div className="flex items-center justify-center absolute top-0 right-0 bottom-0 left-0">
           <div className="bg-opacity-50 bg-black p-2 rounded-full group-hover/experience-photo-button:bg-opacity-100">
             <CameraSVG
@@ -41,14 +42,14 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
 
       <Image
         className="rounded"
-        alt={props.photoData.photo.alt}
-        src={props.photoData.photo.src}
+        alt={photoData.photo.alt}
+        src={photoData.photo.src}
         sizes="100vw"
         width={0}
         height={0}
         style={{ width: "100%", height: "auto", borderRadius: 20 }}
         placeholder="blur"
-        blurDataURL="/image-placeholder.jpeg"
+        blurDataURL="/image-placeholder.png"
       />
     </button>
   );
