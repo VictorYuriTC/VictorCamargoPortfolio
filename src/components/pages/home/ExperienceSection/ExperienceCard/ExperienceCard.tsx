@@ -1,11 +1,16 @@
-import ExperienceCompanyName, {
-  IExperienceCompanyName,
-} from "./ExperienceCompanyName";
+"use client";
+
+import ExperienceCompanyName from "./ExperienceCompanyName";
 import ExperienceDate from "./ExperienceDate";
 import ExperienceSkillTag, { IVictorSkill } from "./ExperienceSkillTag";
 import ExperienceRole, { IExperienceRole } from "./ExperienceRole";
 import { LinkProps } from "next/link";
-import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
+import AllExperiencePhotos, {
+  IAllExperiencePhotos,
+} from "./AllExperiencePhotos";
+import ExperiencePhotosCarouselModal from "./ExperiencePhotosCarouselModal";
+import { ImageProps } from "next/image";
 
 export type MonthType =
   | "January"
@@ -36,6 +41,10 @@ export interface IPresentExperience {
   allSkills: IVictorSkill[];
   startDate: ExperienceDateType;
   companyLink?: LinkProps;
+  allExperiencePhotos?: Omit<
+    IAllExperiencePhotos,
+    "setIsExperiencePhotosCarouselModalOpen" | "setFocusedPhoto"
+  >;
 }
 
 export interface IPastExperience {
@@ -46,6 +55,7 @@ export interface IPastExperience {
   startDate: ExperienceDateType;
   endDate: ExperienceDateType;
   companyLink?: LinkProps;
+  allExperiencePhotos?: IAllExperiencePhotos;
 }
 
 export type VictorExperienceType = IPresentExperience | IPastExperience;
@@ -55,6 +65,16 @@ interface IExperienceCard {
 }
 
 export default function ExperienceCard(props: IExperienceCard) {
+  const [
+    isExperiencePhotosCarouselModalOpen,
+    setIsExperiencePhotosCarouselModalOpen,
+  ] = useState(false);
+
+  const [focusedPhoto, setFocusedPhoto] = useState<ImageProps>({
+    alt: "",
+    src: "",
+  });
+
   return (
     <div className="group flex flex-col rounded duration-500 p-5 border border-gray-300 hover:border-purple-300 dark:border-gray-900 dark:hover:border-purple-700 hover:shadow-[0px_0px_7px_theme(colors.purple.500)]">
       <div className="flex flex-row flex-wrap gap-x-3 gap-y-3 mb-4">
@@ -91,6 +111,34 @@ export default function ExperienceCard(props: IExperienceCard) {
           role={props.experience.role}
           startDate={props.experience.startDate}
           company={props.experience.company}
+        />
+      )}
+
+      {props.experience.allExperiencePhotos && (
+        <AllExperiencePhotos
+          setIsExperiencePhotosCarouselModalOpen={
+            setIsExperiencePhotosCarouselModalOpen
+          }
+          setFocusedPhoto={setFocusedPhoto}
+          photos={props.experience.allExperiencePhotos.photos}
+        />
+      )}
+
+      {isExperiencePhotosCarouselModalOpen && focusedPhoto && (
+        <ExperiencePhotosCarouselModal
+          isOpen={isExperiencePhotosCarouselModalOpen}
+          setIsOpen={setIsExperiencePhotosCarouselModalOpen}
+          focusedPhoto={{
+            alt: focusedPhoto.alt,
+            src: focusedPhoto.src,
+          }}
+          allCarouselPhotos={
+            props.experience.allExperiencePhotos?.photos.map((photoData) => ({
+              alt: photoData.photo.alt,
+              src: photoData.photo.src.toString(),
+            })) || []
+          }
+          setFocusedPhoto={setFocusedPhoto}
         />
       )}
     </div>

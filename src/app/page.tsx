@@ -89,7 +89,7 @@ export const metadata: Metadata = {
   category: "portfolio",
 
   creator: "Victor Yuri Tavares de Camargo",
-  manifest: new URL(`${VICTOR_PORTFOLIO_BASE_URL}/manifest.json`),
+  manifest: new URL(`${VICTOR_PORTFOLIO_BASE_URL}/manifest.webmanifest`),
 
   keywords: [
     "victor",
