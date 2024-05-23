@@ -10,7 +10,6 @@ import AllExperiencePhotos, {
   IAllExperiencePhotos,
 } from "./AllExperiencePhotos";
 import ExperiencePhotosCarouselModal from "./ExperiencePhotosCarouselModal";
-import { ImageProps } from "next/image";
 import { IExperiencePhotoData } from "./ExperiencePhoto";
 
 export type MonthType =
