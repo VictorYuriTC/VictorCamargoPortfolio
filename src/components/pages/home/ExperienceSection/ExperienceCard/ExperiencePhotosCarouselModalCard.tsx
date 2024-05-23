@@ -14,7 +14,8 @@ export default function ExperiencePhotosCarouselModalCard(
   const { setFocusedPhoto, carouselPhoto } = props;
 
   const isCurrentFocusedPhoto =
-    props.focusedPhoto.src === props.carouselPhoto.src;
+    props.focusedPhoto.alt === props.carouselPhoto.alt;
+
   const handleOnClickCarouselCard = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
       setFocusedPhoto(carouselPhoto);

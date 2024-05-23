@@ -110,7 +110,7 @@ export const allVictorExperiences: (VictorExperienceType & {
       photos: [
         {
           photo: {
-            alt: "",
+            alt: "Gigawrks - Agents home screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-agents-home-screen.png",
           },
           type: "photo",
@@ -118,7 +118,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
         {
           photo: {
-            alt: "",
+            alt: "Gigawrks - Clients home screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-clients-home-screen-1.png",
           },
           type: "photo",
@@ -126,7 +126,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
         {
           photo: {
-            alt: "",
+            alt: "Gigawrks - Track transaction screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-track-transaction-screen.png",
           },
           type: "photo",
@@ -134,7 +134,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
         {
           photo: {
-            alt: "",
+            alt: "Gigawrks - Chat screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-chat-screen.png",
           },
           type: "photo",
@@ -142,7 +142,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
         {
           photo: {
-            alt: "",
+            alt: "Gigawrks - Notifications list screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-notifications-list-screen.png",
           },
           type: "photo",
