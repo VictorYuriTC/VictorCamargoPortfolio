@@ -11,6 +11,7 @@ import AllExperiencePhotos, {
 } from "./AllExperiencePhotos";
 import ExperiencePhotosCarouselModal from "./ExperiencePhotosCarouselModal";
 import { ImageProps } from "next/image";
+import { IExperiencePhotoData } from "./ExperiencePhoto";
 
 export type MonthType =
   | "January"
@@ -70,10 +71,9 @@ export default function ExperienceCard(props: IExperienceCard) {
     setIsExperiencePhotosCarouselModalOpen,
   ] = useState(false);
 
-  const [focusedPhoto, setFocusedPhoto] = useState<ImageProps>({
-    alt: "",
-    src: "",
-  });
+  const [focusedPhoto, setFocusedPhoto] = useState<IExperiencePhotoData | null>(
+    null
+  );
 
   return (
     <div className="group flex flex-col rounded duration-500 p-5 border border-gray-300 hover:border-purple-300 dark:border-gray-900 dark:hover:border-purple-700 hover:shadow-[0px_0px_7px_theme(colors.purple.500)]">
@@ -84,7 +84,7 @@ export default function ExperienceCard(props: IExperienceCard) {
               className: "duration-500 bg-purple-700 group-hover:bg-purple-600",
             }}
             skill={skill}
-            key={`index`}
+            key={`name:${skill.name}-field:${skill.field}-index:${index}`}
           />
         ))}
       </div>
@@ -128,16 +128,8 @@ export default function ExperienceCard(props: IExperienceCard) {
         <ExperiencePhotosCarouselModal
           isOpen={isExperiencePhotosCarouselModalOpen}
           setIsOpen={setIsExperiencePhotosCarouselModalOpen}
-          focusedPhoto={{
-            alt: focusedPhoto.alt,
-            src: focusedPhoto.src,
-          }}
-          allCarouselPhotos={
-            props.experience.allExperiencePhotos?.photos.map((photoData) => ({
-              alt: photoData.photo.alt,
-              src: photoData.photo.src.toString(),
-            })) || []
-          }
+          focusedPhoto={focusedPhoto}
+          allCarouselPhotos={props.experience.allExperiencePhotos?.photos || []}
           setFocusedPhoto={setFocusedPhoto}
         />
       )}

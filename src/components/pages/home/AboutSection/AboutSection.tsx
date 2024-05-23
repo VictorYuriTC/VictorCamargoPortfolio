@@ -21,7 +21,7 @@ export default function AboutSection() {
               src="/victor-camargo-photo.jpeg"
               alt={VICTOR_PHOTO_ALT_TEXT}
               placeholder="blur"
-              blurDataURL="/image-placeholder.jpeg"
+              blurDataURL="/image-placeholder.png"
               sizes="100vw"
               width={0}
               height={0}

@@ -114,6 +114,7 @@ export const allVictorExperiences: (VictorExperienceType & {
             src: "/companies-portfolio-photos/gigawrks/gigawrks-agents-home-screen.png",
           },
           type: "photo",
+          title: "Agents home screen",
         },
 
         {
@@ -122,6 +123,7 @@ export const allVictorExperiences: (VictorExperienceType & {
             src: "/companies-portfolio-photos/gigawrks/gigawrks-clients-home-screen-1.png",
           },
           type: "photo",
+          title: "Clients home screen",
         },
 
         {
@@ -130,6 +132,7 @@ export const allVictorExperiences: (VictorExperienceType & {
             src: "/companies-portfolio-photos/gigawrks/gigawrks-track-transaction-screen.png",
           },
           type: "photo",
+          title: "Track transaction screen",
         },
 
         {
@@ -138,6 +141,7 @@ export const allVictorExperiences: (VictorExperienceType & {
             src: "/companies-portfolio-photos/gigawrks/gigawrks-chat-screen.png",
           },
           type: "photo",
+          title: "Chat screen",
         },
 
         {
@@ -146,6 +150,7 @@ export const allVictorExperiences: (VictorExperienceType & {
             src: "/companies-portfolio-photos/gigawrks/gigawrks-notifications-list-screen.png",
           },
           type: "photo",
+          title: "Notifications list screen",
         },
       ],
     },

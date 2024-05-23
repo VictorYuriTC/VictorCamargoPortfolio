@@ -1,11 +1,11 @@
-import Image, { ImageProps } from "next/image";
-import { IFocusedPhoto } from "./ExperiencePhotosCarouselModal";
-import { Dispatch, MouseEvent, SetStateAction, useCallback } from "react";
+import Image from "next/image";
+import { Dispatch, SetStateAction, useCallback } from "react";
+import { IExperiencePhotoData } from "./ExperiencePhoto";
 
 interface IExperiencePhotosCarouselModalCard {
-  carouselPhoto: IFocusedPhoto;
-  focusedPhoto: ImageProps;
-  setFocusedPhoto: Dispatch<SetStateAction<ImageProps>>;
+  carouselPhoto: IExperiencePhotoData;
+  focusedPhoto: IExperiencePhotoData;
+  setFocusedPhoto: Dispatch<SetStateAction<IExperiencePhotoData | null>>;
 }
 
 export default function ExperiencePhotosCarouselModalCard(
@@ -14,24 +14,21 @@ export default function ExperiencePhotosCarouselModalCard(
   const { setFocusedPhoto, carouselPhoto } = props;
 
   const isCurrentFocusedPhoto =
-    props.focusedPhoto.alt === props.carouselPhoto.alt;
+    props.focusedPhoto.title === props.carouselPhoto.title;
 
-  const handleOnClickCarouselCard = useCallback(
-    (e: MouseEvent<HTMLButtonElement>) => {
-      setFocusedPhoto(carouselPhoto);
-    },
-    [setFocusedPhoto, carouselPhoto]
-  );
+  const handleOnClickCarouselCard = useCallback(() => {
+    setFocusedPhoto(carouselPhoto);
+  }, [setFocusedPhoto, carouselPhoto]);
 
   return (
     <button
       onClick={handleOnClickCarouselCard}
-      className={`transition-opacity duration-700 h-[100px] mr-8 opacity-50 ${
-        isCurrentFocusedPhoto && "opacity-100"
+      className={`flex flex-row justify-center items-center transition-opacity duration-700 h-[80px] mr-8 ${
+        isCurrentFocusedPhoto ? "opacity-100" : "opacity-50"
       }`}>
       <Image
-        src={carouselPhoto.src}
-        alt={carouselPhoto.alt}
+        src={carouselPhoto.photo.src}
+        alt={carouselPhoto.photo.alt}
         sizes="100vw"
         width={0}
         height={0}

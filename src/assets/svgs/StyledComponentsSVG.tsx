@@ -8,10 +8,10 @@ export default function StyledComponentsSVG(props: SVGProps<SVGElement>) {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width={props.width || "24px"}
       height={props.height || "24px"}>
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <text
           fill="#000"
-          font-size="75"
+          fontSize="75"
           letterSpacing=".5"
           transform="translate(15 80)">
           <tspan x="0" y="0">

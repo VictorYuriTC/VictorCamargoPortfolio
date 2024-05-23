@@ -14,8 +14,6 @@ export default function SkillCardIcon(props: ISkillCardIcon) {
       height={props.svgSize}
       alt={props.iconData.alt}
       src={props.iconData.src}
-      placeholder="blur"
-      blurDataURL="/image-placeholder.jpeg"
     />
   );
 }
