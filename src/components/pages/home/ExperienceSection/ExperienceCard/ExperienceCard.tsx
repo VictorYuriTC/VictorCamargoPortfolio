@@ -2,16 +2,17 @@
 
 import ExperienceCompanyName from "./ExperienceCompanyName";
 import ExperienceDate from "./ExperienceDate";
-import ExperienceSkillTag, { IVictorSkill } from "./ExperienceSkillTag";
+import { IVictorSkill } from "./ExperienceSkillTag";
 import ExperienceRole, { IExperienceRole } from "./ExperienceRole";
 import { LinkProps } from "next/link";
 import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
 import AllExperiencePhotos, {
   IAllExperiencePhotos,
 } from "./AllExperiencePhotos";
-import ExperiencePhotosCarouselModal from "./ExperiencePhotosCarouselModal";
 import { IExperiencePhotoData } from "./ExperiencePhoto";
 import AllExperienceSkillTagsRow from "./AllExperiencesSkillTagsRow/AllExperienceSkillTagsRow";
+import dynamic from "next/dynamic";
+import ExperiencePhotosCarouselModalSkeleton from "./ExperiencePhotosCarouselModal/ExperiencePhotosCarouselModalSkeleton";
 
 export type MonthType =
   | "January"
@@ -60,6 +61,14 @@ export interface IPastExperience {
 }
 
 export type VictorExperienceType = IPresentExperience | IPastExperience;
+
+const LazyExperiencePhotosCarouselModal = dynamic(
+  () => import("./ExperiencePhotosCarouselModal/ExperiencePhotosCarouselModal"),
+
+  {
+    loading: () => <ExperiencePhotosCarouselModalSkeleton />,
+  }
+);
 
 interface IExperienceCard {
   experience: VictorExperienceType;
@@ -115,7 +124,7 @@ export default function ExperienceCard(props: IExperienceCard) {
       )}
 
       {isExperiencePhotosCarouselModalOpen && focusedPhoto && (
-        <ExperiencePhotosCarouselModal
+        <LazyExperiencePhotosCarouselModal
           isOpen={isExperiencePhotosCarouselModalOpen}
           setIsOpen={setIsExperiencePhotosCarouselModalOpen}
           focusedPhoto={focusedPhoto}
