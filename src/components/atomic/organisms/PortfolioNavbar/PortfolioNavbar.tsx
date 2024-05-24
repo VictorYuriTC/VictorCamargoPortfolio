@@ -9,7 +9,7 @@ export default function PortfolioNavbar() {
   const SVG_SIZE = 24;
 
   return (
-    <nav className="w-full fixed left-0 bottom-0 grid grid-flow-col backdrop-blur-lg bg-[theme(colors.gray.50)50] lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-x-5 lg:px-5 lg:py-2 dark:bg-[#00000099]">
+    <nav className="z-[100] w-full fixed left-0 bottom-0 grid grid-flow-col backdrop-blur-lg bg-[theme(colors.gray.50)50] lg:bottom-auto lg:left-auto lg:right-0 lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-x-5 lg:px-5 lg:py-2 dark:bg-[#00000099]">
       <PortfolioNavbarLink
         link={{
           children: "About",
