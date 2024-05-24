@@ -8,7 +8,7 @@ import {
   useEffect,
 } from "react";
 import ExperiencePhotosCarouselModalCard from "./ExperiencePhotosCarouselModalCard";
-import { IExperiencePhotoData } from "./ExperiencePhoto";
+import { IExperiencePhotoData } from "../ExperiencePhoto";
 
 export interface IFocusedPhoto extends ImageProps {}
 
@@ -169,9 +169,9 @@ export default function ExperiencePhotosCarouselModal(
   return (
     <button
       onClick={handleOnClickBackdrop}
-      className="flex items-end justify-center lg:items-center fixed top-0 right-20 bottom-0 left-0 w-screen h-screen z-50 bg-opacity-50 bg-white dark:bg-opacity-50 dark:bg-black">
-      <div className="flex flex-col p-5 relative rounded-lg w-[100%] h-[100%] lg:h-[100%] bg-white dark:bg-gray-950">
-        {props.focusedPhoto.photo.src && (
+      className="flex items-end justify-center lg:items-center fixed top-0 right-20 bottom-0 left-0 w-screen h-screen z-[1000] bg-opacity-50 bg-white dark:bg-opacity-50 dark:bg-black">
+      <div className="flex flex-col p-5 relative rounded-lg w-[100%] h-[100%] lg:h-[100%] bg-gray-50 dark:bg-gray-950">
+        {focusedPhoto.photo.src && (
           <div className="flex flex-col items-center justify-center w-full rounded-lg h-[80%] lg:h-[90%]">
             <div className="h-[80%] rounded-lg">
               <button
@@ -188,8 +188,8 @@ export default function ExperiencePhotosCarouselModal(
               </button>
 
               <Image
-                src={props.focusedPhoto.photo.src}
-                alt={props.focusedPhoto.photo.alt}
+                src={focusedPhoto.photo.src}
+                alt={focusedPhoto.photo.alt}
                 sizes="100vw"
                 width={0}
                 height={0}
@@ -201,7 +201,7 @@ export default function ExperiencePhotosCarouselModal(
 
             <div className="py-1">
               <span className="text-black dark:text-gray-400">
-                {props.focusedPhoto.title}
+                {focusedPhoto.title}
               </span>
             </div>
           </div>
@@ -209,13 +209,13 @@ export default function ExperiencePhotosCarouselModal(
 
         <button
           onClick={handleOnClickModalContent}
-          className="flex flex-row items-center justify-center absolute right-0 bottom-0 left-0 pt-5 pb-20 lg:pb-5 bg-transparent border-t bg-white border-gray-300 dark:border-gray-800 dark:bg-black">
-          {props.allCarouselPhotos.map((carouselPhoto) => (
+          className="flex flex-row items-center justify-center absolute right-0 bottom-0 left-0 pt-5 pb-20 lg:pb-5 bg-transparent border-t bg-white border-gray-300 dark:border-gray-900 dark:bg-black">
+          {allCarouselPhotos.map((carouselPhoto) => (
             <ExperiencePhotosCarouselModalCard
               key={`src:${carouselPhoto.photo.src}-title:${carouselPhoto.title}`}
               carouselPhoto={carouselPhoto}
-              focusedPhoto={props.focusedPhoto}
-              setFocusedPhoto={props.setFocusedPhoto}
+              focusedPhoto={focusedPhoto}
+              setFocusedPhoto={setFocusedPhoto}
             />
           ))}
         </button>
