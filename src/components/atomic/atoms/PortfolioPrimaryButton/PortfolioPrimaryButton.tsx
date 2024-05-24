@@ -13,7 +13,7 @@ export default function PortfolioPrimaryButton(props: IPortfolioPrimaryButton) {
       onClick={props.onClick}
       disabled={props.disabled}
       style={props.style}
-      className={`transition-colors duration-300 text-white bg-purple-600 hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 disabled:opacity-60 disabled:hover:bg-purple-600 disabled:dark:hover:bg-purple-700 ${
+      className={`transition-colors duration-300 text-white bg-purple-600 whitespace-nowrap hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 disabled:opacity-60 disabled:hover:bg-purple-600 disabled:dark:hover:bg-purple-700 ${
         props.borderRadius === "default"
           ? "rounded-lg"
           : props.borderRadius === "rounded-full"

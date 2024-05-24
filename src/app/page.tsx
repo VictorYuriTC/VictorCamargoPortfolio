@@ -35,9 +35,11 @@ export default function Home() {
   );
 }
 
+const WEBSITE_DESCRIPTION =
+  "Victor Camargo's Portfolio - My two cents about me | Portfolio developed by Victor Yuri Tavares de Camargo, frontend developer and mobile developer based on Curitiba, Paraná, Brazil. VictorYuriTC on GitHub.";
+
 export const metadata: Metadata = {
-  description:
-    "Victor Camargo's Portfolio - Frontend Developer | My two cents about me",
+  description: WEBSITE_DESCRIPTION,
 
   generator: "Next.js",
   metadataBase: new URL(VICTOR_PORTFOLIO_BASE_URL),
@@ -133,8 +135,9 @@ export const metadata: Metadata = {
 
   twitter: {
     title: "Victor Camargo Dev",
-    description: "Victor Camargo's Portfolio - My two cents about me",
+    description: WEBSITE_DESCRIPTION,
     creator: "Victor Yuri Tavares de Camargo",
+    card: "summary",
   },
 
   applicationName: "Victor Camargo Dev",
@@ -142,7 +145,7 @@ export const metadata: Metadata = {
   openGraph: {
     countryName: "brasil",
     emails: ["victoryuritc@yahoo.com"],
-    description: "Victor Camargo's Portoflio",
+    description: WEBSITE_DESCRIPTION,
     type: "profile",
     firstName: "Victor",
     lastName: "Camargo",
