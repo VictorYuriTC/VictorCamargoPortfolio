@@ -23,11 +23,39 @@ interface IExperiencePhotosCarouselModal {
 export default function ExperiencePhotosCarouselModal(
   props: IExperiencePhotosCarouselModal
 ) {
-  const { isOpen, setIsOpen } = props;
+  const {
+    isOpen,
+    setIsOpen,
+    allCarouselPhotos,
+    focusedPhoto,
+    setFocusedPhoto,
+  } = props;
 
   const closeModal = useCallback(() => {
     setIsOpen(false);
   }, [setIsOpen]);
+
+  const displayPreviousPhoto = useCallback(() => {
+    const currentPhotoIndex = allCarouselPhotos.indexOf(focusedPhoto);
+
+    if (currentPhotoIndex === 0) {
+      setFocusedPhoto(allCarouselPhotos[allCarouselPhotos?.length - 1]);
+      return;
+    }
+
+    setFocusedPhoto(allCarouselPhotos?.[currentPhotoIndex - 1]);
+  }, [allCarouselPhotos, focusedPhoto, setFocusedPhoto]);
+
+  const displayNextPhoto = useCallback(() => {
+    const currentPhotoIndex = allCarouselPhotos.indexOf(focusedPhoto);
+
+    if (currentPhotoIndex === allCarouselPhotos.length - 1) {
+      setFocusedPhoto(allCarouselPhotos?.[0]);
+      return;
+    }
+
+    setFocusedPhoto(allCarouselPhotos?.[currentPhotoIndex + 1]);
+  }, [allCarouselPhotos, focusedPhoto, setFocusedPhoto]);
 
   const handleOnClickBackdrop = useCallback(() => {
     closeModal();
@@ -44,22 +72,87 @@ export default function ExperiencePhotosCarouselModal(
     closeModal();
   }, [closeModal]);
 
-  const closeOnPressEscape = useCallback(
+  const closeModalOnPressEscape = useCallback(
     (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        closeModal();
+      if (e.key !== "Escape") {
+        return;
       }
+
+      closeModal();
     },
     [closeModal]
   );
 
+  const displayPreviousPhotoOnPressLeftArrow = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key !== "ArrowLeft") {
+        return;
+      }
+
+      displayPreviousPhoto();
+    },
+    [displayPreviousPhoto]
+  );
+
+  const displayPreviousPhotoOnPressA = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key !== "a") {
+        return;
+      }
+
+      displayPreviousPhoto();
+    },
+    [displayPreviousPhoto]
+  );
+
+  const displayNextPhotoOnPressRightArrow = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key !== "ArrowRight") {
+        return;
+      }
+
+      displayNextPhoto();
+    },
+    [displayNextPhoto]
+  );
+
+  const displayNextPhotoOnPressD = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key !== "d") {
+        return;
+      }
+
+      displayNextPhoto();
+    },
+    [displayNextPhoto]
+  );
+
+  const handleOnKeydown = useCallback(
+    (e: KeyboardEvent) => {
+      closeModalOnPressEscape(e);
+
+      displayPreviousPhotoOnPressLeftArrow(e);
+      displayPreviousPhotoOnPressA(e);
+
+      displayNextPhotoOnPressRightArrow(e);
+      displayNextPhotoOnPressD(e);
+    },
+    [
+      closeModalOnPressEscape,
+      displayPreviousPhotoOnPressLeftArrow,
+      displayPreviousPhotoOnPressA,
+      displayNextPhotoOnPressRightArrow,
+      displayNextPhotoOnPressD,
+    ]
+  );
+
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    document.body.addEventListener("keydown", handleOnKeydown);
 
     return () => {
-      document.body.addEventListener("keydown", closeOnPressEscape);
+      document.body.removeEventListener("keydown", handleOnKeydown);
     };
-  }, [isOpen, closeOnPressEscape]);
+  }, [handleOnKeydown]);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -67,7 +160,7 @@ export default function ExperiencePhotosCarouselModal(
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isOpen]);
+  }, []);
 
   if (!isOpen) {
     return <></>;
