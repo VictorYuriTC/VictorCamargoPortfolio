@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Dispatch, SetStateAction, useCallback } from "react";
+import { Dispatch, MouseEvent, SetStateAction, useCallback } from "react";
 import { IExperiencePhotoData } from "./ExperiencePhoto";
 
 interface IExperiencePhotosCarouselModalCard {
@@ -23,8 +23,8 @@ export default function ExperiencePhotosCarouselModalCard(
   return (
     <button
       onClick={handleOnClickCarouselCard}
-      className={`flex flex-row justify-center items-center transition-opacity duration-700 h-[80px] mr-8 ${
-        isCurrentFocusedPhoto ? "opacity-100" : "opacity-50"
+      className={`flex flex-row justify-center items-center transition duration-700 h-[80px] mr-8 bg-white dark:bg-black ${
+        isCurrentFocusedPhoto ? "opacity-100 scale-110" : "opacity-50 scale-100"
       }`}>
       <Image
         src={carouselPhoto.photo.src}

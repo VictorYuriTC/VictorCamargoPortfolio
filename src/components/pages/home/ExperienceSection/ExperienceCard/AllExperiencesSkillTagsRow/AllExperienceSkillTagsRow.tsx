@@ -1,6 +1,6 @@
 import { VictorExperienceType } from "../ExperienceCard";
 import ExperienceSkillTag from "../ExperienceSkillTag";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef } from "react";
 import ChevronButton from "./ChevronButton";
 
 interface IAllExperienceSkillTagsRow {
