@@ -1,10 +1,11 @@
 import NextFrameworkSVG from "@/assets/svgs/NextFrameworkSVG";
 import SkillCard from "../SkillCard";
 import SkillsSectionContainer from "../SkillsSectionContainer";
-
 import flutterIcon from "@/assets/flutter-framework.svg";
 import reactIcon from "@/assets/react-framework.svg";
 import nextIcon from "@/assets/next-framework.svg";
+import DjangoSVG from "@/assets/svgs/DjangoSVG";
+import { VictorSkillNameType } from "../../ExperienceSection/ExperienceCard/ExperienceSkillTag";
 
 interface IVictorFrameworkSubSection {
   svgSize: number;
@@ -13,6 +14,10 @@ interface IVictorFrameworkSubSection {
 export default function VictorFrameworkSubSection(
   props: IVictorFrameworkSubSection
 ) {
+  const getAltText = (frameworkName: VictorSkillNameType) => {
+    return `${frameworkName} framework logo`;
+  };
+
   return (
     <SkillsSectionContainer title="Frameworks">
       <SkillCard
@@ -23,7 +28,7 @@ export default function VictorFrameworkSubSection(
         skill={{
           iconData: {
             src: reactIcon,
-            alt: "React.js framework logo",
+            alt: getAltText("React"),
           },
           name: "React",
         }}
@@ -37,7 +42,7 @@ export default function VictorFrameworkSubSection(
         skill={{
           iconData: {
             src: reactIcon,
-            alt: "React Native framework logo",
+            alt: getAltText("React Native"),
           },
           name: "React Native",
         }}
@@ -51,7 +56,7 @@ export default function VictorFrameworkSubSection(
         skill={{
           iconData: {
             src: nextIcon,
-            alt: "Next.js framework logo",
+            alt: getAltText("Next"),
           },
           name: "Next",
         }}
@@ -72,10 +77,31 @@ export default function VictorFrameworkSubSection(
         skill={{
           iconData: {
             src: flutterIcon,
-            alt: "Flutter framework logo",
+            alt: getAltText("Flutter"),
           },
           name: "Flutter",
         }}
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("Django"),
+          },
+          name: "Django",
+        }}
+        customIconComponent={
+          <DjangoSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
       />
     </SkillsSectionContainer>
   );
