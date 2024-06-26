@@ -1,7 +1,11 @@
 export enum VictorFrameworksEnum {
+  "Angular",
+
   "Django",
 
   "Flutter",
+
+  "Jest",
 
   "Next",
 

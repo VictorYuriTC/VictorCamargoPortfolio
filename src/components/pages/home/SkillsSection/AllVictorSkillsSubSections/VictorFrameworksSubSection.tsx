@@ -6,6 +6,8 @@ import reactIcon from "@/assets/react-framework.svg";
 import nextIcon from "@/assets/next-framework.svg";
 import DjangoSVG from "@/assets/svgs/DjangoSVG";
 import { VictorSkillNameType } from "../../ExperienceSection/ExperienceCard/ExperienceSkillTag";
+import JestSVG from "@/assets/svgs/JestSVG";
+import AngularSVG from "@/assets/svgs/AngularSVG";
 
 interface IVictorFrameworkSubSection {
   svgSize: number;
@@ -91,6 +93,28 @@ export default function VictorFrameworkSubSection(
         skill={{
           iconData: {
             src: "",
+            alt: getAltText("Angular"),
+          },
+          name: "Angular",
+        }}
+        customIconComponent={
+          <AngularSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            stroke="transparent"
+            fill="transparent"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
             alt: getAltText("Django"),
           },
           name: "Django",
@@ -101,6 +125,23 @@ export default function VictorFrameworkSubSection(
             height={props.svgSize}
             className="fill-black dark:fill-white"
           />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("Jest"),
+          },
+          name: "Jest",
+        }}
+        customIconComponent={
+          <JestSVG width={props.svgSize} height={props.svgSize} />
         }
       />
     </SkillsSectionContainer>
