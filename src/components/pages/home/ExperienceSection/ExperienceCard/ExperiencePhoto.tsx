@@ -49,6 +49,7 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
         height={0}
         placeholder="blur"
         blurDataURL="/image-placeholder.png"
+        loading="lazy"
       />
     </button>
   );
