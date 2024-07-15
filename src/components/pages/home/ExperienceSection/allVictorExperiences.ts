@@ -17,15 +17,17 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "React",
-      },
-      {
-        field: "frontend",
         name: "JavaScript",
       },
+
       {
         field: "frontend",
         name: "TypeScript",
+      },
+
+      {
+        field: "frontend",
+        name: "React",
       },
 
       {
@@ -68,12 +70,12 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "React Native",
+        name: "TypeScript",
       },
 
       {
         field: "frontend",
-        name: "TypeScript",
+        name: "React Native",
       },
 
       {
@@ -128,6 +130,15 @@ export const allVictorExperiences: (VictorExperienceType & {
 
         {
           photo: {
+            alt: "Gigawrks - Clients home screen items preview",
+            src: "/companies-portfolio-photos/gigawrks/gigawrks-clients-home-screen-2.png",
+          },
+          type: "photo",
+          title: "Clients home screen items",
+        },
+
+        {
+          photo: {
             alt: "Gigawrks - Track transaction screen preview",
             src: "/companies-portfolio-photos/gigawrks/gigawrks-track-transaction-screen.png",
           },
@@ -151,6 +162,125 @@ export const allVictorExperiences: (VictorExperienceType & {
           },
           type: "photo",
           title: "Notifications list screen",
+        },
+      ],
+    },
+  },
+
+  {
+    id: 3,
+    type: "present",
+    startDate: "May-2024",
+
+    company: {
+      name: { children: "GeoGaburi" },
+      websiteLink: { href: "https://geogaburi.com/" },
+    },
+    role: { children: "Full-Stack Developer" },
+    allSkills: [
+      {
+        field: "frontend",
+        name: "Dart",
+      },
+
+      {
+        field: "frontend",
+        name: "Flutter",
+      },
+
+      {
+        field: "backend",
+        name: "Python",
+      },
+
+      {
+        field: "backend",
+        name: "Django",
+      },
+
+      {
+        field: "frontend",
+        name: "AdMob",
+      },
+
+      {
+        field: "frontend",
+        name: "Provider",
+      },
+
+      {
+        field: "frontend",
+        name: "Android Studio",
+      },
+
+      {
+        field: "frontend",
+        name: "XCode",
+      },
+    ],
+    allExperiencePhotos: {
+      photos: [
+        {
+          photo: {
+            alt: "GeoGaburi - Login screen preview",
+            src: "/companies-portfolio-photos/geogaburi/1-logging-in-dark.png",
+          },
+          type: "photo",
+          title: "Login screen",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - Sprint mode gameplay preview",
+            src: "/companies-portfolio-photos/geogaburi/3-playing-sprint-mode-dark.png",
+          },
+          type: "photo",
+          title: "Sprint mode gameplay",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - Last match stats screen preview",
+            src: "/companies-portfolio-photos/geogaburi/4-checking-last-match-stats-dark.png",
+          },
+          type: "photo",
+          title: "Last match stats screen",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - Question stats screen preview",
+            src: "/companies-portfolio-photos/geogaburi/6-checking-question-stats-dark.png",
+          },
+          type: "photo",
+          title: "Question stats screen",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - Home screen preview",
+            src: "/companies-portfolio-photos/geogaburi/2-viewing-home-screen-light.png",
+          },
+          type: "photo",
+          title: "Home screen",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - Write & Go mode gameplay preview",
+            src: "/companies-portfolio-photos/geogaburi/5-playing-write-and-go-mode-light.png",
+          },
+          type: "photo",
+          title: "Write & Go mode gameplay",
+        },
+
+        {
+          photo: {
+            alt: "GeoGaburi - App languages screen preview",
+            src: "/companies-portfolio-photos/geogaburi/7-changing-app-language-light.png",
+          },
+          type: "photo",
+          title: "App languages screen",
         },
       ],
     },
