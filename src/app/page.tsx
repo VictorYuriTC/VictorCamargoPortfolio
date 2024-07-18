@@ -38,6 +38,11 @@ export default function Home() {
 const WEBSITE_DESCRIPTION =
   "Victor Camargo's Portfolio - My two cents about me | Portfolio developed by Victor Yuri Tavares de Camargo, frontend developer and mobile developer based on Curitiba, Paraná, Brazil. VictorYuriTC on GitHub.";
 
+const VICTOR_CAMARGO_PHOTO =
+  "https://victorcamargodev.com/victor-camargo-photo.jpeg";
+
+const VICTOR_CAMARGO_SITE = "https://victorcamargodev.com";
+
 export const metadata: Metadata = {
   description: WEBSITE_DESCRIPTION,
 
@@ -98,39 +103,15 @@ export const metadata: Metadata = {
     "yuri",
     "tavares",
     "camargo",
-    "victor yuri",
-    "victor tavares",
-    "victor camargo",
-    "yuri tavares",
-    "yuri camargo",
-    "tavares de camargo",
     "victor yuri tavares de camargo",
-    "victor tavares de camargo",
-    "victor de camargo",
-    "yuri tavares de camargo",
     "portfolio",
     "dev",
-    "victorcamargodev",
-    "victorcamargo",
-    "victor camargo dev",
-    "devcuritiba",
-    "dev curitiba",
-    "victor camargo portfolio",
+    "xaxim",
+    "curitiba",
+    "paraná",
+    "brasil",
     "frontend developer",
-    "victor frontend developer",
-    "victor camargo frontend developer",
-    "victor mobile developer",
-    "victor camargo mobile developer",
-    "mobile developer curitiba",
-    "frontend developer curitiba",
-    "front-end developer curitiba",
-    "victor camargo curitiba",
-    "victor yuri tavares de camargo curitiba",
-    "frontend developer xaxim",
-    "desenvolvedor frontend xaxim",
-    "developer xaxim",
-    "desenvolvedor xaxim",
-    "desenvolvedor curitiba",
+    "mobile developer",
   ],
 
   twitter: {
@@ -138,6 +119,8 @@ export const metadata: Metadata = {
     description: WEBSITE_DESCRIPTION,
     creator: "Victor Yuri Tavares de Camargo",
     card: "summary",
+    images: VICTOR_CAMARGO_PHOTO,
+    site: VICTOR_CAMARGO_SITE,
   },
 
   applicationName: "Victor Camargo Dev",
@@ -154,5 +137,6 @@ export const metadata: Metadata = {
     url: new URL(VICTOR_PORTFOLIO_BASE_URL),
     phoneNumbers: "+5541997248930",
     determiner: "the",
+    images: VICTOR_CAMARGO_PHOTO,
   },
 };
