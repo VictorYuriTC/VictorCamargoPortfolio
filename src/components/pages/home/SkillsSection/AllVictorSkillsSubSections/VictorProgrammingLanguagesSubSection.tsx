@@ -80,29 +80,6 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "MicroPython",
-          iconData: {
-            src: microPythonIcon,
-            alt: "MicroPython language logo",
-          },
-        }}
-        customIconComponent={
-          <div className="">
-            <MicroPythonLanguageSVG
-              width={props.svgSize}
-              height={props.svgSize}
-              className="fill-black dark:fill-white"
-            />
-          </div>
-        }
-      />
-
-      <SkillCard
-        svgSize={props.svgSize}
-        link={{
-          href: "",
-        }}
-        skill={{
           name: "Java",
           iconData: {
             src: javaIcon,
