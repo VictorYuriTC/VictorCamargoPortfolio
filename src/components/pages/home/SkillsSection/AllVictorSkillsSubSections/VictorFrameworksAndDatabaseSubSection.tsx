@@ -8,20 +8,23 @@ import DjangoSVG from "@/assets/svgs/DjangoSVG";
 import { VictorSkillNameType } from "../../ExperienceSection/ExperienceCard/ExperienceSkillTag";
 import JestSVG from "@/assets/svgs/JestSVG";
 import AngularSVG from "@/assets/svgs/AngularSVG";
+import MySQLSVG from "@/assets/svgs/MySQLSVG";
+import SQLSVG from "@/assets/svgs/SQLSVG";
+import PostgreSQL from "@/assets/svgs/PostgreSQL";
 
-interface IVictorFrameworkSubSection {
+interface IVictorFrameworksAndDatabaseSubSection {
   svgSize: number;
 }
 
-export default function VictorFrameworkSubSection(
-  props: IVictorFrameworkSubSection
+export default function VictorFrameworksAndDatabaseSubSection(
+  props: IVictorFrameworksAndDatabaseSubSection
 ) {
   const getAltText = (frameworkName: VictorSkillNameType) => {
     return `${frameworkName} framework logo`;
   };
 
   return (
-    <SkillsSectionContainer title="Frameworks">
+    <SkillsSectionContainer title="Frameworks & Database">
       <SkillCard
         svgSize={props.svgSize}
         link={{
@@ -142,6 +145,72 @@ export default function VictorFrameworkSubSection(
         }}
         customIconComponent={
           <JestSVG width={props.svgSize} height={props.svgSize} />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("SQL"),
+          },
+          name: "SQL",
+        }}
+        customIconComponent={
+          <SQLSVG
+            stroke="stroke-transparent"
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("PostgreSQL"),
+          },
+          name: "PostgreSQL",
+        }}
+        customIconComponent={
+          <PostgreSQL
+            stroke="stroke-transparent"
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-white dark:fill-black"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("MySQL"),
+          },
+          name: "MySQL",
+        }}
+        customIconComponent={
+          <MySQLSVG
+            stroke="stroke-transparent"
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
         }
       />
     </SkillsSectionContainer>

@@ -1,4 +1,4 @@
-import VictorFrameworkSubSection from "./VictorFrameworksSubSection";
+import VictorFrameworksAndDatabaseSubSection from "./VictorFrameworksAndDatabaseSubSection";
 import VictorMarkupAndStylingSubSection from "./VictorMarkupAndStylingSubSection";
 import VictorProgrammingLanguagesSubSection from "./VictorProgrammingLanguagesSubSection";
 import VictorToolsSubSection from "./VictorToolsSubSection";
@@ -12,7 +12,7 @@ export default function AllVictorSkillsSubSections() {
 
       <VictorMarkupAndStylingSubSection svgSize={SVG_SIZE} />
 
-      <VictorFrameworkSubSection svgSize={SVG_SIZE} />
+      <VictorFrameworksAndDatabaseSubSection svgSize={SVG_SIZE} />
 
       <VictorToolsSubSection svgSize={SVG_SIZE} />
     </div>

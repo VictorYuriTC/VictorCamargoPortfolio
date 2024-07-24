@@ -1,4 +1,4 @@
-export enum VictorFrameworksEnum {
+export enum VictorFrameworksAndDatabaseEnum {
   "Angular",
 
   "Django",
@@ -7,9 +7,16 @@ export enum VictorFrameworksEnum {
 
   "Jest",
 
+  "MongoDB",
+  "MySQL",
+
   "Next",
+
+  "PostgreSQL",
 
   "React",
   "React Native",
   "Rest Framework",
+
+  "SQL",
 }

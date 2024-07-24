@@ -1,5 +1,5 @@
 import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
-import { VictorFrameworksEnum } from "@/typing/enums/VictorFrameworksEnum/VictorFrameworksEnum";
+import { VictorFrameworksAndDatabaseEnum } from "@/typing/enums/VictorFrameworksAndDatabaseEnum/VictorFrameworksAndDatabaseEnum";
 import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
 import { VictorMarkupAndStyleSheetLanguagesEnum } from "@/typing/enums/VictorMarkupAndStyleSheetLanguagesEnum/VictorMarkupAndStyleSheetLanguagesEnum";
 import { VictorProgrammingLanguagesEnum } from "@/typing/enums/VictorProgrammingLanguagesEnum/VictorProgrammingLanguagesEnum";
@@ -9,7 +9,7 @@ import { HtmlHTMLAttributes } from "react";
 export type VictorSkillNameType =
   | keyof typeof VictorProgrammingLanguagesEnum
   | keyof typeof VictorMarkupAndStyleSheetLanguagesEnum
-  | keyof typeof VictorFrameworksEnum
+  | keyof typeof VictorFrameworksAndDatabaseEnum
   | keyof typeof VictorToolsEnum
   | keyof typeof VictorLibrariesEnum;
 
