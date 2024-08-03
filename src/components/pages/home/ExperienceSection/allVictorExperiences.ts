@@ -176,7 +176,7 @@ export const allVictorExperiences: (VictorExperienceType & {
       name: { children: "GeoGaburi" },
       websiteLink: { href: "https://geogaburi.com/" },
     },
-    role: { children: "Full-Stack Developer" },
+    role: { children: "Software Engineer" },
     allSkills: [
       {
         field: "frontend",
