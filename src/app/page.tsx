@@ -4,6 +4,7 @@ import AboutSection from "@/components/pages/home/AboutSection/AboutSection";
 import ContactSection from "@/components/pages/home/ContactSection/ContactSection";
 import ExperienceSection from "@/components/pages/home/ExperienceSection/ExperienceSection";
 import LandingSection from "@/components/pages/home/LandingSection/LandingSection";
+import ProjectsSection from "@/components/pages/home/ProjectsSection/ProjectsSection";
 import ResumeSection from "@/components/pages/home/ResumeSection/ResumeSection";
 import SkillsSection from "@/components/pages/home/SkillsSection/SkillsSection";
 import { VICTOR_PORTFOLIO_BASE_URL } from "@/constants";
@@ -21,6 +22,8 @@ export default function Home() {
           <AboutSection />
 
           <ExperienceSection />
+
+          <ProjectsSection />
 
           <ResumeSection />
 

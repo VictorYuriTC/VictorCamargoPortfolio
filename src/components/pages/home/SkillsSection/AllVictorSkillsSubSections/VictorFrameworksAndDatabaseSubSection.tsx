@@ -5,7 +5,7 @@ import flutterIcon from "@/assets/flutter-framework.svg";
 import reactIcon from "@/assets/react-framework.svg";
 import nextIcon from "@/assets/next-framework.svg";
 import DjangoSVG from "@/assets/svgs/DjangoSVG";
-import { VictorSkillNameType } from "../../ExperienceSection/ExperienceCard/ExperienceSkillTag";
+import { VictorSkillNameType } from "../../../../atomic/organisms/ExperienceCard/ExperienceSkillTag";
 import JestSVG from "@/assets/svgs/JestSVG";
 import AngularSVG from "@/assets/svgs/AngularSVG";
 import MySQLSVG from "@/assets/svgs/MySQLSVG";

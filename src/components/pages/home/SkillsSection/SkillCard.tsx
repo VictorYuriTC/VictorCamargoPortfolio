@@ -1,7 +1,7 @@
 import { LinkProps } from "next/link";
 import SkillCardIcon from "./SkillCardIcon";
 import { IPortfolioIcon } from "@/typing/interfaces/IPortfolioIcon/IPortfolioIcon";
-import { VictorSkillNameType } from "../ExperienceSection/ExperienceCard/ExperienceSkillTag";
+import { VictorSkillNameType } from "../../../atomic/organisms/ExperienceCard/ExperienceSkillTag";
 import { ReactNode } from "react";
 
 export interface ISkill {

@@ -1,17 +1,17 @@
+import ExperienceCard from "@/components/atomic/organisms/ExperienceCard/ExperienceCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
-import ExperienceCard from "../../../atomic/organisms/ExperienceCard/ExperienceCard";
-import { allVictorExperiences } from "./allVictorExperiences";
+import { allVictorProjects } from "./allVictorProjects";
 
-export default function ExperienceSection() {
+export default function ProjectsSection() {
   return (
     <SectionWrapper id="experience-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
-        Experience
+        Projects
       </SectionTitle>
 
       <div className="flex flex-col gap-y-8">
-        {allVictorExperiences
+        {allVictorProjects
           ?.slice()
           ?.reverse()
           ?.map((victorExperience) => (
