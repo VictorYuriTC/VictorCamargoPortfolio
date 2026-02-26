@@ -6,6 +6,8 @@ export enum VictorProgrammingLanguagesEnum {
 
   "MicroPython",
 
+  "PHP",
+
   "Python",
 
   "TypeScript",

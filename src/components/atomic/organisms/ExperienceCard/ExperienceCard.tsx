@@ -28,7 +28,7 @@ export type MonthType =
   | "November"
   | "December";
 
-export type YearType = "2022" | "2023" | "2024";
+export type YearType = "2022" | "2023" | "2024" | "2025" | "2026";
 
 export type ExperienceDateType = `${MonthType}-${YearType}`;
 
@@ -67,7 +67,7 @@ const LazyExperiencePhotosCarouselModal = dynamic(
 
   {
     loading: () => <ExperiencePhotosCarouselModalSkeleton />,
-  }
+  },
 );
 
 interface IExperienceCard {
@@ -81,7 +81,7 @@ export default function ExperienceCard(props: IExperienceCard) {
   ] = useState(false);
 
   const [focusedPhoto, setFocusedPhoto] = useState<IExperiencePhotoData | null>(
-    null
+    null,
   );
 
   return (

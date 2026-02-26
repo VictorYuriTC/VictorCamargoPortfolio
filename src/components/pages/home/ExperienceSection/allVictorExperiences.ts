@@ -1,3 +1,4 @@
+import { m } from "framer-motion";
 import { VictorExperienceType } from "../../../atomic/organisms/ExperienceCard/ExperienceCard";
 
 export const allVictorExperiences: (VictorExperienceType & {
@@ -165,5 +166,126 @@ export const allVictorExperiences: (VictorExperienceType & {
         },
       ],
     },
+  },
+  {
+    id: 3,
+    type: "past",
+    endDate: "March-2025",
+    startDate: "January-2026",
+
+    company: {
+      name: { children: "IESDE" },
+      websiteLink: { href: "https://iesde.com.br" },
+    },
+    role: { children: "Frontend Developer II" },
+    allSkills: [
+      {
+        field: "frontend",
+        name: "JavaScript",
+      },
+
+      {
+        field: "frontend",
+        name: "TypeScript",
+      },
+
+      {
+        field: "frontend",
+        name: "Vue",
+      },
+
+      {
+        field: "frontend",
+        name: "Nuxt",
+      },
+
+      {
+        field: "frontend",
+        name: "CSS",
+      },
+
+      {
+        field: "frontend",
+        name: "Tailwind",
+      },
+
+      {
+        field: "frontend",
+        name: "Pinia",
+      },
+
+      {
+        field: "frontend",
+        name: "Dart",
+      },
+
+      {
+        field: "frontend",
+        name: "Flutter",
+      },
+
+      {
+        field: "frontend",
+        name: "PHP",
+      },
+
+      {
+        field: "frontend",
+        name: "Blade",
+      },
+
+      {
+        field: "backend",
+        name: "Laravel",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    type: "present",
+    startDate: "January-2026",
+
+    company: {
+      name: { children: "Groner" },
+      websiteLink: { href: "https://groner.com.br" },
+    },
+    role: { children: "Mid-Level Frontend Developer" },
+    allSkills: [
+      {
+        field: "frontend",
+        name: "TypeScript",
+      },
+
+      {
+        field: "frontend",
+        name: "Vue",
+      },
+
+      {
+        field: "frontend",
+        name: "Quasar",
+      },
+
+      {
+        field: "frontend",
+        name: "CSS",
+      },
+
+      {
+        field: "frontend",
+        name: "Pinia",
+      },
+
+      {
+        field: "frontend",
+        name: "SASS",
+      },
+
+      {
+        field: "frontend",
+        name: "Supabase",
+      },
+    ],
   },
 ];

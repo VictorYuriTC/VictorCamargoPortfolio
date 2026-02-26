@@ -9,7 +9,7 @@ export enum VictorMarkupAndStyleSheetLanguagesEnum {
 
   "HTML",
 
+  "SASS",
   "Styled-Components",
-
   "StyleSheet",
 }

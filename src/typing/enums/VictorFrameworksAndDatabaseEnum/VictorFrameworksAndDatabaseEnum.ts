@@ -1,9 +1,13 @@
 export enum VictorFrameworksAndDatabaseEnum {
   "Angular",
 
+  "Blade",
+
   "Django",
 
   "Flutter",
+
+  "Laravel",
 
   "Jest",
 
@@ -11,12 +15,18 @@ export enum VictorFrameworksAndDatabaseEnum {
   "MySQL",
 
   "Next",
+  "Nuxt",
 
   "PostgreSQL",
+
+  "Quasar",
 
   "React",
   "React Native",
   "Rest Framework",
 
   "SQL",
+  "Supabase",
+
+  "Vue",
 }
