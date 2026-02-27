@@ -23,18 +23,23 @@ export default function ExperiencePhotosCarouselModalCard(
   return (
     <button
       onClick={handleOnClickCarouselCard}
-      className={`flex flex-row justify-center items-center transition duration-500 rounded-lg mr-3 bg-gray-100 dark:bg-gray-900 flex-shrink-0 overflow-hidden ${
+      className={`flex flex-row justify-center items-center flex-shrink-0 transition duration-700 h-[88px] rounded-lg mr-8 bg-gray-100 dark:bg-gray-900 ${
         isCurrentFocusedPhoto
-          ? "opacity-100 ring-2 ring-purple-500"
-          : "opacity-60 hover:opacity-80"
+          ? "opacity-100 scale-110 p-0"
+          : "opacity-50 scale-100 p-1"
       }`}>
       <Image
         src={carouselPhoto.photo.src}
         alt={carouselPhoto.photo.alt}
-        sizes="96px"
+        sizes="100vw"
         width={0}
         height={0}
-        className="h-20 md:h-24 w-auto rounded"
+        style={{
+          width: "auto",
+          height: "100%",
+          borderRadius: 8,
+          minWidth: 120,
+        }}
       />
     </button>
   );
