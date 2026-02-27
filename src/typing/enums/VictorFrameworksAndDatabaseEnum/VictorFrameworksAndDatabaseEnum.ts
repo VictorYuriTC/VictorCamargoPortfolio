@@ -1,5 +1,6 @@
 export enum VictorFrameworksAndDatabaseEnum {
   "Angular",
+  "Astro",
 
   "Blade",
 

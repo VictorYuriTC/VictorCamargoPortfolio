@@ -272,4 +272,169 @@ export const allVictorProjects: (VictorExperienceType & {
       photos: allPoeticosPhotos,
     },
   },
+
+  {
+    id: 2,
+    type: "present",
+    startDate: "November-2025",
+
+    company: {
+      name: { children: "Fishmetry" },
+      websiteLink: { href: "https://fishmetry.com" },
+    },
+    role: { children: "Software Engineer" },
+    allSkills: [
+      {
+        field: "frontend",
+        name: "JavaScript",
+      },
+
+      {
+        field: "frontend",
+        name: "TypeScript",
+      },
+
+      {
+        field: "frontend",
+        name: "Astro",
+      },
+
+      {
+        field: "frontend",
+        name: "React",
+      },
+
+      {
+        field: "frontend",
+        name: "Tailwind",
+      },
+
+      {
+        field: "frontend",
+        name: "CSS",
+      },
+
+      {
+        field: "backend",
+        name: "Python",
+      },
+
+      {
+        field: "backend",
+        name: "Django",
+      },
+
+      {
+        field: "backend",
+        name: "Render",
+      },
+
+      {
+        field: "backend",
+        name: "Netlify",
+      },
+    ],
+    allExperiencePhotos: {
+      photos: [
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/1-fishmetry-landing-screen.png",
+            alt: "Fishmetry - Landing Screen ",
+          },
+          type: "photo",
+          title: "Landing Screen",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/2-fishmetry-blogs-list-screen.png",
+            alt: "Fishmetry - Blogs List Screen ",
+          },
+          type: "photo",
+          title: "Blogs List Screen",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/3-fishmetry-blog-details-screen-header.png",
+            alt: "Fishmetry - Blog Details Screen Header",
+          },
+          type: "photo",
+          title: "Blog Details Screen Header",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/4-fishmetry-blog-details-screen-body.png",
+            alt: "Fishmetry - Blog Details Screen Body",
+          },
+          type: "photo",
+          title: "Blog Details Screen Body",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/5-fishmetry-fish-details-screen-header.png",
+            alt: "Fishmetry - Fish Details Screen Header",
+          },
+          type: "photo",
+          title: "Fish Details Screen Header",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/6-fishmetry-fish-details-screen-recommended-product.png",
+            alt: "Fishmetry - Fish Details Screen Recommended Product",
+          },
+          type: "photo",
+          title: "Fish Details Screen Recommended Product",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/7-fishmetry-fish-details-screen-tank-mates.png",
+            alt: "Fishmetry - Fish Details Screen Header",
+          },
+          type: "photo",
+          title: "Fish Details Screen Header",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/8-fishmetry-fish-details-screen-faq-and-products-carousels.png",
+            alt: "Fishmetry - Fish Details Screen FAQ and Products Carousels",
+          },
+          type: "photo",
+          title: "Fish Details Screen FAQ and Products Carousels",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/9-fishmetry-shop-screen-header.png",
+            alt: "Fishmetry - Shop Screen Header",
+          },
+          type: "photo",
+          title: "Shop Screen Header",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/10-fishmetry-glossary-screen.png",
+            alt: "Fishmetry - Glossary Screen",
+          },
+          type: "photo",
+          title: "Glossary Screen",
+        },
+
+        {
+          photo: {
+            src: "/companies-portfolio-photos/fishmetry/11-fishmetry-glossary-term-screen.png",
+            alt: "Fishmetry - Glossary Term Screen",
+          },
+          type: "photo",
+          title: "Glossary Term Screen",
+        },
+      ],
+    },
+  },
 ];
