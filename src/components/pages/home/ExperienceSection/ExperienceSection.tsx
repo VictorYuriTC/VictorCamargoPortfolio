@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   return (
     <SectionWrapper id="experience-section">
       <SectionTitle hasDefaultMarginTop hasDefaultMarginBottom>
-        Experience
+        Professional Experience
       </SectionTitle>
 
       <div className="flex flex-col gap-y-8">
