@@ -57,7 +57,10 @@ export interface IPastExperience {
   startDate: ExperienceDateType;
   endDate: ExperienceDateType;
   companyLink?: LinkProps;
-  allExperiencePhotos?: IAllExperiencePhotos;
+  allExperiencePhotos?: Omit<
+    IAllExperiencePhotos,
+    "setIsExperiencePhotosCarouselModalOpen" | "setFocusedPhoto"
+  >;
 }
 
 export type VictorExperienceType = IPresentExperience | IPastExperience;

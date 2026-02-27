@@ -239,6 +239,54 @@ export const allVictorExperiences: (VictorExperienceType & {
         name: "Laravel",
       },
     ],
+    allExperiencePhotos: {
+      photos: [
+        {
+          photo: {
+            alt: "Aprova Concursos - Institution Screen",
+            src: "/companies-portfolio-photos/iesde/1-aprova-concursos-institution-screen.png",
+          },
+          title: "Home screen",
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "Aprova Concursos - Course Screen",
+            src: "/companies-portfolio-photos/iesde/2-aprova-concursos-course-screen.png",
+          },
+          title: "Course screen",
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "Questões+ Webapp - Home Screen",
+            src: "/companies-portfolio-photos/iesde/3-questoes-mais-webapp-home-screen.png",
+          },
+          title: "Webapp Home Screen",
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "Aprova Concursos - Search Screen",
+            src: "/companies-portfolio-photos/iesde/4-aprova-concursos-search-screen.png",
+          },
+          title: "Search Screen",
+          type: "photo",
+        },
+
+        {
+          photo: {
+            alt: "LMS Aprova Concursos - Login Screen",
+            src: "/companies-portfolio-photos/iesde/5-lms-aprova-concursos-login-screen.png",
+          },
+          title: "Login Screen",
+          type: "photo",
+        },
+      ],
+    },
   },
 
   {
