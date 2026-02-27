@@ -170,8 +170,8 @@ export const allVictorExperiences: (VictorExperienceType & {
   {
     id: 3,
     type: "past",
-    endDate: "March-2025",
-    startDate: "January-2026",
+    startDate: "March-2025",
+    endDate: "January-2026",
 
     company: {
       name: { children: "IESDE" },
