@@ -9,7 +9,7 @@ interface IExperiencePhotosCarouselModalCard {
 }
 
 export default function ExperiencePhotosCarouselModalCard(
-  props: IExperiencePhotosCarouselModalCard
+  props: IExperiencePhotosCarouselModalCard,
 ) {
   const { setFocusedPhoto, carouselPhoto } = props;
 
@@ -23,18 +23,18 @@ export default function ExperiencePhotosCarouselModalCard(
   return (
     <button
       onClick={handleOnClickCarouselCard}
-      className={`flex flex-row justify-center items-center transition duration-700 h-[88px] rounded-lg mr-8 bg-gray-100 dark:bg-gray-900 ${
+      className={`flex flex-row justify-center items-center transition duration-500 rounded-lg mr-3 bg-gray-100 dark:bg-gray-900 flex-shrink-0 overflow-hidden ${
         isCurrentFocusedPhoto
-          ? "opacity-100 scale-110 p-0"
-          : "opacity-50 scale-100 p-1"
+          ? "opacity-100 ring-2 ring-purple-500"
+          : "opacity-60 hover:opacity-80"
       }`}>
       <Image
         src={carouselPhoto.photo.src}
         alt={carouselPhoto.photo.alt}
-        sizes="100vw"
+        sizes="96px"
         width={0}
         height={0}
-        style={{ width: "auto", height: "100%", borderRadius: 8 }}
+        className="h-20 md:h-24 w-auto rounded"
       />
     </button>
   );

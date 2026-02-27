@@ -21,7 +21,7 @@ interface IExperiencePhotosCarouselModal {
 }
 
 export default function ExperiencePhotosCarouselModal(
-  props: IExperiencePhotosCarouselModal
+  props: IExperiencePhotosCarouselModal,
 ) {
   const {
     isOpen,
@@ -65,7 +65,7 @@ export default function ExperiencePhotosCarouselModal(
     (e: MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
     },
-    []
+    [],
   );
 
   const handleOnClickClose = useCallback(() => {
@@ -80,7 +80,7 @@ export default function ExperiencePhotosCarouselModal(
 
       closeModal();
     },
-    [closeModal]
+    [closeModal],
   );
 
   const displayPreviousPhotoOnPressLeftArrow = useCallback(
@@ -91,7 +91,7 @@ export default function ExperiencePhotosCarouselModal(
 
       displayPreviousPhoto();
     },
-    [displayPreviousPhoto]
+    [displayPreviousPhoto],
   );
 
   const displayPreviousPhotoOnPressA = useCallback(
@@ -102,7 +102,7 @@ export default function ExperiencePhotosCarouselModal(
 
       displayPreviousPhoto();
     },
-    [displayPreviousPhoto]
+    [displayPreviousPhoto],
   );
 
   const displayNextPhotoOnPressRightArrow = useCallback(
@@ -113,7 +113,7 @@ export default function ExperiencePhotosCarouselModal(
 
       displayNextPhoto();
     },
-    [displayNextPhoto]
+    [displayNextPhoto],
   );
 
   const displayNextPhotoOnPressD = useCallback(
@@ -124,7 +124,7 @@ export default function ExperiencePhotosCarouselModal(
 
       displayNextPhoto();
     },
-    [displayNextPhoto]
+    [displayNextPhoto],
   );
 
   const handleOnKeydown = useCallback(
@@ -143,7 +143,7 @@ export default function ExperiencePhotosCarouselModal(
       displayPreviousPhotoOnPressA,
       displayNextPhotoOnPressRightArrow,
       displayNextPhotoOnPressD,
-    ]
+    ],
   );
 
   useEffect(() => {
@@ -169,14 +169,14 @@ export default function ExperiencePhotosCarouselModal(
   return (
     <button
       onClick={handleOnClickBackdrop}
-      className="flex items-end justify-center lg:items-center fixed top-0 right-20 bottom-0 left-0 w-screen h-screen z-[1000] bg-opacity-50 bg-white dark:bg-opacity-50 dark:bg-black">
-      <div className="flex flex-col p-5 relative rounded-lg w-[100%] h-[100%] lg:h-[100%] bg-gray-50 dark:bg-gray-950">
+      className="flex items-end justify-center lg:items-center fixed top-0 right-0 bottom-0 left-0 w-screen h-screen z-[1000] bg-opacity-50 bg-white dark:bg-opacity-50 dark:bg-black">
+      <div className="flex flex-col p-5 relative rounded-lg w-[100%] h-[100%] lg:h-auto lg:max-h-[90vh] lg:max-w-4xl bg-gray-50 dark:bg-gray-950">
         {focusedPhoto.photo.src && (
-          <div className="flex flex-col items-center justify-center w-full rounded-lg h-[80%] lg:h-[90%]">
-            <div className="h-[80%] rounded-lg">
+          <div className="flex flex-col items-center justify-center w-full rounded-lg flex-1 lg:min-h-[500px]">
+            <div className="relative w-full h-full rounded-lg flex items-center justify-center px-4">
               <button
                 onClick={handleOnClickClose}
-                className="block absolute top-3 right-3 opacity-80 transition-transform duration-500 hover:scale-[1.35] hover:opacity-100">
+                className="absolute top-3 right-3 z-10 opacity-80 transition-transform duration-500 hover:scale-[1.35] hover:opacity-100">
                 <CloseSVG
                   width={24}
                   height={24}
@@ -190,17 +190,16 @@ export default function ExperiencePhotosCarouselModal(
               <Image
                 src={focusedPhoto.photo.src}
                 alt={focusedPhoto.photo.alt}
-                sizes="100vw"
-                width={0}
-                height={0}
-                style={{ width: "auto", height: "100%", borderRadius: 8 }}
+                sizes="(max-width: 768px) 100vw, 900px"
+                fill
+                className="object-contain rounded-lg"
                 placeholder="blur"
                 blurDataURL="/image-placeholder.png"
               />
             </div>
 
-            <div className="py-1">
-              <span className="text-black dark:text-gray-400">
+            <div className="py-3">
+              <span className="text-sm sm:text-base text-black dark:text-gray-400 font-medium text-center">
                 {focusedPhoto.title}
               </span>
             </div>
@@ -209,7 +208,7 @@ export default function ExperiencePhotosCarouselModal(
 
         <button
           onClick={handleOnClickModalContent}
-          className="flex flex-row items-center justify-center absolute right-0 bottom-0 left-0 pt-5 pb-20 lg:pb-5 bg-transparent border-t bg-white border-gray-300 dark:border-gray-900 dark:bg-black">
+          className="flex flex-row items-center justify-start absolute right-0 bottom-0 left-0 pt-5 pb-20 lg:pb-5 px-5 lg:relative bg-transparent border-t bg-white border-gray-300 dark:border-gray-900 dark:bg-black overflow-x-auto gap-2">
           {allCarouselPhotos.map((carouselPhoto) => (
             <ExperiencePhotosCarouselModalCard
               key={`src:${carouselPhoto.photo.src}-title:${carouselPhoto.title}`}

@@ -9,7 +9,7 @@ export interface IAllExperiencePhotos {
 
 export default function AllExperiencePhotos(props: IAllExperiencePhotos) {
   return (
-    <div className="flex flex-row items-center my-5">
+    <div className="flex flex-row items-center gap-4 my-5 overflow-x-auto pb-2">
       {props.photos.map((photoData) => (
         <ExperiencePhoto
           setFocusedPhoto={props.setFocusedPhoto}

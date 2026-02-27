@@ -26,10 +26,10 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
   return (
     <button
       onClick={handleOnClickPhoto}
-      className="group/experience-photo-button relative rounded-lg overflow-hidden mr-8 transition-transform duration-700 h-68 w-36 z-20 opacity-60 border border-gray-200 dark:border-gray-900 hover:opacity-100 hover:scale-105">
+      className="group/experience-photo-button relative rounded-lg overflow-hidden mr-4 transition-all duration-500 z-20 opacity-60 border border-gray-200 dark:border-gray-900 hover:opacity-100 flex-shrink-0">
       {photoData.type === "photo" ? (
-        <div className="flex items-center justify-center absolute top-0 right-0 bottom-0 left-0">
-          <div className="bg-opacity-50 bg-black p-2 rounded-full group-hover/experience-photo-button:bg-opacity-100">
+        <div className="flex items-center justify-center absolute top-0 right-0 bottom-0 left-0 z-10">
+          <div className="bg-opacity-50 bg-black p-2 rounded-full group-hover/experience-photo-button:bg-opacity-100 transition-all duration-500">
             <CameraSVG
               width={24}
               height={24}
@@ -41,10 +41,10 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
       ) : null}
 
       <Image
-        className="rounded w-full h-auto"
+        className="rounded h-60 md:h-[300px] w-auto"
         alt={photoData.photo.alt}
         src={photoData.photo.src}
-        sizes="100vw"
+        sizes="(max-width: 768px) 50vw, 33vw"
         width={0}
         height={0}
         placeholder="blur"
