@@ -8,7 +8,7 @@ export const allVictorExperiences: (VictorExperienceType & {
     id: 1,
     type: "past",
     startDate: "November-2022",
-    endDate: "August-2023",
+    endDate: "June-2023",
 
     company: {
       name: { children: "AAK Tele-Science" },

@@ -41,7 +41,7 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
       ) : null}
 
       <Image
-        className="rounded h-60 md:h-[300px] w-auto"
+        className="rounded h-[150px] md:h-[200px] w-auto"
         alt={photoData.photo.alt}
         src={photoData.photo.src}
         sizes="(max-width: 768px) 50vw, 33vw"
