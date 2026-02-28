@@ -35,10 +35,9 @@ export default function ExperiencePhotosCarouselModalCard(
         width={0}
         height={0}
         style={{
-          width: "auto",
           height: "100%",
           borderRadius: 8,
-          minWidth: 120,
+          minWidth: 44,
         }}
       />
     </button>
