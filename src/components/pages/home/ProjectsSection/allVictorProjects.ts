@@ -393,10 +393,10 @@ export const allVictorProjects: (VictorExperienceType & {
         {
           photo: {
             src: "/companies-portfolio-photos/fishmetry/7-fishmetry-fish-details-screen-tank-mates.png",
-            alt: "Fishmetry - Fish Details Screen Header",
+            alt: "Fishmetry - Fish Details Screen Tank Mates",
           },
           type: "photo",
-          title: "Fish Details Screen Header",
+          title: "Fish Details Screen Tank Mates",
         },
 
         {
