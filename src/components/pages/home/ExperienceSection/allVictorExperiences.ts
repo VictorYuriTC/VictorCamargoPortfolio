@@ -60,8 +60,9 @@ export const allVictorExperiences: (VictorExperienceType & {
 
   {
     id: 2,
-    type: "present",
+    type: "past",
     startDate: "June-2023",
+    endDate: "March-2025",
 
     company: {
       name: { children: "Gigawrks" },
