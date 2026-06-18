@@ -1,6 +1,11 @@
 export enum VictorToolsEnum {
   "Affiliate Links",
   "Android Studio",
+  "AWS",
+
+  "Cloudwatch",
+
+  "ECS",
 
   "Git",
   "GitHub",
@@ -8,6 +13,9 @@ export enum VictorToolsEnum {
   "Netlify",
 
   "Render",
+
+  "SAM",
+  "S3",
 
   "XCode",
 }

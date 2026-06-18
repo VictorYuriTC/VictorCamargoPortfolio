@@ -8,7 +8,9 @@ export default function LandingSection() {
       className="flex flex-col justify-center gap-y-6">
       <h1 className="font-light text-3xl md:text-5xl">Victor Camargo</h1>
 
-      <h2 className="font-semibold text-5xl md:text-7xl">Frontend Developer</h2>
+      <h2 className="font-semibold text-5xl md:text-7xl">
+        Full-Stack Developer
+      </h2>
 
       <div className="flex flex-row mt-6">
         <PortfolioPrimaryButton variant="default" borderRadius="rounded-full">

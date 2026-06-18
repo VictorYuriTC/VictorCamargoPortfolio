@@ -107,7 +107,7 @@ export const allVictorProjects: (VictorExperienceType & {
       name: { children: "GeoGaburi" },
       websiteLink: { href: "https://geogaburi.com/" },
     },
-    role: { children: "Software Engineer" },
+    role: { children: "Software Developer" },
     allSkills: [
       {
         field: "frontend",
@@ -231,7 +231,7 @@ export const allVictorProjects: (VictorExperienceType & {
       name: { children: "Poéticos" },
       websiteLink: { href: "https://poeticos.com.br/" },
     },
-    role: { children: "Software Engineer" },
+    role: { children: "Software Developer" },
     allSkills: [
       {
         field: "frontend",
@@ -282,7 +282,7 @@ export const allVictorProjects: (VictorExperienceType & {
       name: { children: "Fishmetry" },
       websiteLink: { href: "https://fishmetry.com" },
     },
-    role: { children: "Software Engineer" },
+    role: { children: "Software Developer" },
     allSkills: [
       {
         field: "frontend",

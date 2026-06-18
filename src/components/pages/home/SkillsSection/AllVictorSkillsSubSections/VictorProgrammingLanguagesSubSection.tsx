@@ -8,13 +8,14 @@ import pythonIcon from "@/assets/python-language.svg";
 import microPythonIcon from "@/assets/micropython-language.svg";
 import javaIcon from "@/assets/java-language.svg";
 import MicroPythonLanguageSVG from "@/assets/svgs/MicroPythonLanguageSVG";
+import PHPSVG from "@/assets/svgs/PHPSVG";
 
 interface IVictorProgrammingLanguagesSubSection {
   svgSize: number;
 }
 
 export default function VictorProgrammingLanguagesSubSection(
-  props: IVictorProgrammingLanguagesSubSection
+  props: IVictorProgrammingLanguagesSubSection,
 ) {
   return (
     <SkillsSectionContainer title="Programming Languages">
@@ -80,13 +81,36 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "Java",
+          name: "PHP",
           iconData: {
-            src: javaIcon,
-            alt: "Java language logo",
+            src: "",
+            alt: "PHP language logo",
           },
         }}
+        customIconComponent={
+          <PHPSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
       />
+
+      {false && (
+        <SkillCard
+          svgSize={props.svgSize}
+          link={{
+            href: "",
+          }}
+          skill={{
+            name: "Java",
+            iconData: {
+              src: javaIcon,
+              alt: "Java language logo",
+            },
+          }}
+        />
+      )}
     </SkillsSectionContainer>
   );
 }

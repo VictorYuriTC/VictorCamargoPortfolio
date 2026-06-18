@@ -4,6 +4,7 @@ import SkillsSectionContainer from "../SkillsSectionContainer";
 import flutterIcon from "@/assets/flutter-framework.svg";
 import reactIcon from "@/assets/react-framework.svg";
 import nextIcon from "@/assets/next-framework.svg";
+import vueIcon from "@/assets/svgs/VueSVG";
 import DjangoSVG from "@/assets/svgs/DjangoSVG";
 import { VictorSkillNameType } from "../../../../atomic/organisms/ExperienceCard/ExperienceSkillTag";
 import JestSVG from "@/assets/svgs/JestSVG";
@@ -11,13 +12,14 @@ import AngularSVG from "@/assets/svgs/AngularSVG";
 import MySQLSVG from "@/assets/svgs/MySQLSVG";
 import SQLSVG from "@/assets/svgs/SQLSVG";
 import PostgreSQL from "@/assets/svgs/PostgreSQL";
+import VueSVG from "@/assets/svgs/VueSVG";
 
 interface IVictorFrameworksAndDatabaseSubSection {
   svgSize: number;
 }
 
 export default function VictorFrameworksAndDatabaseSubSection(
-  props: IVictorFrameworksAndDatabaseSubSection
+  props: IVictorFrameworksAndDatabaseSubSection,
 ) {
   const getAltText = (frameworkName: VictorSkillNameType) => {
     return `${frameworkName} framework logo`;
@@ -37,6 +39,27 @@ export default function VictorFrameworksAndDatabaseSubSection(
           },
           name: "React",
         }}
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: getAltText("Vue"),
+          },
+          name: "Vue",
+        }}
+        customIconComponent={
+          <VueSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
       />
 
       <SkillCard

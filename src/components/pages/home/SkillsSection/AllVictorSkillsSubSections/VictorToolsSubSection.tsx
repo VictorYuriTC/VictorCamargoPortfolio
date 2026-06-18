@@ -6,6 +6,7 @@ import gitIcon from "@/assets/git-tool.svg";
 import androidStudioIcon from "@/assets/android-studio-tool.svg";
 import xCodeIcon from "@/assets/xcode-tool.svg";
 import GitHubToolSVG from "@/assets/svgs/GitHubToolSVG";
+import AWSSVG from "@/assets/svgs/AWSSVG";
 
 interface IVictorToolsSubSection {
   svgSize: number;
@@ -14,6 +15,23 @@ interface IVictorToolsSubSection {
 export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
   return (
     <SkillsSectionContainer title="Tools">
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: "AWS logo",
+          },
+          name: "AWS",
+        }}
+        customIconComponent={
+          <AWSSVG width={props.svgSize} height={props.svgSize} />
+        }
+      />
+
       <SkillCard
         svgSize={props.svgSize}
         link={{

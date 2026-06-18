@@ -178,7 +178,7 @@ export const allVictorExperiences: (VictorExperienceType & {
       name: { children: "IESDE" },
       websiteLink: { href: "https://iesde.com.br" },
     },
-    role: { children: "Frontend Developer II" },
+    role: { children: "Mid-Level Frontend Developer" },
     allSkills: [
       {
         field: "frontend",
@@ -198,6 +198,11 @@ export const allVictorExperiences: (VictorExperienceType & {
       {
         field: "frontend",
         name: "Nuxt",
+      },
+
+      {
+        field: "frontend",
+        name: "Vuetify",
       },
 
       {
@@ -299,8 +304,13 @@ export const allVictorExperiences: (VictorExperienceType & {
       name: { children: "Groner" },
       websiteLink: { href: "https://groner.com.br" },
     },
-    role: { children: "Mid-Level Frontend Developer" },
+    role: { children: "Mid-Level Full-Stack Developer" },
     allSkills: [
+      {
+        field: "frontend",
+        name: "JavaScript",
+      },
+
       {
         field: "frontend",
         name: "TypeScript",
@@ -317,8 +327,18 @@ export const allVictorExperiences: (VictorExperienceType & {
       },
 
       {
-        field: "frontend",
-        name: "CSS",
+        field: "backend",
+        name: "Node",
+      },
+
+      {
+        field: "backend",
+        name: "AWS",
+      },
+
+      {
+        field: "backend",
+        name: "SAM",
       },
 
       {
@@ -328,12 +348,22 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
+        name: "Supabase",
+      },
+
+      {
+        field: "backend",
+        name: "Cloudwatch",
+      },
+
+      {
+        field: "frontend",
         name: "SASS",
       },
 
       {
         field: "frontend",
-        name: "Supabase",
+        name: "Tailwind",
       },
     ],
   },

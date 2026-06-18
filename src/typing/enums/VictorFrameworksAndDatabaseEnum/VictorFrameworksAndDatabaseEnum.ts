@@ -16,6 +16,7 @@ export enum VictorFrameworksAndDatabaseEnum {
   "MySQL",
 
   "Next",
+  "Node",
   "Nuxt",
 
   "PostgreSQL",

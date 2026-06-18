@@ -37,6 +37,7 @@ export default function AboutSection() {
         <div className="mt-4 flex flex-col gap-y-4 md:w-[75%] lg:w-[50%] lg:order-1">
           <AboutParagraph>
             I&apos;m Victor Camargo, a{" "}
+            <AboutStrongText>full-stack developer</AboutStrongText>,{" "}
             <AboutStrongText>frontend developer</AboutStrongText> and{" "}
             <AboutStrongText>mobile developer</AboutStrongText> based on
             Curitiba, Paraná, Brazil. I&apos;m currently working at Gigawrks and

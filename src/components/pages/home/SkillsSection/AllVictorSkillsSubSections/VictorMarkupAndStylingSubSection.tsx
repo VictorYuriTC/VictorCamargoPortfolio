@@ -8,13 +8,14 @@ import StyledComponentsSVG from "@/assets/svgs/StyledComponentsSVG";
 
 import htmlIcon from "@/assets/html.svg";
 import cssIcon from "@/assets/css.svg";
+import VueSVG from "@/assets/svgs/VueSVG";
 
 interface IVictorMarkupAndStylingSubSection {
   svgSize: number;
 }
 
 export default function VictorMarkupAndStylingSubSection(
-  props: IVictorMarkupAndStylingSubSection
+  props: IVictorMarkupAndStylingSubSection,
 ) {
   return (
     <SkillsSectionContainer title="Markup & Styling">
@@ -116,6 +117,27 @@ export default function VictorMarkupAndStylingSubSection(
         }}
         customIconComponent={
           <StyledComponentsSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-white"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          name: "Vuetify",
+          iconData: {
+            src: "",
+            alt: "Vuetify styling logo",
+          },
+        }}
+        customIconComponent={
+          <VueSVG
             width={props.svgSize}
             height={props.svgSize}
             className="fill-white"
