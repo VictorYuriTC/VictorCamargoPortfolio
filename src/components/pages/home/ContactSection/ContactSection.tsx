@@ -22,6 +22,8 @@ export interface IContactForm {
 export default function ContactSection() {
   const [state, handleOnSubmitContactForm] = useForm("meqyvplq");
 
+  const IS_UNDER_CONSTRUCTION = true;
+
   return (
     <SectionWrapper id="contact-section">
       <div className="flex flex-row gap-x-5">
@@ -66,7 +68,7 @@ export default function ContactSection() {
                 className="fill-black dark:fill-white"
               />
             }
-            text="LinkedIn"
+            text="Instagram"
             link={{
               href: "https://instagram.com/victoryuritc",
             }}
@@ -125,8 +127,8 @@ export default function ContactSection() {
               disabled={true}
               variant="default"
               borderRadius="rounded-full"
-              className="disabled:">
-              {"Under Construction" || "Start Game"}
+              className="disabled:opacity-50">
+              {IS_UNDER_CONSTRUCTION ? "Under Construction" : "Start Game"}
             </PortfolioPrimaryButton>
           </div>
         </div>
@@ -181,8 +183,8 @@ export default function ContactSection() {
               {state.submitting
                 ? "Loading"
                 : state.succeeded
-                ? "Message Sent"
-                : "Send Message"}
+                  ? "Message Sent"
+                  : "Send Message"}
             </PortfolioPrimaryButton>
           </div>
         </form>
