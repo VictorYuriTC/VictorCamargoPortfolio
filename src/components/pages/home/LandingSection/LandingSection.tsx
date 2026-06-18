@@ -16,8 +16,8 @@ export default function LandingSection() {
         <PortfolioPrimaryButton variant="default" borderRadius="rounded-full">
           <a
             className=""
-            href="/victor-camargo-resume.pdf"
-            download="victor-camargo-resume">
+            href="/Victor_Camargo_Software_Developer_Resume.pdf"
+            download="Victor_Camargo_Software_Developer_Resume">
             Download Resume
           </a>
         </PortfolioPrimaryButton>
