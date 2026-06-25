@@ -5,7 +5,7 @@ import ExperienceDate from "./ExperienceDate";
 import { IVictorSkill } from "./ExperienceSkillTag";
 import ExperienceRole, { IExperienceRole } from "./ExperienceRole";
 import { LinkProps } from "next/link";
-import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
+import { DetailedHTMLProps, HTMLAttributes, useCallback, useState } from "react";
 import AllExperiencePhotos, {
   IAllExperiencePhotos,
 } from "./AllExperiencePhotos";
@@ -87,44 +87,62 @@ export default function ExperienceCard(props: IExperienceCard) {
     null,
   );
 
+  const experiencePhotos = props.experience.allExperiencePhotos?.photos;
+  const hasExperiencePhotos = !!experiencePhotos?.length;
+
+  const handleOnClickCard = useCallback(() => {
+    if (!experiencePhotos?.length) {
+      return;
+    }
+
+    setFocusedPhoto(experiencePhotos[0]);
+    setIsExperiencePhotosCarouselModalOpen(true);
+  }, [experiencePhotos]);
+
   return (
-    <div className="group flex flex-col rounded duration-500 p-5 border border-gray-300 hover:border-purple-300 dark:border-gray-900 dark:hover:border-purple-700 hover:shadow-[0px_0px_7px_theme(colors.purple.500)]">
-      <AllExperienceSkillTagsRow experience={props.experience} />
+    <>
+      <div
+        onClick={handleOnClickCard}
+        className={`group flex flex-col rounded duration-500 p-5 border border-gray-300 hover:border-purple-300 dark:border-gray-900 dark:hover:border-purple-700 hover:shadow-[0px_0px_7px_theme(colors.purple.500)] ${
+          hasExperiencePhotos ? "cursor-pointer" : ""
+        }`}>
+        <AllExperienceSkillTagsRow experience={props.experience} />
 
-      <ExperienceRole>{props.experience.role.children}</ExperienceRole>
+        <ExperienceRole>{props.experience.role.children}</ExperienceRole>
 
-      <ExperienceCompanyName company={props.experience.company} />
+        <ExperienceCompanyName company={props.experience.company} />
 
-      {props.experience.type === "past" && (
-        <ExperienceDate
-          type={props.experience.type}
-          endDate={props.experience.endDate}
-          allSkills={props.experience.allSkills}
-          role={props.experience.role}
-          startDate={props.experience.startDate}
-          company={props.experience.company}
-        />
-      )}
+        {props.experience.type === "past" && (
+          <ExperienceDate
+            type={props.experience.type}
+            endDate={props.experience.endDate}
+            allSkills={props.experience.allSkills}
+            role={props.experience.role}
+            startDate={props.experience.startDate}
+            company={props.experience.company}
+          />
+        )}
 
-      {props.experience.type === "present" && (
-        <ExperienceDate
-          type={props.experience.type}
-          allSkills={props.experience.allSkills}
-          role={props.experience.role}
-          startDate={props.experience.startDate}
-          company={props.experience.company}
-        />
-      )}
+        {props.experience.type === "present" && (
+          <ExperienceDate
+            type={props.experience.type}
+            allSkills={props.experience.allSkills}
+            role={props.experience.role}
+            startDate={props.experience.startDate}
+            company={props.experience.company}
+          />
+        )}
 
-      {props.experience.allExperiencePhotos && (
-        <AllExperiencePhotos
-          setIsExperiencePhotosCarouselModalOpen={
-            setIsExperiencePhotosCarouselModalOpen
-          }
-          setFocusedPhoto={setFocusedPhoto}
-          photos={props.experience.allExperiencePhotos.photos}
-        />
-      )}
+        {props.experience.allExperiencePhotos && (
+          <AllExperiencePhotos
+            setIsExperiencePhotosCarouselModalOpen={
+              setIsExperiencePhotosCarouselModalOpen
+            }
+            setFocusedPhoto={setFocusedPhoto}
+            photos={props.experience.allExperiencePhotos.photos}
+          />
+        )}
+      </div>
 
       {isExperiencePhotosCarouselModalOpen && focusedPhoto && (
         <LazyExperiencePhotosCarouselModal
@@ -135,6 +153,6 @@ export default function ExperienceCard(props: IExperienceCard) {
           setFocusedPhoto={setFocusedPhoto}
         />
       )}
-    </div>
+    </>
   );
 }

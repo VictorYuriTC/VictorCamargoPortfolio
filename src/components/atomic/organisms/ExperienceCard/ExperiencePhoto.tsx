@@ -18,10 +18,14 @@ export default function ExperiencePhoto(props: IExperiencePhoto) {
   const { setIsExperiencePhotosCarouselModalOpen, setFocusedPhoto, photoData } =
     props;
 
-  const handleOnClickPhoto = useCallback(() => {
-    setIsExperiencePhotosCarouselModalOpen(true);
-    setFocusedPhoto(photoData);
-  }, [setIsExperiencePhotosCarouselModalOpen, setFocusedPhoto, photoData]);
+  const handleOnClickPhoto = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
+      setIsExperiencePhotosCarouselModalOpen(true);
+      setFocusedPhoto(photoData);
+    },
+    [setIsExperiencePhotosCarouselModalOpen, setFocusedPhoto, photoData],
+  );
 
   return (
     <button

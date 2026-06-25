@@ -12,6 +12,7 @@ export default function ExperienceCompanyName(props: IExperienceCompanyName) {
         <Link
           passHref={true}
           href={props.company.websiteLink.href}
+          onClick={(e) => e.stopPropagation()}
           className={`text-lg font-semibold text-purple-600 hover:text-purple-500 ${props.company.websiteLink}`}>
           {props.company.name.children}
         </Link>

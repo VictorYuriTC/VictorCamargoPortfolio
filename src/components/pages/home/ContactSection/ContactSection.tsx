@@ -37,7 +37,7 @@ export default function ContactSection() {
               <GitHubOutlineToolSVG
                 width={24}
                 height={24}
-                className="fill-black dark:fill-white"
+                className="fill-black transition-colors duration-300 group-hover:fill-purple-500 dark:fill-white"
               />
             }
             text="GitHub"
@@ -51,7 +51,7 @@ export default function ContactSection() {
               <LinkedinSVG
                 width={24}
                 height={24}
-                className="fill-black dark:fill-white"
+                className="fill-black transition-colors duration-300 group-hover:fill-purple-500 dark:fill-white"
               />
             }
             text="LinkedIn"
@@ -65,7 +65,7 @@ export default function ContactSection() {
               <InstagramSVG
                 width={24}
                 height={24}
-                className="fill-black dark:fill-white"
+                className="fill-black transition-colors duration-300 group-hover:fill-purple-500 dark:fill-white"
               />
             }
             text="Instagram"
