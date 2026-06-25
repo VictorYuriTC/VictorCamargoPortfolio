@@ -8,7 +8,7 @@ interface IAllExperienceSkillTagsRow {
 }
 
 export default function AllExperienceSkillTagsRow(
-  props: IAllExperienceSkillTagsRow
+  props: IAllExperienceSkillTagsRow,
 ) {
   const rowRef = useRef<HTMLDivElement>(null);
 
@@ -29,7 +29,7 @@ export default function AllExperienceSkillTagsRow(
   }, []);
 
   return (
-    <div className="relative flex items-center mb-4">
+    <div className="relative flex items-center mb-3">
       <ChevronButton
         placement="left"
         button={{
@@ -47,9 +47,6 @@ export default function AllExperienceSkillTagsRow(
         className="pl-10 pr-10 lg:pl-0 lg:pr-0 flex flex-row lg:flex-wrap overflow-x-scroll gap-x-3 gap-y-3">
         {props.experience.allSkills.map((skill, index) => (
           <ExperienceSkillTag
-            span={{
-              className: "duration-500 bg-purple-700 group-hover:bg-purple-600",
-            }}
             skill={skill}
             key={`name:${skill.name}-field:${skill.field}-index:${index}`}
           />

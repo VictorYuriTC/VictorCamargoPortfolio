@@ -1,4 +1,3 @@
-import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import { VictorFrameworksAndDatabaseEnum } from "@/typing/enums/VictorFrameworksAndDatabaseEnum/VictorFrameworksAndDatabaseEnum";
 import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
 import { VictorMarkupAndStyleSheetLanguagesEnum } from "@/typing/enums/VictorMarkupAndStyleSheetLanguagesEnum/VictorMarkupAndStyleSheetLanguagesEnum";
@@ -24,12 +23,13 @@ export interface IExperienceSkillTag {
 }
 
 export default function ExperienceSkillTag(props: IExperienceSkillTag) {
+  const { className, ...spanProps } = props.span ?? {};
+
   return (
-    <PortfolioPrimaryButton
-      variant="small"
-      borderRadius="rounded-full"
-      className={`flex flex-row justify-center items-center py-1 px-3 rounded-full text-base font-light text-white ${props.span?.className}`}>
+    <span
+      {...spanProps}
+      className={`inline-flex flex-row justify-center items-center py-1 px-3 rounded-full text-base  whitespace-nowrap font-base text-purple-800 border bg-purple-100 border-purple-200  dark:text-white dark:border-purple-900 dark:bg-purple-950 transition-colors duration-500 group-hover:bg-purple-200 group-hover:border-purple-300 dark:group-hover:bg-purple-900 dark:group-hover:border-purple-800 ${className ?? ""}`}>
       {props.skill.name}
-    </PortfolioPrimaryButton>
+    </span>
   );
 }
