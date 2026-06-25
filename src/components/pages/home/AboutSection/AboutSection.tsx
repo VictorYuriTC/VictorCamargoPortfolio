@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PortfolioPrimaryButton from "@/components/atomic/atoms/PortfolioPrimaryButton/PortfolioPrimaryButton";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import AboutParagraph from "./AboutParagraph";
@@ -37,34 +38,46 @@ export default function AboutSection() {
         <div className="mt-4 flex flex-col gap-y-4 md:w-[75%] lg:w-[50%] lg:order-1">
           <AboutParagraph>
             I&apos;m Victor Camargo, a{" "}
-            <AboutStrongText>full-stack developer</AboutStrongText>,{" "}
-            <AboutStrongText>frontend developer</AboutStrongText> and{" "}
-            <AboutStrongText>mobile developer</AboutStrongText> based on
-            Curitiba, Paraná, Brazil. I&apos;m currently working at Gigawrks and
-            pursuing an Applied Artificial Intelligence graduation.
+            <AboutStrongText>software engineer</AboutStrongText> specializing in{" "}
+            <AboutStrongText>frontend development</AboutStrongText> and{" "}
+            <AboutStrongText>mobile development</AboutStrongText>, with
+            experience in{" "}
+            <AboutStrongText>full-stack development</AboutStrongText>, based in{" "}
+            Curitiba Paraná, Brazil.
           </AboutParagraph>
 
           <AboutParagraph>
-            I&apos;m a <AboutStrongText>linguaphile</AboutStrongText>,
-            <AboutStrongText> cultural explorer</AboutStrongText>, and{" "}
-            <AboutStrongText>bad hiker</AboutStrongText> - since I&apos;m quite
-            inactive now. I&apos;m passionate about discovering more about
-            countries, places, and cultures usually not mentioned on mainstream
-            sources.
+            I&apos;m a <AboutStrongText>linguaphile</AboutStrongText>,{" "}
+            <AboutStrongText>technology enthusiast</AboutStrongText>, and{" "}
+            <AboutStrongText>cultural explorer</AboutStrongText> with a strong
+            interest in <AboutStrongText>countries</AboutStrongText>,{" "}
+            <AboutStrongText>places</AboutStrongText>, and{" "}
+            <AboutStrongText>cultures</AboutStrongText> that are often
+            overlooked.
           </AboutParagraph>
 
           <AboutParagraph>
-            I&apos;m a <AboutStrongText>fan of city builders</AboutStrongText>,{" "}
-            <AboutStrongText>simulators</AboutStrongText>, and{" "}
-            <AboutStrongText>RTS games</AboutStrongText> such as Caesar III,
-            Empire Earth, C-evo, Warlords Battlecry III, and Rollercoaster
-            Tycoon since I was a child.
+            I&apos;ve been passionate about city builders, simulators, and RTS
+            games since childhood, from{" "}
+            <AboutStrongText>Caesar III</AboutStrongText> and{" "}
+            <AboutStrongText>Empire Earth</AboutStrongText> to{" "}
+            <AboutStrongText>RollerCoaster Tycoon</AboutStrongText> and{" "}
+            <AboutStrongText>Warlords Battlecry III</AboutStrongText>.
           </AboutParagraph>
 
           <AboutParagraph>
-            Contact me in case you want to have an independent, interested, and
-            genuine developer. I&apos;m sure you&apos;ll like me - or something.
+            Feel free to reach out if you’re looking for a{" "}
+            <AboutStrongText>curious</AboutStrongText>,{" "}
+            <AboutStrongText>independent</AboutStrongText>, and{" "}
+            <AboutStrongText>culturally driven</AboutStrongText> developer.
           </AboutParagraph>
+
+          <PortfolioPrimaryButton
+            variant="default"
+            borderRadius="rounded-full"
+            className="mt-4 self-start w-full">
+            <a href="#contact-section">Contact me</a>
+          </PortfolioPrimaryButton>
         </div>
       </div>
     </SectionWrapper>

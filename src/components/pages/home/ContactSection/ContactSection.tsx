@@ -100,7 +100,7 @@ export default function ContactSection() {
             <PhoneSVG
               width={24}
               height={24}
-              className="stroke-black dark:stroke-white"
+              className="fill-black stroke-black dark:fill-white dark:stroke-white"
             />
           }
           text="+5541997248930"

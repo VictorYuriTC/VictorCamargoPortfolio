@@ -9,15 +9,15 @@ export default function LandingSection() {
       <h1 className="font-light text-3xl md:text-5xl">Victor Camargo</h1>
 
       <h2 className="font-semibold text-5xl md:text-7xl">
-        Full-Stack Developer
+        Software Engineer
       </h2>
 
       <div className="flex flex-row mt-6">
         <PortfolioPrimaryButton variant="default" borderRadius="rounded-full">
           <a
             className=""
-            href="/Victor_Camargo_Software_Developer_Resume.pdf"
-            download="Victor_Camargo_Software_Developer_Resume">
+            href="/Victor_Camargo_Software_Engineer.pdf"
+            download="Victor_Camargo_Software_Engineer">
             Download Resume
           </a>
         </PortfolioPrimaryButton>
