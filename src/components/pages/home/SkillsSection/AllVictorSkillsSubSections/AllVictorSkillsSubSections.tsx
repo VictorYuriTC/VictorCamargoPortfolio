@@ -10,11 +10,11 @@ export default function AllVictorSkillsSubSections() {
     <div className="flex flex-col gap-y-6">
       <VictorProgrammingLanguagesSubSection svgSize={SVG_SIZE} />
 
-      <VictorMarkupAndStylingSubSection svgSize={SVG_SIZE} />
-
       <VictorFrameworksAndDatabaseSubSection svgSize={SVG_SIZE} />
 
       <VictorToolsSubSection svgSize={SVG_SIZE} />
+
+      <VictorMarkupAndStylingSubSection svgSize={SVG_SIZE} />
     </div>
   );
 }
