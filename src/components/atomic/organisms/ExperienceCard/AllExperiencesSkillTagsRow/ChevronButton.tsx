@@ -12,6 +12,7 @@ export default function ChevronButton(props: IChevronButton) {
 
   return (
     <button
+      title={isChevronLeft ? "Scroll left" : "Scroll right"}
       onClick={props.button.onClick}
       className={`flex justify-center items-center p-1 bg-gray-50 dark:bg-white rounded-full absolute aspect-square active:bg-gray-100 lg:hidden ${
         isChevronLeft ? "left-0" : "right-0"

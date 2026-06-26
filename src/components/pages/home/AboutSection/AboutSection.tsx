@@ -43,7 +43,7 @@ export default function AboutSection() {
             <AboutStrongText>mobile development</AboutStrongText>, with
             experience in{" "}
             <AboutStrongText>full-stack development</AboutStrongText>, based in{" "}
-            Curitiba Paraná, Brazil.
+            Curitiba, Paraná, Brazil.
           </AboutParagraph>
 
           <AboutParagraph>
