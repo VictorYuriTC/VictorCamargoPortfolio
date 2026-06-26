@@ -56,6 +56,58 @@ export const allVictorExperiences: (VictorExperienceType & {
         name: "React TanStack Query",
       },
     ],
+    allExperiencePhotos: {
+      photos: [
+        {
+          photo: {
+            alt: "AAK Tele-Science - Select user type screen",
+            src: "/companies-portfolio-photos/aak-telescience/1-aak-telescience-select-user-type.png",
+          },
+          type: "photo",
+          title: "Select user type screen",
+        },
+        {
+          photo: {
+            alt: "AAK Tele-Science - Create user screen",
+            src: "/companies-portfolio-photos/aak-telescience/2-aak-telescience-create-user.png",
+          },
+          type: "photo",
+          title: "Create user screen",
+        },
+        {
+          photo: {
+            alt: "AAK Tele-Science - Profile settings screen",
+            src: "/companies-portfolio-photos/aak-telescience/3-aak-telescience-profile-settings.png",
+          },
+          type: "photo",
+          title: "Profile settings screen",
+        },
+        {
+          photo: {
+            alt: "AAK Tele-Science - Researcher profile screen",
+            src: "/companies-portfolio-photos/aak-telescience/4-aak-telescience-researcher-profile.png",
+          },
+          type: "photo",
+          title: "Researcher profile screen",
+        },
+        {
+          photo: {
+            alt: "AAK Tele-Science - Connection requests screen",
+            src: "/companies-portfolio-photos/aak-telescience/5-aak-telescience-connection-requests.png",
+          },
+          type: "photo",
+          title: "Connection requests screen",
+        },
+        {
+          photo: {
+            alt: "AAK Tele-Science - Create blog screen",
+            src: "/companies-portfolio-photos/aak-telescience/6-aak-telescience-create-blog.png",
+          },
+          type: "photo",
+          title: "Create blog screen",
+        },
+      ],
+    },
   },
 
   {
