@@ -13,13 +13,12 @@ export default function LandingSection() {
       </h2>
 
       <div className="flex flex-row mt-6">
-        <PortfolioPrimaryButton variant="default" borderRadius="rounded-full">
-          <a
-            className=""
-            href="/Victor_Camargo_Software_Engineer.pdf"
-            download="Victor_Camargo_Software_Engineer">
-            Download Resume
-          </a>
+        <PortfolioPrimaryButton
+          variant="default"
+          borderRadius="rounded-full"
+          href="/Victor_Camargo_Software_Engineer.pdf"
+          download="Victor_Camargo_Software_Engineer">
+          Download Resume
         </PortfolioPrimaryButton>
       </div>
     </SectionWrapper>

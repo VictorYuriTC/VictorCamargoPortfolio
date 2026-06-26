@@ -75,8 +75,9 @@ export default function AboutSection() {
           <PortfolioPrimaryButton
             variant="default"
             borderRadius="rounded-full"
-            className="mt-4 self-start w-full">
-            <a href="#contact-section">Contact me</a>
+            className="mt-4 self-start w-full"
+            href="#contact-section">
+            Contact Me
           </PortfolioPrimaryButton>
         </div>
       </div>
