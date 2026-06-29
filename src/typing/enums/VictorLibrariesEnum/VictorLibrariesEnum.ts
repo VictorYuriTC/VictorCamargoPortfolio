@@ -2,6 +2,8 @@ export enum VictorLibrariesEnum {
   "AdSense",
   "AdMob",
 
+  "i18n",
+
   "Pinia",
   "Provider",
 

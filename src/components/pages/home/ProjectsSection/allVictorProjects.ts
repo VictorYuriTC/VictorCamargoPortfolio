@@ -111,47 +111,37 @@ export const allVictorProjects: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "Dart",
+        name: "TypeScript",
       },
 
       {
         field: "frontend",
-        name: "Flutter",
+        name: "Vue",
+      },
+
+      {
+        field: "frontend",
+        name: "Nuxt",
+      },
+
+      {
+        field: "frontend",
+        name: "Tailwind",
+      },
+
+      {
+        field: "frontend",
+        name: "Pinia",
+      },
+
+      {
+        field: "frontend",
+        name: "i18n",
       },
 
       {
         field: "backend",
-        name: "Python",
-      },
-
-      {
-        field: "backend",
-        name: "Django",
-      },
-
-      {
-        field: "backend",
-        name: "PostgreSQL",
-      },
-
-      {
-        field: "frontend",
-        name: "AdMob",
-      },
-
-      {
-        field: "frontend",
-        name: "Provider",
-      },
-
-      {
-        field: "frontend",
-        name: "Android Studio",
-      },
-
-      {
-        field: "frontend",
-        name: "XCode",
+        name: "Supabase",
       },
     ],
     allExperiencePhotos: {
