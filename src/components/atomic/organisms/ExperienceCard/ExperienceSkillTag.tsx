@@ -6,11 +6,11 @@ import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum"
 import { HtmlHTMLAttributes } from "react";
 
 export type VictorSkillNameType =
-  | keyof typeof VictorProgrammingLanguagesEnum
-  | keyof typeof VictorMarkupAndStyleSheetLanguagesEnum
-  | keyof typeof VictorFrameworksAndDatabaseEnum
-  | keyof typeof VictorToolsEnum
-  | keyof typeof VictorLibrariesEnum;
+  | VictorProgrammingLanguagesEnum
+  | VictorMarkupAndStyleSheetLanguagesEnum
+  | VictorFrameworksAndDatabaseEnum
+  | VictorToolsEnum
+  | VictorLibrariesEnum;
 
 export interface IVictorSkill {
   name: VictorSkillNameType;

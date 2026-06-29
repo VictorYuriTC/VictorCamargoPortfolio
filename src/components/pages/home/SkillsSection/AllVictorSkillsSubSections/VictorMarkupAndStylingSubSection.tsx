@@ -9,6 +9,8 @@ import StyledComponentsSVG from "@/assets/svgs/StyledComponentsSVG";
 import htmlIcon from "@/assets/html.svg";
 import cssIcon from "@/assets/css.svg";
 import VueSVG from "@/assets/svgs/VueSVG";
+import { VictorMarkupAndStyleSheetLanguagesEnum } from "@/typing/enums/VictorMarkupAndStyleSheetLanguagesEnum/VictorMarkupAndStyleSheetLanguagesEnum";
+import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
 
 interface IVictorMarkupAndStylingSubSection {
   svgSize: number;
@@ -25,7 +27,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "HTML",
+          name: VictorMarkupAndStyleSheetLanguagesEnum.HTML,
           iconData: {
             src: htmlIcon,
             alt: "HTML language logo",
@@ -46,7 +48,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "CSS",
+          name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
           iconData: {
             src: cssIcon,
             alt: "CSS language logo",
@@ -67,7 +69,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "Tailwind",
+          name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
           iconData: {
             src: "",
             alt: "Tailwind styling logo",
@@ -88,7 +90,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "Bootstrap",
+          name: VictorMarkupAndStyleSheetLanguagesEnum.Bootstrap,
           iconData: {
             src: "",
             alt: "Bootstrap styling logo",
@@ -109,7 +111,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "Styled-Components",
+          name: VictorMarkupAndStyleSheetLanguagesEnum.StyledComponents,
           iconData: {
             src: "",
             alt: "Styled-Components styling logo",
@@ -130,7 +132,7 @@ export default function VictorMarkupAndStylingSubSection(
           href: "",
         }}
         skill={{
-          name: "Vuetify",
+          name: VictorLibrariesEnum.Vuetify,
           iconData: {
             src: "",
             alt: "Vuetify styling logo",

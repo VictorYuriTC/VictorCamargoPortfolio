@@ -9,6 +9,7 @@ import microPythonIcon from "@/assets/micropython-language.svg";
 import javaIcon from "@/assets/java-language.svg";
 import MicroPythonLanguageSVG from "@/assets/svgs/MicroPythonLanguageSVG";
 import PHPSVG from "@/assets/svgs/PHPSVG";
+import { VictorProgrammingLanguagesEnum } from "@/typing/enums/VictorProgrammingLanguagesEnum/VictorProgrammingLanguagesEnum";
 
 interface IVictorProgrammingLanguagesSubSection {
   svgSize: number;
@@ -25,7 +26,7 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "JavaScript",
+          name: VictorProgrammingLanguagesEnum.JavaScript,
           iconData: {
             src: javaScriptIcon,
             alt: "JavaScript language logo",
@@ -39,7 +40,7 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "TypeScript",
+          name: VictorProgrammingLanguagesEnum.TypeScript,
           iconData: {
             src: typeScriptIcon,
             alt: "TypeScript language logo",
@@ -53,7 +54,7 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "Dart",
+          name: VictorProgrammingLanguagesEnum.Dart,
           iconData: {
             src: dartIcon,
             alt: "Dart language logo",
@@ -67,7 +68,7 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "Python",
+          name: VictorProgrammingLanguagesEnum.Python,
           iconData: {
             src: pythonIcon,
             alt: "Python language logo",
@@ -81,7 +82,7 @@ export default function VictorProgrammingLanguagesSubSection(
           href: "",
         }}
         skill={{
-          name: "PHP",
+          name: VictorProgrammingLanguagesEnum.PHP,
           iconData: {
             src: "",
             alt: "PHP language logo",
@@ -103,7 +104,7 @@ export default function VictorProgrammingLanguagesSubSection(
             href: "",
           }}
           skill={{
-            name: "Java",
+            name: VictorProgrammingLanguagesEnum.Java,
             iconData: {
               src: javaIcon,
               alt: "Java language logo",

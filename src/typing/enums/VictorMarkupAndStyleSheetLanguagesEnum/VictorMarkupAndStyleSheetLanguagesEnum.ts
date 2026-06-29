@@ -1,15 +1,15 @@
 export enum VictorMarkupAndStyleSheetLanguagesEnum {
-  "Bootstrap",
+  Bootstrap = "Bootstrap",
 
-  "Tailwind",
+  Tailwind = "Tailwind",
 
-  "CSS",
+  CSS = "CSS",
 
-  "CSS Modules",
+  CSSModules = "CSS Modules",
 
-  "HTML",
+  HTML = "HTML",
 
-  "SASS",
-  "Styled-Components",
-  "StyleSheet",
+  SASS = "SASS",
+  StyledComponents = "Styled-Components",
+  StyleSheet = "StyleSheet",
 }

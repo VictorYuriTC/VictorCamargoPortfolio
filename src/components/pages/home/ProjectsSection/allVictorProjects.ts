@@ -1,5 +1,10 @@
 import { IExperiencePhotoData } from "@/components/atomic/organisms/ExperienceCard/ExperiencePhoto";
 import { VictorExperienceType } from "../../../atomic/organisms/ExperienceCard/ExperienceCard";
+import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum";
+import { VictorFrameworksAndDatabaseEnum } from "@/typing/enums/VictorFrameworksAndDatabaseEnum/VictorFrameworksAndDatabaseEnum";
+import { VictorProgrammingLanguagesEnum } from "@/typing/enums/VictorProgrammingLanguagesEnum/VictorProgrammingLanguagesEnum";
+import { VictorMarkupAndStyleSheetLanguagesEnum } from "@/typing/enums/VictorMarkupAndStyleSheetLanguagesEnum/VictorMarkupAndStyleSheetLanguagesEnum";
+import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
 
 const homePagePreviewInLightModeAndMobile: IExperiencePhotoData = {
   photo: {
@@ -111,37 +116,42 @@ export const allVictorProjects: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "Vue",
+        name: VictorFrameworksAndDatabaseEnum.Vue,
       },
 
       {
         field: "frontend",
-        name: "Nuxt",
+        name: VictorFrameworksAndDatabaseEnum.Nuxt,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
 
       {
         field: "frontend",
-        name: "Pinia",
+        name: VictorLibrariesEnum.Pinia,
       },
 
       {
         field: "frontend",
-        name: "i18n",
+        name: VictorLibrariesEnum.i18n,
       },
 
       {
         field: "backend",
-        name: "Supabase",
+        name: VictorFrameworksAndDatabaseEnum.Supabase,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.N8N,
       },
     ],
     allExperiencePhotos: {
@@ -225,37 +235,37 @@ export const allVictorProjects: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "React",
+        name: VictorFrameworksAndDatabaseEnum.React,
       },
 
       {
         field: "frontend",
-        name: "Next",
+        name: VictorFrameworksAndDatabaseEnum.Next,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
 
       {
         field: "frontend",
-        name: "CSS",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
       },
 
       {
         field: "frontend",
-        name: "CSS Modules",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSSModules,
       },
 
       {
         field: "frontend",
-        name: "AdSense",
+        name: VictorLibrariesEnum.AdSense,
       },
     ],
     allExperiencePhotos: {
@@ -276,52 +286,52 @@ export const allVictorProjects: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "JavaScript",
+        name: VictorProgrammingLanguagesEnum.JavaScript,
       },
 
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "Astro",
+        name: VictorFrameworksAndDatabaseEnum.Astro,
       },
 
       {
         field: "frontend",
-        name: "React",
+        name: VictorFrameworksAndDatabaseEnum.React,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
 
       {
         field: "frontend",
-        name: "CSS",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
       },
 
       {
         field: "backend",
-        name: "Python",
+        name: VictorProgrammingLanguagesEnum.Python,
       },
 
       {
         field: "backend",
-        name: "Django",
+        name: VictorFrameworksAndDatabaseEnum.Django,
       },
 
       {
         field: "backend",
-        name: "Render",
+        name: VictorToolsEnum.Render,
       },
 
       {
         field: "backend",
-        name: "Netlify",
+        name: VictorToolsEnum.Netlify,
       },
     ],
     allExperiencePhotos: {

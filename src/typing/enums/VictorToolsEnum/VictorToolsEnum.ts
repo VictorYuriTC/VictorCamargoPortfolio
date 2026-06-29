@@ -1,21 +1,23 @@
 export enum VictorToolsEnum {
-  "Affiliate Links",
-  "Android Studio",
-  "AWS",
+  AffiliateLinks = "Affiliate Links",
+  AndroidStudio = "Android Studio",
+  AWS = "AWS",
 
-  "Cloudwatch",
+  Cloudwatch = "Cloudwatch",
 
-  "ECS",
+  ECS = "ECS",
 
-  "Git",
-  "GitHub",
+  Git = "Git",
+  GitHub = "GitHub",
 
-  "Netlify",
+  Netlify = "Netlify",
 
-  "Render",
+  N8N = "N8N",
 
-  "SAM",
-  "S3",
+  Render = "Render",
 
-  "XCode",
+  SAM = "SAM",
+  S3 = "S3",
+
+  XCode = "XCode",
 }

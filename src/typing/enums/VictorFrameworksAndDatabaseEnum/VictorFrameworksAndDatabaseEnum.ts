@@ -1,34 +1,34 @@
 export enum VictorFrameworksAndDatabaseEnum {
-  "Angular",
-  "Astro",
+  Angular = "Angular",
+  Astro = "Astro",
 
-  "Blade",
+  Blade = "Blade",
 
-  "Django",
+  Django = "Django",
 
-  "Flutter",
+  Flutter = "Flutter",
 
-  "Laravel",
+  Laravel = "Laravel",
 
-  "Jest",
+  Jest = "Jest",
 
-  "MongoDB",
-  "MySQL",
+  MongoDB = "MongoDB",
+  MySQL = "MySQL",
 
-  "Next",
-  "Node",
-  "Nuxt",
+  Next = "Next",
+  Node = "Node",
+  Nuxt = "Nuxt",
 
-  "PostgreSQL",
+  PostgreSQL = "PostgreSQL",
 
-  "Quasar",
+  Quasar = "Quasar",
 
-  "React",
-  "React Native",
-  "Rest Framework",
+  React = "React",
+  ReactNative = "React Native",
+  RestFramework = "Rest Framework",
 
-  "SQL",
-  "Supabase",
+  SQL = "SQL",
+  Supabase = "Supabase",
 
-  "Vue",
+  Vue = "Vue",
 }

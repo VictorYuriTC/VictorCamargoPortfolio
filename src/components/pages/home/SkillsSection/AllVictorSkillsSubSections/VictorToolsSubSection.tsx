@@ -7,6 +7,7 @@ import androidStudioIcon from "@/assets/android-studio-tool.svg";
 import xCodeIcon from "@/assets/xcode-tool.svg";
 import GitHubToolSVG from "@/assets/svgs/GitHubToolSVG";
 import AWSSVG from "@/assets/svgs/AWSSVG";
+import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum";
 
 interface IVictorToolsSubSection {
   svgSize: number;
@@ -25,7 +26,7 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
             src: "",
             alt: "AWS logo",
           },
-          name: "AWS",
+          name: VictorToolsEnum.AWS,
         }}
         customIconComponent={
           <AWSSVG width={props.svgSize} height={props.svgSize} />
@@ -42,7 +43,7 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
             src: gitIcon,
             alt: "Git logo",
           },
-          name: "Git",
+          name: VictorToolsEnum.Git,
         }}
       />
 
@@ -56,7 +57,7 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
             src: gitHubIcon,
             alt: "GitHub logo",
           },
-          name: "GitHub",
+          name: VictorToolsEnum.GitHub,
         }}
         customIconComponent={
           <GitHubToolSVG
@@ -77,7 +78,7 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
             src: androidStudioIcon,
             alt: "Android Studio logo",
           },
-          name: "Android Studio",
+          name: VictorToolsEnum.AndroidStudio,
         }}
       />
 
@@ -91,7 +92,7 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
             src: xCodeIcon,
             alt: "XCode logo",
           },
-          name: "XCode",
+          name: VictorToolsEnum.XCode,
         }}
       />
     </SkillsSectionContainer>

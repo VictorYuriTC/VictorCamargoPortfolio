@@ -1,14 +1,14 @@
 export enum VictorProgrammingLanguagesEnum {
-  "Dart",
+  Dart = "Dart",
 
-  "Java",
-  "JavaScript",
+  Java = "Java",
+  JavaScript = "JavaScript",
 
-  "MicroPython",
+  MicroPython = "MicroPython",
 
-  "PHP",
+  PHP = "PHP",
 
-  "Python",
+  Python = "Python",
 
-  "TypeScript",
+  TypeScript = "TypeScript",
 }

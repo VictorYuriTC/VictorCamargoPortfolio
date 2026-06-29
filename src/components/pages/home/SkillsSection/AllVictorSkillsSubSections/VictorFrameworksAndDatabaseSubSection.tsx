@@ -13,6 +13,8 @@ import MySQLSVG from "@/assets/svgs/MySQLSVG";
 import SQLSVG from "@/assets/svgs/SQLSVG";
 import PostgreSQL from "@/assets/svgs/PostgreSQL";
 import VueSVG from "@/assets/svgs/VueSVG";
+import { VictorFrameworksAndDatabaseEnum } from "@/typing/enums/VictorFrameworksAndDatabaseEnum/VictorFrameworksAndDatabaseEnum";
+import QuasarSVG from "@/assets/svgs/QuasarSVG";
 
 interface IVictorFrameworksAndDatabaseSubSection {
   svgSize: number;
@@ -35,9 +37,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: reactIcon,
-            alt: getAltText("React"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.React),
           },
-          name: "React",
+          name: VictorFrameworksAndDatabaseEnum.React,
         }}
       />
 
@@ -49,9 +51,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("Vue"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Vue),
           },
-          name: "Vue",
+          name: VictorFrameworksAndDatabaseEnum.Vue,
         }}
         customIconComponent={
           <VueSVG
@@ -70,9 +72,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: reactIcon,
-            alt: getAltText("React Native"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.ReactNative),
           },
-          name: "React Native",
+          name: VictorFrameworksAndDatabaseEnum.ReactNative,
         }}
       />
 
@@ -83,10 +85,31 @@ export default function VictorFrameworksAndDatabaseSubSection(
         }}
         skill={{
           iconData: {
-            src: nextIcon,
-            alt: getAltText("Next"),
+            src: "",
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Quasar),
           },
-          name: "Next",
+          name: VictorFrameworksAndDatabaseEnum.Quasar,
+        }}
+        customIconComponent={
+          <QuasarSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: nextIcon,
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Next),
+          },
+          name: VictorFrameworksAndDatabaseEnum.Next,
         }}
         customIconComponent={
           <NextFrameworkSVG
@@ -105,9 +128,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: flutterIcon,
-            alt: getAltText("Flutter"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Flutter),
           },
-          name: "Flutter",
+          name: VictorFrameworksAndDatabaseEnum.Flutter,
         }}
       />
 
@@ -119,9 +142,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("Angular"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Angular),
           },
-          name: "Angular",
+          name: VictorFrameworksAndDatabaseEnum.Angular,
         }}
         customIconComponent={
           <AngularSVG
@@ -141,9 +164,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("Django"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Django),
           },
-          name: "Django",
+          name: VictorFrameworksAndDatabaseEnum.Django,
         }}
         customIconComponent={
           <DjangoSVG
@@ -162,9 +185,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("Jest"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.Jest),
           },
-          name: "Jest",
+          name: VictorFrameworksAndDatabaseEnum.Jest,
         }}
         customIconComponent={
           <JestSVG width={props.svgSize} height={props.svgSize} />
@@ -179,9 +202,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("SQL"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.SQL),
           },
-          name: "SQL",
+          name: VictorFrameworksAndDatabaseEnum.SQL,
         }}
         customIconComponent={
           <SQLSVG
@@ -201,9 +224,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("PostgreSQL"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.PostgreSQL),
           },
-          name: "PostgreSQL",
+          name: VictorFrameworksAndDatabaseEnum.PostgreSQL,
         }}
         customIconComponent={
           <PostgreSQL
@@ -223,9 +246,9 @@ export default function VictorFrameworksAndDatabaseSubSection(
         skill={{
           iconData: {
             src: "",
-            alt: getAltText("MySQL"),
+            alt: getAltText(VictorFrameworksAndDatabaseEnum.MySQL),
           },
-          name: "MySQL",
+          name: VictorFrameworksAndDatabaseEnum.MySQL,
         }}
         customIconComponent={
           <MySQLSVG

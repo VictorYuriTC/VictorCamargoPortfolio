@@ -1,5 +1,10 @@
 import { m } from "framer-motion";
 import { VictorExperienceType } from "../../../atomic/organisms/ExperienceCard/ExperienceCard";
+import { VictorProgrammingLanguagesEnum } from "@/typing/enums/VictorProgrammingLanguagesEnum/VictorProgrammingLanguagesEnum";
+import { VictorFrameworksAndDatabaseEnum } from "@/typing/enums/VictorFrameworksAndDatabaseEnum/VictorFrameworksAndDatabaseEnum";
+import { VictorMarkupAndStyleSheetLanguagesEnum } from "@/typing/enums/VictorMarkupAndStyleSheetLanguagesEnum/VictorMarkupAndStyleSheetLanguagesEnum";
+import { VictorLibrariesEnum } from "@/typing/enums/VictorLibrariesEnum/VictorLibrariesEnum";
+import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum";
 
 export const allVictorExperiences: (VictorExperienceType & {
   id: number;
@@ -18,42 +23,42 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "JavaScript",
+        name: VictorProgrammingLanguagesEnum.JavaScript,
       },
 
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "React",
+        name: VictorFrameworksAndDatabaseEnum.React,
       },
 
       {
         field: "frontend",
-        name: "CSS",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
       },
 
       {
         field: "frontend",
-        name: "CSS Modules",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSSModules,
       },
 
       {
         field: "frontend",
-        name: "Styled-Components",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.StyledComponents,
       },
 
       {
         field: "frontend",
-        name: "Recoil",
+        name: VictorLibrariesEnum.Recoil,
       },
 
       {
         field: "frontend",
-        name: "React TanStack Query",
+        name: VictorLibrariesEnum.ReactTanStackQuery,
       },
     ],
     allExperiencePhotos: {
@@ -124,42 +129,42 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "React Native",
+        name: VictorFrameworksAndDatabaseEnum.ReactNative,
       },
 
       {
         field: "frontend",
-        name: "StyleSheet",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.StyleSheet,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
 
       {
         field: "frontend",
-        name: "Redux",
+        name: VictorLibrariesEnum.Redux,
       },
 
       {
         field: "frontend",
-        name: "Android Studio",
+        name: VictorToolsEnum.AndroidStudio,
       },
 
       {
         field: "frontend",
-        name: "XCode",
+        name: VictorToolsEnum.XCode,
       },
 
       {
         field: "frontend",
-        name: "React TanStack Query",
+        name: VictorLibrariesEnum.ReactTanStackQuery,
       },
     ],
     allExperiencePhotos: {
@@ -234,67 +239,67 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "JavaScript",
+        name: VictorProgrammingLanguagesEnum.JavaScript,
       },
 
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "Vue",
+        name: VictorFrameworksAndDatabaseEnum.Vue,
       },
 
       {
         field: "frontend",
-        name: "Nuxt",
+        name: VictorFrameworksAndDatabaseEnum.Nuxt,
       },
 
       {
         field: "frontend",
-        name: "Vuetify",
+        name: VictorLibrariesEnum.Vuetify,
       },
 
       {
         field: "frontend",
-        name: "CSS",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
 
       {
         field: "frontend",
-        name: "Pinia",
+        name: VictorLibrariesEnum.Pinia,
       },
 
       {
         field: "frontend",
-        name: "Dart",
+        name: VictorProgrammingLanguagesEnum.Dart,
       },
 
       {
         field: "frontend",
-        name: "Flutter",
+        name: VictorFrameworksAndDatabaseEnum.Flutter,
       },
 
       {
         field: "frontend",
-        name: "PHP",
+        name: VictorProgrammingLanguagesEnum.PHP,
       },
 
       {
         field: "frontend",
-        name: "Blade",
+        name: VictorFrameworksAndDatabaseEnum.Blade,
       },
 
       {
         field: "backend",
-        name: "Laravel",
+        name: VictorFrameworksAndDatabaseEnum.Laravel,
       },
     ],
     allExperiencePhotos: {
@@ -360,62 +365,62 @@ export const allVictorExperiences: (VictorExperienceType & {
     allSkills: [
       {
         field: "frontend",
-        name: "JavaScript",
+        name: VictorProgrammingLanguagesEnum.JavaScript,
       },
 
       {
         field: "frontend",
-        name: "TypeScript",
+        name: VictorProgrammingLanguagesEnum.TypeScript,
       },
 
       {
         field: "frontend",
-        name: "Vue",
+        name: VictorFrameworksAndDatabaseEnum.Vue,
       },
 
       {
         field: "frontend",
-        name: "Quasar",
+        name: VictorFrameworksAndDatabaseEnum.Quasar,
       },
 
       {
         field: "backend",
-        name: "Node",
+        name: VictorFrameworksAndDatabaseEnum.Node,
       },
 
       {
         field: "backend",
-        name: "AWS",
+        name: VictorToolsEnum.AWS,
       },
 
       {
         field: "backend",
-        name: "SAM",
+        name: VictorToolsEnum.SAM,
       },
 
       {
         field: "frontend",
-        name: "Pinia",
+        name: VictorLibrariesEnum.Pinia,
       },
 
       {
         field: "frontend",
-        name: "Supabase",
+        name: VictorFrameworksAndDatabaseEnum.Supabase,
       },
 
       {
         field: "backend",
-        name: "Cloudwatch",
+        name: VictorToolsEnum.Cloudwatch,
       },
 
       {
         field: "frontend",
-        name: "SASS",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.SASS,
       },
 
       {
         field: "frontend",
-        name: "Tailwind",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
     ],
   },

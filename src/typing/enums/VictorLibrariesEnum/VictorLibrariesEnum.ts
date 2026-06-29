@@ -1,15 +1,15 @@
 export enum VictorLibrariesEnum {
-  "AdSense",
-  "AdMob",
+  AdSense = "AdSense",
+  AdMob = "AdMob",
 
-  "i18n",
+  i18n = "i18n",
 
-  "Pinia",
-  "Provider",
+  Pinia = "Pinia",
+  Provider = "Provider",
 
-  "React TanStack Query",
-  "Recoil",
-  "Redux",
+  ReactTanStackQuery = "React TanStack Query",
+  Recoil = "Recoil",
+  Redux = "Redux",
 
-  "Vuetify",
+  Vuetify = "Vuetify",
 }
