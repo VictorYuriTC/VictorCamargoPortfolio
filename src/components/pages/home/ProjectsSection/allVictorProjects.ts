@@ -224,8 +224,9 @@ export const allVictorProjects: (VictorExperienceType & {
 
   {
     id: 2,
-    type: "present",
+    type: "past",
     startDate: "August-2024",
+    endDate: "December-2024",
 
     company: {
       name: { children: "Poéticos" },
@@ -275,8 +276,9 @@ export const allVictorProjects: (VictorExperienceType & {
 
   {
     id: 2,
-    type: "present",
+    type: "past",
     startDate: "November-2025",
+    endDate: "January-2026",
 
     company: {
       name: { children: "Fishmetry" },

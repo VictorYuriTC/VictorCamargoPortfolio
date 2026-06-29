@@ -134,27 +134,29 @@ export default function VictorFrameworksAndDatabaseSubSection(
         }}
       />
 
-      <SkillCard
-        svgSize={props.svgSize}
-        link={{
-          href: "",
-        }}
-        skill={{
-          iconData: {
-            src: "",
-            alt: getAltText(VictorFrameworksAndDatabaseEnum.Angular),
-          },
-          name: VictorFrameworksAndDatabaseEnum.Angular,
-        }}
-        customIconComponent={
-          <AngularSVG
-            width={props.svgSize}
-            height={props.svgSize}
-            stroke="transparent"
-            fill="transparent"
-          />
-        }
-      />
+      {false && (
+        <SkillCard
+          svgSize={props.svgSize}
+          link={{
+            href: "",
+          }}
+          skill={{
+            iconData: {
+              src: "",
+              alt: getAltText(VictorFrameworksAndDatabaseEnum.Angular),
+            },
+            name: VictorFrameworksAndDatabaseEnum.Angular,
+          }}
+          customIconComponent={
+            <AngularSVG
+              width={props.svgSize}
+              height={props.svgSize}
+              stroke="transparent"
+              fill="transparent"
+            />
+          }
+        />
+      )}
 
       <SkillCard
         svgSize={props.svgSize}
