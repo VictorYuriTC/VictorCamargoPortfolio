@@ -8,16 +8,14 @@ export default function LandingSection() {
       className="flex flex-col justify-center gap-y-6">
       <h1 className="font-light text-3xl md:text-5xl">Victor Camargo</h1>
 
-      <h2 className="font-semibold text-5xl md:text-7xl">
-        Software Engineer
-      </h2>
+      <h2 className="font-semibold text-5xl md:text-7xl">Software Engineer</h2>
 
       <div className="flex flex-row mt-6">
         <PortfolioPrimaryButton
           variant="default"
           borderRadius="rounded-full"
-          href="/Victor_Camargo_Software_Engineer.pdf"
-          download="Victor_Camargo_Software_Engineer">
+          href="/Victor_Camargo_Software_Engineer_Resume.pdf"
+          download="Victor_Camargo_Software_Engineer_Resume">
           Download Resume
         </PortfolioPrimaryButton>
       </div>
