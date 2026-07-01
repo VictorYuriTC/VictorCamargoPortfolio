@@ -541,14 +541,6 @@ export const allVictorExperiences: (VictorExperienceType & {
         },
         {
           photo: {
-            alt: "Groner - User Details Routing Tab",
-            src: "/companies-portfolio-photos/groner/groner-user-details-routing.png",
-          },
-          type: "photo",
-          title: "User Details Routing Tab",
-        },
-        {
-          photo: {
             alt: "Groner - User Details Info Tab",
             src: "/companies-portfolio-photos/groner/groner-user-details-info.png",
           },
@@ -570,6 +562,14 @@ export const allVictorExperiences: (VictorExperienceType & {
           },
           type: "photo",
           title: "User Details Notifications Tab",
+        },
+        {
+          photo: {
+            alt: "Groner - User Details Routing Tab",
+            src: "/companies-portfolio-photos/groner/groner-user-details-routing.png",
+          },
+          type: "photo",
+          title: "User Details Routing Tab",
         },
         {
           photo: {
