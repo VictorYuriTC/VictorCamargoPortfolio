@@ -438,7 +438,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Departments screen",
-            src: "/companies-portfolio-photos/groner/1-groner-departments.png",
+            src: "/companies-portfolio-photos/groner/groner-departments.png",
           },
           type: "photo",
           title: "Departments Screen",
@@ -446,7 +446,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Custom Variables Screen",
-            src: "/companies-portfolio-photos/groner/2-groner-custom-variables.png",
+            src: "/companies-portfolio-photos/groner/groner-custom-variables.png",
           },
           type: "photo",
           title: "Custom Variables Screen",
@@ -454,7 +454,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Survey List Screen",
-            src: "/companies-portfolio-photos/groner/3-groner-survey-list.png",
+            src: "/companies-portfolio-photos/groner/groner-survey-list.png",
           },
           type: "photo",
           title: "Survey List Screen",
@@ -462,7 +462,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Sent Emails Screen",
-            src: "/companies-portfolio-photos/groner/4-groner-sent-emails.png",
+            src: "/companies-portfolio-photos/groner/groner-sent-emails.png",
           },
           type: "photo",
           title: "Sent Emails Screen",
@@ -470,7 +470,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Schedule Task Linked with Google Agenda",
-            src: "/companies-portfolio-photos/groner/5-groner-schedule-task-linked-with-google-agenda.png",
+            src: "/companies-portfolio-photos/groner/groner-schedule-task-linked-with-google-agenda.png",
           },
           type: "photo",
           title: "Schedule Task Linked with Google Agenda",
@@ -478,7 +478,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Solar Panels Installations Screen",
-            src: "/companies-portfolio-photos/groner/6-groner-solar-panels-installations.png",
+            src: "/companies-portfolio-photos/groner/groner-solar-panels-installations.png",
           },
           type: "photo",
           title: "Solar Panels Installations Screen",
@@ -486,7 +486,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Email Senders Screen",
-            src: "/companies-portfolio-photos/groner/7-groner-email-senders.png",
+            src: "/companies-portfolio-photos/groner/groner-email-senders.png",
           },
           type: "photo",
           title: "Email Senders Screen",
@@ -494,7 +494,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Create Task Screen",
-            src: "/companies-portfolio-photos/groner/8-groner-create-task.png",
+            src: "/companies-portfolio-photos/groner/groner-create-task.png",
           },
           type: "photo",
           title: "Create Task Screen",
@@ -502,7 +502,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Proposals List Screen",
-            src: "/companies-portfolio-photos/groner/9-groner-proposals-list.png",
+            src: "/companies-portfolio-photos/groner/groner-proposals-list.png",
           },
           type: "photo",
           title: "Proposals List Screen",
@@ -510,7 +510,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Task Tag List Screen",
-            src: "/companies-portfolio-photos/groner/10-groner-task-tag-list.png",
+            src: "/companies-portfolio-photos/groner/groner-task-tag-list.png",
           },
           type: "photo",
           title: "Task Tag List Screen",
@@ -518,7 +518,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Task Details Screen",
-            src: "/companies-portfolio-photos/groner/11-groner-task-details.png",
+            src: "/companies-portfolio-photos/groner/groner-task-details.png",
           },
           type: "photo",
           title: "Task Details Screen",
@@ -526,7 +526,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Deals List Screen",
-            src: "/companies-portfolio-photos/groner/12-groner-deals-list.png",
+            src: "/companies-portfolio-photos/groner/groner-deals-list.png",
           },
           type: "photo",
           title: "Deals List Screen",
@@ -534,7 +534,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Task List Screen",
-            src: "/companies-portfolio-photos/groner/13-groner-task-list.png",
+            src: "/companies-portfolio-photos/groner/groner-task-list.png",
           },
           type: "photo",
           title: "Task List Screen",
@@ -542,7 +542,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - User Details Routing Tab",
-            src: "/companies-portfolio-photos/groner/14-groner-user-details-routing.png",
+            src: "/companies-portfolio-photos/groner/groner-user-details-routing.png",
           },
           type: "photo",
           title: "User Details Routing Tab",
@@ -550,7 +550,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - User Details Info Tab",
-            src: "/companies-portfolio-photos/groner/15-groner-user-details-info.png",
+            src: "/companies-portfolio-photos/groner/groner-user-details-info.png",
           },
           type: "photo",
           title: "User Details Info Tab",
@@ -558,7 +558,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - User Details System Tab",
-            src: "/companies-portfolio-photos/groner/17-groner-user-details-system.png",
+            src: "/companies-portfolio-photos/groner/groner-user-details-system.png",
           },
           type: "photo",
           title: "User Details System Tab",
@@ -566,7 +566,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - User Details Notifications Tab",
-            src: "/companies-portfolio-photos/groner/18-groner-user-details-notifications.png",
+            src: "/companies-portfolio-photos/groner/groner-user-details-notifications.png",
           },
           type: "photo",
           title: "User Details Notifications Tab",
@@ -574,7 +574,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - User Details History Tab",
-            src: "/companies-portfolio-photos/groner/19-groner-user-details-history.png",
+            src: "/companies-portfolio-photos/groner/groner-user-details-history.png",
           },
           type: "photo",
           title: "User Details History Tab",
@@ -582,7 +582,7 @@ export const allVictorExperiences: (VictorExperienceType & {
         {
           photo: {
             alt: "Groner - Lead Details Screen",
-            src: "/companies-portfolio-photos/groner/20-groner-lead-details.png",
+            src: "/companies-portfolio-photos/groner/groner-lead-details.png",
           },
           type: "photo",
           title: "Lead Details Screen",
