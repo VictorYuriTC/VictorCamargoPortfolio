@@ -10,6 +10,7 @@ import AWSSVG from "@/assets/svgs/AWSSVG";
 import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum";
 import N8NSVG from "@/assets/svgs/N8NSVG";
 import SupabaseSVG from "@/assets/svgs/SupabaseSVG";
+import GitLabSVG from "@/assets/svgs/GitLab";
 
 interface IVictorToolsSubSection {
   svgSize: number;
@@ -97,6 +98,27 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
         }}
         customIconComponent={
           <GitHubToolSVG
+            width={props.svgSize}
+            height={props.svgSize}
+            className="fill-black dark:fill-white"
+          />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: "GitLab logo",
+          },
+          name: VictorToolsEnum.GitLab,
+        }}
+        customIconComponent={
+          <GitLabSVG
             width={props.svgSize}
             height={props.svgSize}
             className="fill-black dark:fill-white"

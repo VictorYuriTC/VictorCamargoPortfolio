@@ -9,6 +9,7 @@ export enum VictorToolsEnum {
 
   Git = "Git",
   GitHub = "GitHub",
+  GitLab = "GitLab",
 
   Netlify = "Netlify",
 

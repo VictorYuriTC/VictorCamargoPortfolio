@@ -139,16 +139,6 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
-        name: VictorMarkupAndStyleSheetLanguagesEnum.StyleSheet,
-      },
-
-      {
-        field: "frontend",
-        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
-      },
-
-      {
-        field: "frontend",
         name: VictorLibrariesEnum.Redux,
       },
 
@@ -165,6 +155,16 @@ export const allVictorExperiences: (VictorExperienceType & {
       {
         field: "frontend",
         name: VictorLibrariesEnum.ReactTanStackQuery,
+      },
+
+      {
+        field: "frontend",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.StyleSheet,
+      },
+
+      {
+        field: "frontend",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
     ],
     allExperiencePhotos: {
@@ -264,16 +264,6 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
-        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
-      },
-
-      {
-        field: "frontend",
-        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
-      },
-
-      {
-        field: "frontend",
         name: VictorLibrariesEnum.Pinia,
       },
 
@@ -300,6 +290,26 @@ export const allVictorExperiences: (VictorExperienceType & {
       {
         field: "backend",
         name: VictorFrameworksAndDatabaseEnum.Laravel,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitLab,
+      },
+
+      {
+        field: "frontend",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.CSS,
+      },
+
+      {
+        field: "frontend",
+        name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
     ],
     allExperiencePhotos: {
@@ -424,7 +434,160 @@ export const allVictorExperiences: (VictorExperienceType & {
       },
     ],
     allExperiencePhotos: {
-      photos: [],
+      photos: [
+        {
+          photo: {
+            alt: "Groner - Departments screen",
+            src: "/companies-portfolio-photos/groner/1-groner-departments.png",
+          },
+          type: "photo",
+          title: "Departments screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Custom variables screen",
+            src: "/companies-portfolio-photos/groner/2-groner-custom-variables.png",
+          },
+          type: "photo",
+          title: "Custom variables screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Survey list screen",
+            src: "/companies-portfolio-photos/groner/3-groner-survey-list.png",
+          },
+          type: "photo",
+          title: "Survey list screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Sent emails screen",
+            src: "/companies-portfolio-photos/groner/4-groner-sent-emails.png",
+          },
+          type: "photo",
+          title: "Sent emails screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Schedule task linked with Google Agenda",
+            src: "/companies-portfolio-photos/groner/5-groner-schedule-task-linked-with-google-agenda.png",
+          },
+          type: "photo",
+          title: "Schedule task linked with Google Agenda",
+        },
+        {
+          photo: {
+            alt: "Groner - Solar panels installations screen",
+            src: "/companies-portfolio-photos/groner/6-groner-solar-panels-installations.png",
+          },
+          type: "photo",
+          title: "Solar panels installations screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Email senders screen",
+            src: "/companies-portfolio-photos/groner/7-groner-email-senders.png",
+          },
+          type: "photo",
+          title: "Email senders screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Create task screen",
+            src: "/companies-portfolio-photos/groner/8-groner-create-task.png",
+          },
+          type: "photo",
+          title: "Create task screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Proposals list screen",
+            src: "/companies-portfolio-photos/groner/9-groner-proposals-list.png",
+          },
+          type: "photo",
+          title: "Proposals list screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Task tag list screen",
+            src: "/companies-portfolio-photos/groner/10-groner-task-tag-list.png",
+          },
+          type: "photo",
+          title: "Task tag list screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Task details screen",
+            src: "/companies-portfolio-photos/groner/11-groner-task-details.png",
+          },
+          type: "photo",
+          title: "Task details screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Deals list screen",
+            src: "/companies-portfolio-photos/groner/12-groner-deals-list.png",
+          },
+          type: "photo",
+          title: "Deals list screen",
+        },
+        {
+          photo: {
+            alt: "Groner - Task list screen",
+            src: "/companies-portfolio-photos/groner/13-groner-task-list.png",
+          },
+          type: "photo",
+          title: "Task list screen",
+        },
+        {
+          photo: {
+            alt: "Groner - User details routing tab",
+            src: "/companies-portfolio-photos/groner/14-groner-user-details-routing.png",
+          },
+          type: "photo",
+          title: "User details routing tab",
+        },
+        {
+          photo: {
+            alt: "Groner - User details info tab",
+            src: "/companies-portfolio-photos/groner/15-groner-user-details-info.png",
+          },
+          type: "photo",
+          title: "User details info tab",
+        },
+        {
+          photo: {
+            alt: "Groner - User details system tab",
+            src: "/companies-portfolio-photos/groner/17-groner-user-details-system.png",
+          },
+          type: "photo",
+          title: "User details system tab",
+        },
+        {
+          photo: {
+            alt: "Groner - User details notifications tab",
+            src: "/companies-portfolio-photos/groner/18-groner-user-details-notifications.png",
+          },
+          type: "photo",
+          title: "User details notifications tab",
+        },
+        {
+          photo: {
+            alt: "Groner - User details history tab",
+            src: "/companies-portfolio-photos/groner/19-groner-user-details-history.png",
+          },
+          type: "photo",
+          title: "User details history tab",
+        },
+        {
+          photo: {
+            alt: "Groner - Lead details screen",
+            src: "/companies-portfolio-photos/groner/20-groner-lead-details.png",
+          },
+          type: "photo",
+          title: "Lead details screen",
+        },
+      ],
     },
   },
 ];
