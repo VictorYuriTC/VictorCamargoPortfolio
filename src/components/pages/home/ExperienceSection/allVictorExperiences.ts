@@ -423,5 +423,8 @@ export const allVictorExperiences: (VictorExperienceType & {
         name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
       },
     ],
+    allExperiencePhotos: {
+      photos: [],
+    },
   },
 ];
