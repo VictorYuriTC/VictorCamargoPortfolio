@@ -405,7 +405,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
       {
         field: "frontend",
-        name: VictorFrameworksAndDatabaseEnum.Supabase,
+        name: VictorToolsEnum.Supabase,
       },
 
       {

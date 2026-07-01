@@ -28,7 +28,6 @@ export enum VictorFrameworksAndDatabaseEnum {
   RestFramework = "Rest Framework",
 
   SQL = "SQL",
-  Supabase = "Supabase",
 
   Vue = "Vue",
 }

@@ -16,8 +16,9 @@ export enum VictorToolsEnum {
 
   Render = "Render",
 
-  SAM = "SAM",
   S3 = "S3",
+  SAM = "SAM",
+  Supabase = "Supabase",
 
   XCode = "XCode",
 }

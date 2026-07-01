@@ -146,7 +146,7 @@ export const allVictorProjects: (VictorExperienceType & {
 
       {
         field: "backend",
-        name: VictorFrameworksAndDatabaseEnum.Supabase,
+        name: VictorToolsEnum.Supabase,
       },
 
       {

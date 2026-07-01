@@ -8,6 +8,8 @@ import xCodeIcon from "@/assets/xcode-tool.svg";
 import GitHubToolSVG from "@/assets/svgs/GitHubToolSVG";
 import AWSSVG from "@/assets/svgs/AWSSVG";
 import { VictorToolsEnum } from "@/typing/enums/VictorToolsEnum/VictorToolsEnum";
+import N8NSVG from "@/assets/svgs/N8NSVG";
+import SupabaseSVG from "@/assets/svgs/SupabaseSVG";
 
 interface IVictorToolsSubSection {
   svgSize: number;
@@ -30,6 +32,40 @@ export default function VictorToolsSubSection(props: IVictorToolsSubSection) {
         }}
         customIconComponent={
           <AWSSVG width={props.svgSize} height={props.svgSize} />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: "N8N logo",
+          },
+          name: VictorToolsEnum.N8N,
+        }}
+        customIconComponent={
+          <N8NSVG width={props.svgSize} height={props.svgSize} />
+        }
+      />
+
+      <SkillCard
+        svgSize={props.svgSize}
+        link={{
+          href: "",
+        }}
+        skill={{
+          iconData: {
+            src: "",
+            alt: "Supabase logo",
+          },
+          name: VictorToolsEnum.Supabase,
+        }}
+        customIconComponent={
+          <SupabaseSVG width={props.svgSize} height={props.svgSize} />
         }
       />
 
