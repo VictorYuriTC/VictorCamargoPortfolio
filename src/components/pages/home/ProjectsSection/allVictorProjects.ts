@@ -153,6 +153,16 @@ export const allVictorProjects: (VictorExperienceType & {
         field: "backend",
         name: VictorToolsEnum.N8N,
       },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
+      },
     ],
     allExperiencePhotos: {
       photos: [
@@ -268,6 +278,16 @@ export const allVictorProjects: (VictorExperienceType & {
         field: "frontend",
         name: VictorLibrariesEnum.AdSense,
       },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
+      },
     ],
     allExperiencePhotos: {
       photos: allPoeticosPhotos,
@@ -334,6 +354,16 @@ export const allVictorProjects: (VictorExperienceType & {
       {
         field: "backend",
         name: VictorToolsEnum.Netlify,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
       },
     ],
     allExperiencePhotos: {

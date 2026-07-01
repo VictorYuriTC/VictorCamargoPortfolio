@@ -69,7 +69,7 @@ export default function AboutSection() {
             Feel free to reach out if you’re looking for a{" "}
             <AboutStrongText>curious</AboutStrongText>,{" "}
             <AboutStrongText>independent</AboutStrongText>, and{" "}
-            <AboutStrongText>culturally driven</AboutStrongText> developer.
+            <AboutStrongText>culturally driven developer</AboutStrongText>.
           </AboutParagraph>
 
           <PortfolioPrimaryButton

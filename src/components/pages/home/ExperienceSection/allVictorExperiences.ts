@@ -60,6 +60,16 @@ export const allVictorExperiences: (VictorExperienceType & {
         field: "frontend",
         name: VictorLibrariesEnum.ReactTanStackQuery,
       },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
+      },
     ],
     allExperiencePhotos: {
       photos: [
@@ -165,6 +175,16 @@ export const allVictorExperiences: (VictorExperienceType & {
       {
         field: "frontend",
         name: VictorMarkupAndStyleSheetLanguagesEnum.Tailwind,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
       },
     ],
     allExperiencePhotos: {
@@ -369,7 +389,7 @@ export const allVictorExperiences: (VictorExperienceType & {
 
     company: {
       name: { children: "Groner" },
-      websiteLink: { href: "https://groner.com.br" },
+      websiteLink: { href: "https://gronercrm.com.br" },
     },
     role: { children: "Mid-Level Full-Stack Developer" },
     allSkills: [
@@ -421,6 +441,16 @@ export const allVictorExperiences: (VictorExperienceType & {
       {
         field: "backend",
         name: VictorToolsEnum.Cloudwatch,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.Git,
+      },
+
+      {
+        field: "backend",
+        name: VictorToolsEnum.GitHub,
       },
 
       {
